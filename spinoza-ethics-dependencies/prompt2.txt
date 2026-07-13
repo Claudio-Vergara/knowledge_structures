@@ -1,0 +1,12 @@
+The file "ethics.json" contains an extraction of the key elements in spinoza's ethics.
+Now I want to populate the "parent" by using the elements called up in the "proof" field. For example for I.P10
+one should get:
+{
+      "id": "I.P10",
+      "part": "I",
+      "kind": "proposition",
+      "number": 26,
+      "statement": "Each particular attribute of the one substance must be conceived through itself.",
+      "proof": "An attribute is that which the intellect perceives of substance, as constituting its essence (Def. iv.), and, therefore, must be conceived through itself (Def. iii.). Q.E.D.",
+      "parent": ["I.D3","I.D4"]
+    },

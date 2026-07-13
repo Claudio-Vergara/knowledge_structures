@@ -1,0 +1,7555 @@
+{
+  "meta": {
+    "source": "Spinoza_Ethics.txt (Elwes translation, Project Gutenberg #3800)",
+    "node_count": 443,
+    "edge_count": 994,
+    "node_kinds": {
+      "definition": 26,
+      "axiom": 16,
+      "proposition": 259,
+      "corollary": 71,
+      "appendix": 2,
+      "preface": 3,
+      "axiom-phys": 2,
+      "lemma": 7,
+      "postulate": 8,
+      "emotion-definition": 48,
+      "defemo-general": 1
+    }
+  },
+  "nodes": [
+    {
+      "id": "I.D1",
+      "part": "I",
+      "kind": "definition",
+      "number": 1,
+      "statement": "By that which is self\u00e2\u0080\u0094caused, I mean that of which the essence involves existence, or that of which the nature is only conceivable as existent.",
+      "parent": null
+    },
+    {
+      "id": "I.D2",
+      "part": "I",
+      "kind": "definition",
+      "number": 2,
+      "statement": "A thing is called finite after its kind, when it can be limited by another thing of the same nature; for instance, a body is called finite because we always conceive another greater body. So, also, a thought is limited by another thought, b",
+      "parent": null
+    },
+    {
+      "id": "I.D3",
+      "part": "I",
+      "kind": "definition",
+      "number": 3,
+      "statement": "By substance, I mean that which is in itself, and is conceived through itself: in other words, that of which a conception can be formed independently of any other conception.",
+      "parent": null
+    },
+    {
+      "id": "I.D4",
+      "part": "I",
+      "kind": "definition",
+      "number": 4,
+      "statement": "By attribute, I mean that which the intellect perceives as constituting the essence of substance.",
+      "parent": null
+    },
+    {
+      "id": "I.D5",
+      "part": "I",
+      "kind": "definition",
+      "number": 5,
+      "statement": "By mode, I mean the modifications[1] of substance, or that which exists in, and is conceived through, something other than itself.",
+      "parent": null
+    },
+    {
+      "id": "I.D6",
+      "part": "I",
+      "kind": "definition",
+      "number": 6,
+      "statement": "By God, I mean a being absolutely infinite\u00e2\u0080\u0094that is, a substance consisting in infinite attributes, of which each expresses eternal and infinite essentiality.",
+      "parent": null
+    },
+    {
+      "id": "I.D7",
+      "part": "I",
+      "kind": "definition",
+      "number": 7,
+      "statement": "That thing is called free, which exists solely by the necessity of its own nature, and of which the action is determined by itself alone. On the other hand, that thing is necessary, or rather constrained, which is determined by something ex",
+      "parent": null
+    },
+    {
+      "id": "I.D8",
+      "part": "I",
+      "kind": "definition",
+      "number": 8,
+      "statement": "By eternity, I mean existence itself, in so far as it is conceived necessarily to follow solely from the definition of that which is eternal.",
+      "parent": null
+    },
+    {
+      "id": "I.A1",
+      "part": "I",
+      "kind": "axiom",
+      "number": 1,
+      "statement": "Everything which exists, exists either in itself or in something else.",
+      "parent": null
+    },
+    {
+      "id": "I.A2",
+      "part": "I",
+      "kind": "axiom",
+      "number": 2,
+      "statement": "That which cannot be conceived through anything else must be conceived through itself.",
+      "parent": null
+    },
+    {
+      "id": "I.A3",
+      "part": "I",
+      "kind": "axiom",
+      "number": 3,
+      "statement": "From a given definite cause an effect necessarily follows; and, on the other hand, if no definite cause be granted, it is impossible that an effect can follow.",
+      "parent": null
+    },
+    {
+      "id": "I.A4",
+      "part": "I",
+      "kind": "axiom",
+      "number": 4,
+      "statement": "The knowledge of an effect depends on and involves the knowledge of a cause.",
+      "parent": null
+    },
+    {
+      "id": "I.A5",
+      "part": "I",
+      "kind": "axiom",
+      "number": 5,
+      "statement": "Things which have nothing in common cannot be understood, the one by means of the other; the conception of one does not involve the conception of the other.",
+      "parent": null
+    },
+    {
+      "id": "I.A6",
+      "part": "I",
+      "kind": "axiom",
+      "number": 6,
+      "statement": "A true idea must correspond with its ideate or object.",
+      "parent": null
+    },
+    {
+      "id": "I.A7",
+      "part": "I",
+      "kind": "axiom",
+      "number": 7,
+      "statement": "If a thing can be conceived as non\u00e2\u0080\u0094existing, its essence does not involve existence.",
+      "parent": null
+    },
+    {
+      "id": "I.P1",
+      "part": "I",
+      "kind": "proposition",
+      "number": 1,
+      "statement": "Substance is by nature prior to its modifications.",
+      "parent": null
+    },
+    {
+      "id": "I.P2",
+      "part": "I",
+      "kind": "proposition",
+      "number": 2,
+      "statement": "Two substances, whose attributes are different, have nothing in common.",
+      "parent": null
+    },
+    {
+      "id": "I.P3",
+      "part": "I",
+      "kind": "proposition",
+      "number": 3,
+      "statement": "Things which have nothing in common cannot be one the cause of the other.",
+      "parent": null
+    },
+    {
+      "id": "I.P4",
+      "part": "I",
+      "kind": "proposition",
+      "number": 4,
+      "statement": "Two or more distinct things are distinguished one from the other, either by the difference of the attributes of the substances, or by the difference of their modifications.",
+      "parent": null
+    },
+    {
+      "id": "I.P5",
+      "part": "I",
+      "kind": "proposition",
+      "number": 5,
+      "statement": "There cannot exist in the universe two or more substances having the same nature or attribute.",
+      "parent": null
+    },
+    {
+      "id": "I.P6",
+      "part": "I",
+      "kind": "proposition",
+      "number": 6,
+      "statement": "One substance cannot be produced by another substance.",
+      "parent": null
+    },
+    {
+      "id": "I.P6.C1",
+      "part": "I",
+      "kind": "corollary",
+      "number": 1,
+      "statement": "\u00e2\u0080\u0094Hence it follows that a substance cannot be produced by anything external to itself. For in the universe nothing is granted, save substances and their modifications (as appears from Ax. i. and Deff. iii. and v.). Now (by the last Prop.)",
+      "parent": "I.P6"
+    },
+    {
+      "id": "I.P7",
+      "part": "I",
+      "kind": "proposition",
+      "number": 7,
+      "statement": "Existence belongs to the nature of substances.",
+      "parent": null
+    },
+    {
+      "id": "I.P8",
+      "part": "I",
+      "kind": "proposition",
+      "number": 8,
+      "statement": "Every substance is necessarily infinite.",
+      "parent": null
+    },
+    {
+      "id": "I.P9",
+      "part": "I",
+      "kind": "proposition",
+      "number": 9,
+      "statement": "The more reality or being a thing has, the greater the number of its attributes (Def. iv.).",
+      "parent": null
+    },
+    {
+      "id": "I.P10",
+      "part": "I",
+      "kind": "proposition",
+      "number": 10,
+      "statement": "Each particular attribute of the one substance must be conceived through itself.",
+      "parent": null
+    },
+    {
+      "id": "I.P11",
+      "part": "I",
+      "kind": "proposition",
+      "number": 11,
+      "statement": "God, or substance, consisting of infinite attributes, of which each expresses eternal and infinite essentiality, necessarily exists.",
+      "parent": null
+    },
+    {
+      "id": "I.P12",
+      "part": "I",
+      "kind": "proposition",
+      "number": 12,
+      "statement": "No attribute of substance can be conceived from which it would follow that substance can be divided.",
+      "parent": null
+    },
+    {
+      "id": "I.P13",
+      "part": "I",
+      "kind": "proposition",
+      "number": 13,
+      "statement": "Substance absolutely infinite is indivisible.",
+      "parent": null
+    },
+    {
+      "id": "I.P13.C1",
+      "part": "I",
+      "kind": "corollary",
+      "number": 1,
+      "statement": "\u00e2\u0080\u0094It follows, that no substance, and consequently no extended substance, in so far as it is substance, is divisible.",
+      "parent": "I.P13"
+    },
+    {
+      "id": "I.P14",
+      "part": "I",
+      "kind": "proposition",
+      "number": 14,
+      "statement": "Besides God no substance can be granted or conceived.",
+      "parent": null
+    },
+    {
+      "id": "I.P14.C1",
+      "part": "I",
+      "kind": "corollary",
+      "number": 1,
+      "statement": "\u00e2\u0080\u0094Clearly, therefore: 1. God is one, that is (by Def. vi.) only one substance can be granted in the universe, and that substance is absolutely infinite, as we have already indicated (in the note to Prop. x.).",
+      "parent": "I.P14"
+    },
+    {
+      "id": "I.P14.C2",
+      "part": "I",
+      "kind": "corollary",
+      "number": 2,
+      "statement": "\u00e2\u0080\u0094It follows: 2. That extension and thought are either attributes of God or (by Ax. i.) accidents (affectiones) of the attributes of God.",
+      "parent": "I.P14"
+    },
+    {
+      "id": "I.P15",
+      "part": "I",
+      "kind": "proposition",
+      "number": 15,
+      "statement": "Whatsoever is, is in God, and without God nothing can be, or be conceived.",
+      "parent": null
+    },
+    {
+      "id": "I.P16",
+      "part": "I",
+      "kind": "proposition",
+      "number": 16,
+      "statement": "From the necessity of the divine nature must follow an infinite number of things in infinite ways\u00e2\u0080\u0094that is, all things which can fall within the sphere of infinite intellect.",
+      "parent": null
+    },
+    {
+      "id": "I.P16.C1",
+      "part": "I",
+      "kind": "corollary",
+      "number": 1,
+      "statement": "\u00e2\u0080\u0094Hence it follows, that God is the efficient cause of all that can fall within the sphere of an infinite intellect.",
+      "parent": "I.P16"
+    },
+    {
+      "id": "I.P16.C2",
+      "part": "I",
+      "kind": "corollary",
+      "number": 2,
+      "statement": "\u00e2\u0080\u0094It also follows that God is a cause in himself, and not through an accident of his nature.",
+      "parent": "I.P16"
+    },
+    {
+      "id": "I.P16.C3",
+      "part": "I",
+      "kind": "corollary",
+      "number": 3,
+      "statement": "\u00e2\u0080\u0094It follows, thirdly, that God is the absolutely first cause.",
+      "parent": "I.P16"
+    },
+    {
+      "id": "I.P17",
+      "part": "I",
+      "kind": "proposition",
+      "number": 17,
+      "statement": "God acts solely by the laws of his own nature, and is not constrained by anyone.",
+      "parent": null
+    },
+    {
+      "id": "I.P17.C1",
+      "part": "I",
+      "kind": "corollary",
+      "number": 1,
+      "statement": "\u00e2\u0080\u0094It follows: 1. That there can be no cause which, either extrinsically or intrinsically, besides the perfection of his own nature, moves God to act.",
+      "parent": "I.P17"
+    },
+    {
+      "id": "I.P17.C2",
+      "part": "I",
+      "kind": "corollary",
+      "number": 2,
+      "statement": "\u00e2\u0080\u0094It follows: 2. That God is the sole free cause. For God alone exists by the sole necessity of his nature (by Prop. xi. and Prop. xiv., Coroll. i.), and acts by the sole necessity of his own nature, wherefore God is (by Def. vii.) the sol",
+      "parent": "I.P17"
+    },
+    {
+      "id": "I.P18",
+      "part": "I",
+      "kind": "proposition",
+      "number": 18,
+      "statement": "God is the indwelling and not the transient cause of all things.",
+      "parent": null
+    },
+    {
+      "id": "I.P19",
+      "part": "I",
+      "kind": "proposition",
+      "number": 19,
+      "statement": "God, and all the attributes of God, are eternal.",
+      "parent": null
+    },
+    {
+      "id": "I.P20",
+      "part": "I",
+      "kind": "proposition",
+      "number": 20,
+      "statement": "The existence of God and his essence are one and the same.",
+      "parent": null
+    },
+    {
+      "id": "I.P20.C1",
+      "part": "I",
+      "kind": "corollary",
+      "number": 1,
+      "statement": "\u00e2\u0080\u0094Hence it follows that God's existence, like his essence, is an eternal truth.",
+      "parent": "I.P20"
+    },
+    {
+      "id": "I.P20.C2",
+      "part": "I",
+      "kind": "corollary",
+      "number": 2,
+      "statement": "\u00e2\u0080\u0094Secondly, it follows that God, and all the attributes of God, are unchangeable. For if they could be changed in respect to existence, they must also be able to be changed in respect to essence\u00e2\u0080\u0094that is, obviously, be changed from true t",
+      "parent": "I.P20"
+    },
+    {
+      "id": "I.P21",
+      "part": "I",
+      "kind": "proposition",
+      "number": 21,
+      "statement": "All things which follow from the absolute nature of any attribute of God must always exist and be infinite, or, in other words, are eternal and infinite through the said attribute.",
+      "parent": null
+    },
+    {
+      "id": "I.P22",
+      "part": "I",
+      "kind": "proposition",
+      "number": 22,
+      "statement": "Whatsoever follows from any attribute of God, in so far as it is modified by a modification, which exists necessarily and as infinite, through the said attribute, must also exist necessarily and as infinite.",
+      "parent": null
+    },
+    {
+      "id": "I.P23",
+      "part": "I",
+      "kind": "proposition",
+      "number": 23,
+      "statement": "Every mode, which exists both necessarily and as infinite, must necessarily follow either from the absolute nature of some attribute of God, or from an attribute modified by a modification which exists necessarily, and as infinite.",
+      "parent": null
+    },
+    {
+      "id": "I.P24",
+      "part": "I",
+      "kind": "proposition",
+      "number": 24,
+      "statement": "The essence of things produced by God does not involve existence.",
+      "parent": null
+    },
+    {
+      "id": "I.P24.C1",
+      "part": "I",
+      "kind": "corollary",
+      "number": 1,
+      "statement": "\u00e2\u0080\u0094Hence it follows that God is not only the cause of things coming into existence, but also of their continuing in existence, that is, in scholastic phraseology, God is cause of the being of things (essendi rerum). For whether things exist",
+      "parent": "I.P24"
+    },
+    {
+      "id": "I.P25",
+      "part": "I",
+      "kind": "proposition",
+      "number": 25,
+      "statement": "God is the efficient cause not only of the existence of things, but also of their essence.",
+      "parent": null
+    },
+    {
+      "id": "I.P25.C1",
+      "part": "I",
+      "kind": "corollary",
+      "number": 1,
+      "statement": "\u00e2\u0080\u0094Individual things are nothing but modifications of the attributes of God, or modes by which the attributes of God are expressed in a fixed and definite manner. The proof appears from Prop. xv. and Def. v.",
+      "parent": "I.P25"
+    },
+    {
+      "id": "I.P26",
+      "part": "I",
+      "kind": "proposition",
+      "number": 26,
+      "statement": "A thing which is conditioned to act in a particular manner, has necessarily been thus conditioned by God; and that which has not been conditioned by God cannot condition itself to act.",
+      "parent": null
+    },
+    {
+      "id": "I.P27",
+      "part": "I",
+      "kind": "proposition",
+      "number": 27,
+      "statement": "A thing, which has been conditioned by God to act in a particular way, cannot render itself unconditioned.",
+      "parent": null
+    },
+    {
+      "id": "I.P28",
+      "part": "I",
+      "kind": "proposition",
+      "number": 28,
+      "statement": "Every individual thing, or everything which is finite and has a conditioned existence, cannot exist or be conditioned to act, unless it be conditioned for existence and action by a cause other than itself, which also is finite, and has a co",
+      "parent": null
+    },
+    {
+      "id": "I.P29",
+      "part": "I",
+      "kind": "proposition",
+      "number": 29,
+      "statement": "Nothing in the universe is contingent, but all things are conditioned to exist and operate in a particular manner by the necessity of the divine nature.",
+      "parent": null
+    },
+    {
+      "id": "I.P30",
+      "part": "I",
+      "kind": "proposition",
+      "number": 30,
+      "statement": "Intellect, in function (actu) finite, or in function infinite, must comprehend the attributes of God and the modifications of God, and nothing else.",
+      "parent": null
+    },
+    {
+      "id": "I.P31",
+      "part": "I",
+      "kind": "proposition",
+      "number": 31,
+      "statement": "The intellect in function, whether finite or infinite, as will, desire, love, &c., should be referred to passive nature and not to active nature.",
+      "parent": null
+    },
+    {
+      "id": "I.P32",
+      "part": "I",
+      "kind": "proposition",
+      "number": 32,
+      "statement": "Will cannot be called a free cause, but only a necessary cause.",
+      "parent": null
+    },
+    {
+      "id": "I.P32.C1",
+      "part": "I",
+      "kind": "corollary",
+      "number": 1,
+      "statement": "\u00e2\u0080\u0094Hence it follows, first, that God does not act according to freedom of the will.",
+      "parent": "I.P32"
+    },
+    {
+      "id": "I.P32.C2",
+      "part": "I",
+      "kind": "corollary",
+      "number": 2,
+      "statement": "\u00e2\u0080\u0094It follows, secondly, that will and intellect stand in the same relation to the nature of God as do motion, and rest, and absolutely all natural phenomena, which must be conditioned by God (Prop. xxix.) to exist and act in a particular m",
+      "parent": "I.P32"
+    },
+    {
+      "id": "I.P33",
+      "part": "I",
+      "kind": "proposition",
+      "number": 33,
+      "statement": "Things could not have been brought into being by God in any manner or in any order different from that which has in fact obtained.",
+      "parent": null
+    },
+    {
+      "id": "I.P34",
+      "part": "I",
+      "kind": "proposition",
+      "number": 34,
+      "statement": "God's power is identical with his essence.",
+      "parent": null
+    },
+    {
+      "id": "I.P35",
+      "part": "I",
+      "kind": "proposition",
+      "number": 35,
+      "statement": "Whatsoever we conceive to be in the power of God, necessarily exists.",
+      "parent": null
+    },
+    {
+      "id": "I.P36",
+      "part": "I",
+      "kind": "proposition",
+      "number": 36,
+      "statement": "There is no cause from whose nature some effect does not follow.",
+      "parent": null
+    },
+    {
+      "id": "I.App",
+      "part": "I",
+      "kind": "appendix",
+      "number": null,
+      "statement": "In the foregoing I have explained the nature and properties of God. I have shown that he necessarily exists, that he is one: that he is, and acts solely by the necessity of his own nature; that he is the free cause of all things, and how he",
+      "parent": null
+    },
+    {
+      "id": "II.Pref",
+      "part": "II",
+      "kind": "preface",
+      "number": null,
+      "statement": "PREFACE",
+      "parent": null
+    },
+    {
+      "id": "II.D1",
+      "part": "II",
+      "kind": "definition",
+      "number": 1,
+      "statement": "By body I mean a mode which expresses in a certain determinate manner the essence of God, in so far as he is considered as an extended thing. (See Pt. i., Prop. xxv., Coroll.)",
+      "parent": null
+    },
+    {
+      "id": "II.D2",
+      "part": "II",
+      "kind": "definition",
+      "number": 2,
+      "statement": "I consider as belonging to the essence of a thing that, which being given, the thing is necessarily given also, and, which being removed, the thing is necessarily removed also; in other words, that without which the thing, and which itself",
+      "parent": null
+    },
+    {
+      "id": "II.D3",
+      "part": "II",
+      "kind": "definition",
+      "number": 3,
+      "statement": "By idea, I mean the mental conception which is formed by the mind as a thinking thing.",
+      "parent": null
+    },
+    {
+      "id": "II.D4",
+      "part": "II",
+      "kind": "definition",
+      "number": 4,
+      "statement": "By an adequate idea, I mean an idea which, in so far as it is considered in itself, without relation to the object, has all the properties or intrinsic marks of a true idea.",
+      "parent": null
+    },
+    {
+      "id": "II.D5",
+      "part": "II",
+      "kind": "definition",
+      "number": 5,
+      "statement": "Duration is the indefinite continuance of existing.",
+      "parent": null
+    },
+    {
+      "id": "II.D6",
+      "part": "II",
+      "kind": "definition",
+      "number": 6,
+      "statement": "Reality and perfection I use as synonymous terms.",
+      "parent": null
+    },
+    {
+      "id": "II.D7",
+      "part": "II",
+      "kind": "definition",
+      "number": 7,
+      "statement": "By particular things, I mean things which are finite and have a conditioned existence; but if several individual things concur in one action, so as to be all simultaneously the effect of one cause, I consider them all, so far, as one partic",
+      "parent": null
+    },
+    {
+      "id": "II.A1",
+      "part": "II",
+      "kind": "axiom",
+      "number": 1,
+      "statement": "The essence of man does not involve necessary existence, that is, it may, in the order of nature, come to pass that this or that man does or does not exist.",
+      "parent": null
+    },
+    {
+      "id": "II.A2",
+      "part": "II",
+      "kind": "axiom",
+      "number": 2,
+      "statement": "Man thinks.",
+      "parent": null
+    },
+    {
+      "id": "II.A3",
+      "part": "II",
+      "kind": "axiom",
+      "number": 3,
+      "statement": "Modes of thinking, such as love, desire, or any other of the passions, do not take place, unless there be in the same individual an idea of the thing loved, desired, &c. But the idea can exist without the presence of any other mode of think",
+      "parent": null
+    },
+    {
+      "id": "II.A4",
+      "part": "II",
+      "kind": "axiom",
+      "number": 4,
+      "statement": "We perceive that a certain body is affected in many ways.",
+      "parent": null
+    },
+    {
+      "id": "II.A5",
+      "part": "II",
+      "kind": "axiom",
+      "number": 5,
+      "statement": "We feel and perceive no particular things, save bodies and modes of thought.",
+      "parent": null
+    },
+    {
+      "id": "II.P1",
+      "part": "II",
+      "kind": "proposition",
+      "number": 1,
+      "statement": "Thought is an attribute of God, or God is a thinking thing.",
+      "parent": null
+    },
+    {
+      "id": "II.P2",
+      "part": "II",
+      "kind": "proposition",
+      "number": 2,
+      "statement": "Extension is an attribute of God, or God is an extended thing.",
+      "parent": null
+    },
+    {
+      "id": "II.P3",
+      "part": "II",
+      "kind": "proposition",
+      "number": 3,
+      "statement": "In God there is necessarily the idea not only of his essence, but also of all things which necessarily follow from his essence.",
+      "parent": null
+    },
+    {
+      "id": "II.P4",
+      "part": "II",
+      "kind": "proposition",
+      "number": 4,
+      "statement": "The idea of God, from which an infinite number of things follow in infinite ways, can only be one.",
+      "parent": null
+    },
+    {
+      "id": "II.P5",
+      "part": "II",
+      "kind": "proposition",
+      "number": 5,
+      "statement": "The actual being of ideas owns God as its cause, only in so far as he is considered as a thinking thing, not in so far as he is unfolded in any other attribute; that is, the ideas both of the attributes of God and of particular things do no",
+      "parent": null
+    },
+    {
+      "id": "II.P6",
+      "part": "II",
+      "kind": "proposition",
+      "number": 6,
+      "statement": "The modes of any given attribute are caused by God, in so far as he is considered through the attribute of which they are modes, and not in so far as he is considered through any other attribute.",
+      "parent": null
+    },
+    {
+      "id": "II.P6.C1",
+      "part": "II",
+      "kind": "corollary",
+      "number": 1,
+      "statement": "\u00e2\u0080\u0094Hence the actual being of things, which are not modes of thought, does not follow from the divine nature, because that nature has prior knowledge of the things. Things represented in ideas follow, and are derived from their particular at",
+      "parent": "II.P6"
+    },
+    {
+      "id": "II.P7",
+      "part": "II",
+      "kind": "proposition",
+      "number": 7,
+      "statement": "The order and connection of ideas is the same as the order and connection of things.",
+      "parent": null
+    },
+    {
+      "id": "II.P7.C1",
+      "part": "II",
+      "kind": "corollary",
+      "number": 1,
+      "statement": "\u00e2\u0080\u0094Hence God's power of thinking is equal to his realized power of action\u00e2\u0080\u0094that is, whatsoever follows from the infinite nature of God in the world of extension (formaliter), follows without exception in the same order and connection from",
+      "parent": "II.P7"
+    },
+    {
+      "id": "II.P8",
+      "part": "II",
+      "kind": "proposition",
+      "number": 8,
+      "statement": "The ideas of particular things, or of modes, that do not exist, must be comprehended in the infinite idea of God, in the same way as the formal essences of particular things or modes are contained in the attributes of God.",
+      "parent": null
+    },
+    {
+      "id": "II.P8.C1",
+      "part": "II",
+      "kind": "corollary",
+      "number": 1,
+      "statement": "\u00e2\u0080\u0094Hence, so long as particular things do not exist, except in so far as they are comprehended in the attributes of God, their representations in thought or ideas do not exist, except in so far as the infinite idea of God exists; and when p",
+      "parent": "II.P8"
+    },
+    {
+      "id": "II.P9",
+      "part": "II",
+      "kind": "proposition",
+      "number": 9,
+      "statement": "The idea of an individual thing actually existing is caused by God, not in so far as he is infinite, but in so far as he is considered as affected by another idea of a thing actually existing, of which he is the cause, in so far as he is af",
+      "parent": null
+    },
+    {
+      "id": "II.P9.C1",
+      "part": "II",
+      "kind": "corollary",
+      "number": 1,
+      "statement": "\u00e2\u0080\u0094Whatsoever takes place in the individual object of any idea, the knowledge thereof is in God, in so far only as he has the idea of the object.",
+      "parent": "II.P9"
+    },
+    {
+      "id": "II.P10",
+      "part": "II",
+      "kind": "proposition",
+      "number": 10,
+      "statement": "The being of substance does not appertain to the essence of man\u00e2\u0080\u0094in other words, substance does not constitute the actual being[2] of man.",
+      "parent": null
+    },
+    {
+      "id": "II.P10.C1",
+      "part": "II",
+      "kind": "corollary",
+      "number": 1,
+      "statement": "\u00e2\u0080\u0094Hence it follows, that the essence of man is constituted by certain modifications of the attributes of God. For (by the last Prop.) the being of substance does not belong to the essence of man. That essence therefore (by i. 15) is someth",
+      "parent": "II.P10"
+    },
+    {
+      "id": "II.P11",
+      "part": "II",
+      "kind": "proposition",
+      "number": 11,
+      "statement": "The first element, which constitutes the actual being of the human mind, is the idea of some particular thing actually existing.",
+      "parent": null
+    },
+    {
+      "id": "II.P11.C1",
+      "part": "II",
+      "kind": "corollary",
+      "number": 1,
+      "statement": "\u00e2\u0080\u0094Hence it follows, that the human mind is part of the infinite intellect of God; thus when we say, that the human mind perceives this or that, we make the assertion, that God has this or that idea, not in so far as he is infinite, but in",
+      "parent": "II.P11"
+    },
+    {
+      "id": "II.P12",
+      "part": "II",
+      "kind": "proposition",
+      "number": 12,
+      "statement": "Whatsoever comes to pass in the object of the idea, which constitutes the human mind, must be perceived by the human mind, or there will necessarily be an idea in the human mind of the said occurrence. That is, if the object of the idea con",
+      "parent": null
+    },
+    {
+      "id": "II.P13",
+      "part": "II",
+      "kind": "proposition",
+      "number": 13,
+      "statement": "The object of the idea constituting the human mind is the body, in other words a certain mode of extension which actually exists, and nothing else.",
+      "parent": null
+    },
+    {
+      "id": "II.PhysA1",
+      "part": "II",
+      "kind": "axiom-phys",
+      "number": 1,
+      "statement": "All bodies are either in motion or at rest.",
+      "parent": null
+    },
+    {
+      "id": "II.PhysA2",
+      "part": "II",
+      "kind": "axiom-phys",
+      "number": 2,
+      "statement": "Every body is moved sometimes more slowly, sometimes more quickly.",
+      "parent": null
+    },
+    {
+      "id": "II.L1",
+      "part": "II",
+      "kind": "lemma",
+      "number": 1,
+      "statement": "Bodies are distinguished from one another in respect of motion and rest, quickness and slowness, and not in respect of substance.",
+      "parent": null
+    },
+    {
+      "id": "II.L2",
+      "part": "II",
+      "kind": "lemma",
+      "number": 2,
+      "statement": "All bodies agree in certain respects.",
+      "parent": null
+    },
+    {
+      "id": "II.L3",
+      "part": "II",
+      "kind": "lemma",
+      "number": 3,
+      "statement": "A body in motion or at rest must be determined to motion or rest by another body, which other body has been determined to motion or rest by a third body, and that third again by a fourth, and so on to infinity.",
+      "parent": null
+    },
+    {
+      "id": "II.L4",
+      "part": "II",
+      "kind": "lemma",
+      "number": 4,
+      "statement": "If from a body or individual, compounded of several bodies, certain bodies be separated, and if, at the same time, an equal number of other bodies of the same nature take their place, the individual will preserve its nature as before, witho",
+      "parent": null
+    },
+    {
+      "id": "II.L5",
+      "part": "II",
+      "kind": "lemma",
+      "number": 5,
+      "statement": "If the parts composing an individual become greater or less, but in such proportion, that they all preserve the same mutual relations of motion and rest, the individual will still preserve its original nature, and its actuality will not be",
+      "parent": null
+    },
+    {
+      "id": "II.L6",
+      "part": "II",
+      "kind": "lemma",
+      "number": 6,
+      "statement": "If certain bodies composing an individual be compelled to change the motion, which they have in one direction, for motion in another direction, but in such a manner, that they be able to continue their motions and their mutual communication",
+      "parent": null
+    },
+    {
+      "id": "II.L7",
+      "part": "II",
+      "kind": "lemma",
+      "number": 7,
+      "statement": "Furthermore, the individual thus composed preserves its nature, whether it be, as a whole, in motion or at rest, whether it be moved in this or that direction; so long as each part retains its motion, and preserves its communication with ot",
+      "parent": null
+    },
+    {
+      "id": "II.Post1",
+      "part": "II",
+      "kind": "postulate",
+      "number": 1,
+      "statement": "The human body is composed of a number of individual parts, of diverse nature, each one of which is in itself extremely complex.",
+      "parent": null
+    },
+    {
+      "id": "II.Post2",
+      "part": "II",
+      "kind": "postulate",
+      "number": 2,
+      "statement": "Of the individual parts composing the human body some are fluid, some soft, some hard.",
+      "parent": null
+    },
+    {
+      "id": "II.Post3",
+      "part": "II",
+      "kind": "postulate",
+      "number": 3,
+      "statement": "The individual parts composing the human body, and consequently the human body itself, are affected in a variety of ways by external bodies.",
+      "parent": null
+    },
+    {
+      "id": "II.Post4",
+      "part": "II",
+      "kind": "postulate",
+      "number": 4,
+      "statement": "The human body stands in need for its preservation of a number of other bodies, by which it is continually, so to speak, regenerated.",
+      "parent": null
+    },
+    {
+      "id": "II.Post5",
+      "part": "II",
+      "kind": "postulate",
+      "number": 5,
+      "statement": "When the fluid part of the human body is determined by an external body to impinge often on another soft part, it changes the surface of the latter, and, as it were, leaves the impression thereupon of the external body which impels it.",
+      "parent": null
+    },
+    {
+      "id": "II.Post6",
+      "part": "II",
+      "kind": "postulate",
+      "number": 6,
+      "statement": "The human body can move external bodies, and arrange them in a variety of ways.",
+      "parent": null
+    },
+    {
+      "id": "II.P14",
+      "part": "II",
+      "kind": "proposition",
+      "number": 14,
+      "statement": "The human mind is capable of perceiving a great number of things, and is so in proportion as its body is capable of receiving a great number of impressions.",
+      "parent": null
+    },
+    {
+      "id": "II.P15",
+      "part": "II",
+      "kind": "proposition",
+      "number": 15,
+      "statement": "The idea, which constitutes the actual being of the human mind, is not simple, but compounded of a great number of ideas.",
+      "parent": null
+    },
+    {
+      "id": "II.P16",
+      "part": "II",
+      "kind": "proposition",
+      "number": 16,
+      "statement": "The idea of every mode, in which the human body is affected by external bodies, must involve the nature of the human body, and also the nature of the external body.",
+      "parent": null
+    },
+    {
+      "id": "II.P16.C1",
+      "part": "II",
+      "kind": "corollary",
+      "number": 1,
+      "statement": "\u00e2\u0080\u0094Hence it follows, first, that the human mind perceives the nature of a variety of bodies, together with the nature of its own.",
+      "parent": "II.P16"
+    },
+    {
+      "id": "II.P16.C2",
+      "part": "II",
+      "kind": "corollary",
+      "number": 2,
+      "statement": "\u00e2\u0080\u0094It follows, secondly, that the ideas, which we have of external bodies, indicate rather the constitution of our own body than the nature of external bodies. I have amply illustrated this in the Appendix to Part I.",
+      "parent": "II.P16"
+    },
+    {
+      "id": "II.P17",
+      "part": "II",
+      "kind": "proposition",
+      "number": 17,
+      "statement": "If the human body is affected in a manner which involves the nature of any external body, the human mind will regard the said external body as actually existing, or as present to itself, until the human body be affected in such a way, as to",
+      "parent": null
+    },
+    {
+      "id": "II.P17.C1",
+      "part": "II",
+      "kind": "corollary",
+      "number": 1,
+      "statement": "\u00e2\u0080\u0094The mind is able to regard as present external bodies, by which the human body has once been affected, even though they be no longer in existence or present.",
+      "parent": "II.P17"
+    },
+    {
+      "id": "II.P18",
+      "part": "II",
+      "kind": "proposition",
+      "number": 18,
+      "statement": "If the human body has once been affected by two or more bodies at the same time, when the mind afterwards imagines any of them, it will straightway remember the others also.",
+      "parent": null
+    },
+    {
+      "id": "II.P19",
+      "part": "II",
+      "kind": "proposition",
+      "number": 19,
+      "statement": "The human mind has no knowledge of the body, and does not know it to exist, save through the ideas of the modifications whereby the body is affected.",
+      "parent": null
+    },
+    {
+      "id": "II.P20",
+      "part": "II",
+      "kind": "proposition",
+      "number": 20,
+      "statement": "The idea or knowledge of the human mind is also in God, following in God in the same manner, and being referred to God in the same manner, as the idea or knowledge of the human body.",
+      "parent": null
+    },
+    {
+      "id": "II.P21",
+      "part": "II",
+      "kind": "proposition",
+      "number": 21,
+      "statement": "This idea of the mind is united to the mind in the same way as the mind is united to the body.",
+      "parent": null
+    },
+    {
+      "id": "II.P22",
+      "part": "II",
+      "kind": "proposition",
+      "number": 22,
+      "statement": "The human mind perceives not only the modifications of the body, but also the ideas of such modifications.",
+      "parent": null
+    },
+    {
+      "id": "II.P23",
+      "part": "II",
+      "kind": "proposition",
+      "number": 23,
+      "statement": "The mind does not know itself, except in so far as it perceives the ideas of the modifications of the body.",
+      "parent": null
+    },
+    {
+      "id": "II.P24",
+      "part": "II",
+      "kind": "proposition",
+      "number": 24,
+      "statement": "The human mind does not involve an adequate knowledge of the parts composing the human body.",
+      "parent": null
+    },
+    {
+      "id": "II.P25",
+      "part": "II",
+      "kind": "proposition",
+      "number": 25,
+      "statement": "The idea of each modification of the human body does not involve an adequate knowledge of the external body.",
+      "parent": null
+    },
+    {
+      "id": "II.P26",
+      "part": "II",
+      "kind": "proposition",
+      "number": 26,
+      "statement": "The human mind does not perceive any external body as actually existing, except through the ideas of the modifications of its own body.",
+      "parent": null
+    },
+    {
+      "id": "II.P26.C1",
+      "part": "II",
+      "kind": "corollary",
+      "number": 1,
+      "statement": "\u00e2\u0080\u0094In so far as the human mind imagines an external body, it has not an adequate knowledge thereof.",
+      "parent": "II.P26"
+    },
+    {
+      "id": "II.P27",
+      "part": "II",
+      "kind": "proposition",
+      "number": 27,
+      "statement": "The idea of each modification of the human body does not involve an adequate knowledge of the human body itself.",
+      "parent": null
+    },
+    {
+      "id": "II.P28",
+      "part": "II",
+      "kind": "proposition",
+      "number": 28,
+      "statement": "The ideas of the modifications of the human body, in so far as they have reference only to the human mind, are not clear and distinct, but confused.",
+      "parent": null
+    },
+    {
+      "id": "II.P29",
+      "part": "II",
+      "kind": "proposition",
+      "number": 29,
+      "statement": "The idea of the idea of each modification of the human body does not involve an adequate knowledge of the human mind.",
+      "parent": null
+    },
+    {
+      "id": "II.P29.C1",
+      "part": "II",
+      "kind": "corollary",
+      "number": 1,
+      "statement": "\u00e2\u0080\u0094Hence it follows that the human mind, when it perceives things after the common order of nature, has not an adequate but only a confused and fragmentary knowledge of itself, of its own body, and of external bodies. For the mind does not",
+      "parent": "II.P29"
+    },
+    {
+      "id": "II.P30",
+      "part": "II",
+      "kind": "proposition",
+      "number": 30,
+      "statement": "We can only have a very inadequate knowledge of the duration of our body.",
+      "parent": null
+    },
+    {
+      "id": "II.P31",
+      "part": "II",
+      "kind": "proposition",
+      "number": 31,
+      "statement": "We can only have a very inadequate knowledge of the duration of particular things external to ourselves.",
+      "parent": null
+    },
+    {
+      "id": "II.P31.C1",
+      "part": "II",
+      "kind": "corollary",
+      "number": 1,
+      "statement": "\u00e2\u0080\u0094Hence it follows that all particular things are contingent and perishable. For we can have no adequate idea of their duration (by the last Prop.), and this is what we must understand by the contingency and perishableness of things. (I. x",
+      "parent": "II.P31"
+    },
+    {
+      "id": "II.P32",
+      "part": "II",
+      "kind": "proposition",
+      "number": 32,
+      "statement": "All ideas, in so far as they are referred to God, are true.",
+      "parent": null
+    },
+    {
+      "id": "II.P33",
+      "part": "II",
+      "kind": "proposition",
+      "number": 33,
+      "statement": "There is nothing positive in ideas, which causes them to be called false.",
+      "parent": null
+    },
+    {
+      "id": "II.P34",
+      "part": "II",
+      "kind": "proposition",
+      "number": 34,
+      "statement": "Every idea, which in us is absolute or adequate and perfect, is true.",
+      "parent": null
+    },
+    {
+      "id": "II.P35",
+      "part": "II",
+      "kind": "proposition",
+      "number": 35,
+      "statement": "Falsity consists in the privation of knowledge, which inadequate, fragmentary, or confused ideas involve.",
+      "parent": null
+    },
+    {
+      "id": "II.P36",
+      "part": "II",
+      "kind": "proposition",
+      "number": 36,
+      "statement": "Inadequate and confused ideas follow by the same necessity, as adequate or clear and distinct ideas.",
+      "parent": null
+    },
+    {
+      "id": "II.P37",
+      "part": "II",
+      "kind": "proposition",
+      "number": 37,
+      "statement": "That which is common to all (cf. Lemma II., above), and which is equally in a part and in the whole, does not constitute the essence of any particular thing.",
+      "parent": null
+    },
+    {
+      "id": "II.P38",
+      "part": "II",
+      "kind": "proposition",
+      "number": 38,
+      "statement": "Those things, which are common to all, and which are equally in a part and in the whole, cannot be conceived except adequately.",
+      "parent": null
+    },
+    {
+      "id": "II.P38.C1",
+      "part": "II",
+      "kind": "corollary",
+      "number": 1,
+      "statement": "\u00e2\u0080\u0094Hence it follows that there are certain ideas or notions common to all men; for (by Lemma ii.) all bodies agree in certain respects, which (by the foregoing Prop.) must be adequately or clearly and distinctly perceived by all.",
+      "parent": "II.P38"
+    },
+    {
+      "id": "II.P39",
+      "part": "II",
+      "kind": "proposition",
+      "number": 39,
+      "statement": "That, which is common to and a property of the human body and such other bodies as are wont to affect the human body, and which is present equally in each part of either, or in the whole, will be represented by an adequate idea in the mind.",
+      "parent": null
+    },
+    {
+      "id": "II.P39.C1",
+      "part": "II",
+      "kind": "corollary",
+      "number": 1,
+      "statement": "\u00e2\u0080\u0094Hence it follows that the mind is fitted to perceive adequately more things, in proportion as its body has more in common with other bodies.",
+      "parent": "II.P39"
+    },
+    {
+      "id": "II.P40",
+      "part": "II",
+      "kind": "proposition",
+      "number": 40,
+      "statement": "Whatsoever ideas in the mind follow from ideas which are therein adequate, are also themselves adequate.",
+      "parent": null
+    },
+    {
+      "id": "II.P41",
+      "part": "II",
+      "kind": "proposition",
+      "number": 41,
+      "statement": "Knowledge of the first kind is the only source of falsity, knowledge of the second and third kinds is necessarily true.",
+      "parent": null
+    },
+    {
+      "id": "II.P42",
+      "part": "II",
+      "kind": "proposition",
+      "number": 42,
+      "statement": "Knowledge of the second and third kinds, not knowledge of the first kind, teaches us to distinguish the true from the false.",
+      "parent": null
+    },
+    {
+      "id": "II.P43",
+      "part": "II",
+      "kind": "proposition",
+      "number": 43,
+      "statement": "He, who has a true idea, simultaneously knows that he has a true idea, and cannot doubt of the truth of the thing perceived.",
+      "parent": null
+    },
+    {
+      "id": "II.P44",
+      "part": "II",
+      "kind": "proposition",
+      "number": 44,
+      "statement": "It is not in the nature of reason to regard things as contingent, but as necessary.",
+      "parent": null
+    },
+    {
+      "id": "II.P44.C1",
+      "part": "II",
+      "kind": "corollary",
+      "number": 1,
+      "statement": "\u00e2\u0080\u0094Hence it follows, that it is only through our imagination that we consider things, whether in respect to the future or the past, as contingent.",
+      "parent": "II.P44"
+    },
+    {
+      "id": "II.P44.C2",
+      "part": "II",
+      "kind": "corollary",
+      "number": 2,
+      "statement": "\u00e2\u0080\u0094It is in the nature of reason to perceive things under a certain form of eternity (sub qu\u00c3\u00a2dam \u00c3\u00a6ternitatis specie).",
+      "parent": "II.P44"
+    },
+    {
+      "id": "II.P45",
+      "part": "II",
+      "kind": "proposition",
+      "number": 45,
+      "statement": "Every idea of every body, or of every particular thing actually existing, necessarily involves the eternal and infinite essence of God.",
+      "parent": null
+    },
+    {
+      "id": "II.P46",
+      "part": "II",
+      "kind": "proposition",
+      "number": 46,
+      "statement": "The knowledge of the eternal and infinite essence of God which every idea involves is adequate and perfect.",
+      "parent": null
+    },
+    {
+      "id": "II.P47",
+      "part": "II",
+      "kind": "proposition",
+      "number": 47,
+      "statement": "The human mind has an adequate knowledge of the eternal and infinite essence of God.",
+      "parent": null
+    },
+    {
+      "id": "II.P48",
+      "part": "II",
+      "kind": "proposition",
+      "number": 48,
+      "statement": "In the mind there is no absolute or free will; but the mind is determined to wish this or that by a cause, which has also been determined by another cause, and this last by another cause, and so on to infinity.",
+      "parent": null
+    },
+    {
+      "id": "II.P49",
+      "part": "II",
+      "kind": "proposition",
+      "number": 49,
+      "statement": "There is in the mind no volition or affirmation and negation, save that which an idea, inasmuch as it is an idea, involves.",
+      "parent": null
+    },
+    {
+      "id": "II.P49.C1",
+      "part": "II",
+      "kind": "corollary",
+      "number": 1,
+      "statement": "\u00e2\u0080\u0094Will and understanding are one and the same.",
+      "parent": "II.P49"
+    },
+    {
+      "id": "III.D1",
+      "part": "III",
+      "kind": "definition",
+      "number": 1,
+      "statement": "By an adequate cause, I mean a cause through which its effect can be clearly and distinctly perceived. By an inadequate or partial cause, I mean a cause through which, by itself, its effect cannot be understood.",
+      "parent": null
+    },
+    {
+      "id": "III.D2",
+      "part": "III",
+      "kind": "definition",
+      "number": 2,
+      "statement": "I say that we act when anything takes place, either within us or externally to us, whereof we are the adequate cause; that is (by the foregoing definition) when through our nature something takes place within us or externally to us, which c",
+      "parent": null
+    },
+    {
+      "id": "III.D3",
+      "part": "III",
+      "kind": "definition",
+      "number": 3,
+      "statement": "By emotion I mean the modifications of the body, whereby the active power of the said body is increased or diminished, aided or constrained, and also the ideas of such modifications.",
+      "parent": null
+    },
+    {
+      "id": "III.Post1",
+      "part": "III",
+      "kind": "postulate",
+      "number": 1,
+      "statement": "The human body can be affected in many ways, whereby its power of activity is increased or diminished, and also in other ways which do not render its power of activity either greater or less.",
+      "parent": null
+    },
+    {
+      "id": "III.Post2",
+      "part": "III",
+      "kind": "postulate",
+      "number": 2,
+      "statement": "The human body can undergo many changes, and, nevertheless, retain the impressions or traces of objects (cf. II. Post. v.), and, consequently, the same images of things (see note II. xvii.).",
+      "parent": null
+    },
+    {
+      "id": "III.P1",
+      "part": "III",
+      "kind": "proposition",
+      "number": 1,
+      "statement": "Our mind is in certain cases active, and in certain cases passive. In so far as it has adequate ideas it is necessarily active, and in so far as it has inadequate ideas, it is necessarily passive.",
+      "parent": null
+    },
+    {
+      "id": "III.P1.C1",
+      "part": "III",
+      "kind": "corollary",
+      "number": 1,
+      "statement": "\u00e2\u0080\u0094Hence it follows that the mind is more or less liable to be acted upon, in proportion as it possesses inadequate ideas, and, contrariwise, is more or less active in proportion as it possesses adequate ideas.",
+      "parent": "III.P1"
+    },
+    {
+      "id": "III.P2",
+      "part": "III",
+      "kind": "proposition",
+      "number": 2,
+      "statement": "Body cannot determine mind to think, neither can mind determine body to motion or rest or any state different from these, if such there be.",
+      "parent": null
+    },
+    {
+      "id": "III.P3",
+      "part": "III",
+      "kind": "proposition",
+      "number": 3,
+      "statement": "The activities of the mind arise solely from adequate ideas; the passive states of the mind depend solely on inadequate ideas.",
+      "parent": null
+    },
+    {
+      "id": "III.P4",
+      "part": "III",
+      "kind": "proposition",
+      "number": 4,
+      "statement": "Nothing can be destroyed, except by a cause external to itself.",
+      "parent": null
+    },
+    {
+      "id": "III.P5",
+      "part": "III",
+      "kind": "proposition",
+      "number": 5,
+      "statement": "Things are naturally contrary, that is, cannot exist in the same object, in so far as one is capable of destroying the other.",
+      "parent": null
+    },
+    {
+      "id": "III.P6",
+      "part": "III",
+      "kind": "proposition",
+      "number": 6,
+      "statement": "Everything, in so far as it is in itself, endeavours to persist in its own being.",
+      "parent": null
+    },
+    {
+      "id": "III.P7",
+      "part": "III",
+      "kind": "proposition",
+      "number": 7,
+      "statement": "The endeavour, wherewith everything endeavours to persist in its own being, is nothing else but the actual essence of the thing in question.",
+      "parent": null
+    },
+    {
+      "id": "III.P8",
+      "part": "III",
+      "kind": "proposition",
+      "number": 8,
+      "statement": "The endeavour, whereby a thing endeavours to persist in its own being, involves no finite time, but an indefinite time.",
+      "parent": null
+    },
+    {
+      "id": "III.P9",
+      "part": "III",
+      "kind": "proposition",
+      "number": 9,
+      "statement": "The mind, both in so far as it has clear and distinct ideas, and also in so far as it has confused ideas, endeavours to persist in its being for an indefinite period, and of this endeavour it is conscious.",
+      "parent": null
+    },
+    {
+      "id": "III.P10",
+      "part": "III",
+      "kind": "proposition",
+      "number": 10,
+      "statement": "An idea, which excludes the existence of our body, cannot be postulated in our mind, but is contrary thereto.",
+      "parent": null
+    },
+    {
+      "id": "III.P11",
+      "part": "III",
+      "kind": "proposition",
+      "number": 11,
+      "statement": "Whatsoever increases or diminishes, helps or hinders the power of activity in our body, the idea thereof increases or diminishes, helps or hinders the power of thought in our mind.",
+      "parent": null
+    },
+    {
+      "id": "III.P12",
+      "part": "III",
+      "kind": "proposition",
+      "number": 12,
+      "statement": "The mind, as far as it can, endeavours to conceive those things, which increase or help the power of activity in the body.",
+      "parent": null
+    },
+    {
+      "id": "III.P13",
+      "part": "III",
+      "kind": "proposition",
+      "number": 13,
+      "statement": "When the mind conceives things which diminish or hinder the body's power of activity, it endeavours, as far as possible, to remember things which exclude the existence of the first\u00e2\u0080\u0094named things.",
+      "parent": null
+    },
+    {
+      "id": "III.P13.C1",
+      "part": "III",
+      "kind": "corollary",
+      "number": 1,
+      "statement": "\u00e2\u0080\u0094Hence it follows that the mind shrinks from conceiving those things, which diminish or constrain the power of itself and of the body.",
+      "parent": "III.P13"
+    },
+    {
+      "id": "III.P14",
+      "part": "III",
+      "kind": "proposition",
+      "number": 14,
+      "statement": "If the mind has once been affected by two emotions at the same time, it will, whenever it is afterwards affected by one of these two, be also affected by the other.",
+      "parent": null
+    },
+    {
+      "id": "III.P15",
+      "part": "III",
+      "kind": "proposition",
+      "number": 15,
+      "statement": "Anything can, accidentally, be the cause of pleasure, pain, or desire.",
+      "parent": null
+    },
+    {
+      "id": "III.P15.C1",
+      "part": "III",
+      "kind": "corollary",
+      "number": 1,
+      "statement": "\u00e2\u0080\u0094Simply from the fact that we have regarded a thing with the emotion of pleasure or pain, though that thing be not the efficient cause of the emotion, we can either love or hate it.",
+      "parent": "III.P15"
+    },
+    {
+      "id": "III.P16",
+      "part": "III",
+      "kind": "proposition",
+      "number": 16,
+      "statement": "Simply from the fact that we conceive, that a given object has some point of resemblance with another object which is wont to affect the mind pleasurably or painfully, although the point of resemblance be not the efficient cause of the said",
+      "parent": null
+    },
+    {
+      "id": "III.P17",
+      "part": "III",
+      "kind": "proposition",
+      "number": 17,
+      "statement": "If we conceive that a thing, which is wont to affect us painfully, has any point of resemblance with another thing which is wont to affect us with an equally strong emotion of pleasure, we shall hate the first\u00e2\u0080\u0094named thing, and at the same",
+      "parent": null
+    },
+    {
+      "id": "III.P18",
+      "part": "III",
+      "kind": "proposition",
+      "number": 18,
+      "statement": "A man is as much affected pleasurably or painfully by the image of a thing past or future as by the image of a thing present.",
+      "parent": null
+    },
+    {
+      "id": "III.P19",
+      "part": "III",
+      "kind": "proposition",
+      "number": 19,
+      "statement": "He who conceives that the object of his love is destroyed will feel pain; if he conceives that it is preserved he will feel pleasure.",
+      "parent": null
+    },
+    {
+      "id": "III.P20",
+      "part": "III",
+      "kind": "proposition",
+      "number": 20,
+      "statement": "He who conceives that the object of his hate is destroyed will also feel pleasure.",
+      "parent": null
+    },
+    {
+      "id": "III.P21",
+      "part": "III",
+      "kind": "proposition",
+      "number": 21,
+      "statement": "He who conceives, that the object of his love is affected pleasurably or painfully, will himself be affected pleasurably or painfully; and the one or the other emotion will be greater or less in the lover according as it is greater or less",
+      "parent": null
+    },
+    {
+      "id": "III.P22",
+      "part": "III",
+      "kind": "proposition",
+      "number": 22,
+      "statement": "If we conceive that anything pleasurably affects some object of our love, we shall be affected with love towards that thing. Contrariwise, if we conceive that it affects an object of our love painfully, we shall be affected with hatred towa",
+      "parent": null
+    },
+    {
+      "id": "III.P23",
+      "part": "III",
+      "kind": "proposition",
+      "number": 23,
+      "statement": "He who conceives, that an object of his hatred is painfully affected, will feel pleasure. Contrariwise, if he thinks that the said object is pleasurably affected, he will feel pain. Each of these emotions will be greater or less, according",
+      "parent": null
+    },
+    {
+      "id": "III.P24",
+      "part": "III",
+      "kind": "proposition",
+      "number": 24,
+      "statement": "If we conceive that anyone pleasurably affects an object of our hate, we shall feel hatred towards him also. If we conceive that he painfully affects that said object, we shall feel love towards him.",
+      "parent": null
+    },
+    {
+      "id": "III.P25",
+      "part": "III",
+      "kind": "proposition",
+      "number": 25,
+      "statement": "We endeavour to affirm, concerning ourselves, and concerning what we love, everything that we can conceive to affect pleasurably ourselves, or the loved object. Contrariwise, we endeavour to negative everything, which we conceive to affect",
+      "parent": null
+    },
+    {
+      "id": "III.P26",
+      "part": "III",
+      "kind": "proposition",
+      "number": 26,
+      "statement": "We endeavour to affirm, concerning that which we hate, everything which we conceive to affect it painfully; and, contrariwise, we endeavour to deny, concerning it, everything which we conceive to affect it pleasurably.",
+      "parent": null
+    },
+    {
+      "id": "III.P27",
+      "part": "III",
+      "kind": "proposition",
+      "number": 27,
+      "statement": "By the very fact that we conceive a thing, which is like ourselves, and which we have not regarded with any emotion, to be affected with any emotion, we are ourselves affected with a like emotion (affectus).",
+      "parent": null
+    },
+    {
+      "id": "III.P27.C1",
+      "part": "III",
+      "kind": "corollary",
+      "number": 1,
+      "statement": "\u00e2\u0080\u0094If we conceive that anyone, whom we have hitherto regarded with no emotion, pleasurably affects something similar to ourselves, we shall be affected with love towards him. If, on the other hand, we conceive that he painfully affects the",
+      "parent": "III.P27"
+    },
+    {
+      "id": "III.P27.C2",
+      "part": "III",
+      "kind": "corollary",
+      "number": 2,
+      "statement": "\u00e2\u0080\u0094We cannot hate a thing which we pity, because its misery affects us painfully.",
+      "parent": "III.P27"
+    },
+    {
+      "id": "III.P27.C3",
+      "part": "III",
+      "kind": "corollary",
+      "number": 3,
+      "statement": "\u00e2\u0080\u0094We seek to free from misery, as far as we can, a thing which we pity.",
+      "parent": "III.P27"
+    },
+    {
+      "id": "III.P28",
+      "part": "III",
+      "kind": "proposition",
+      "number": 28,
+      "statement": "We endeavour to bring about whatsoever we conceive to conduce to pleasure; but we endeavour to remove or destroy whatsoever we conceive to be truly repugnant thereto, or to conduce to pain.",
+      "parent": null
+    },
+    {
+      "id": "III.P29",
+      "part": "III",
+      "kind": "proposition",
+      "number": 29,
+      "statement": "We shall also endeavour to do whatsoever we conceive men[6] to regard with pleasure, and contrariwise we shall shrink from doing that which we conceive men to shrink from.",
+      "parent": null
+    },
+    {
+      "id": "III.P30",
+      "part": "III",
+      "kind": "proposition",
+      "number": 30,
+      "statement": "If anyone has done something which he conceives as affecting other men pleasurably, he will be affected by pleasure, accompanied by the idea of himself as cause; in other words, he will regard himself with pleasure. On the other hand, if he",
+      "parent": null
+    },
+    {
+      "id": "III.P31",
+      "part": "III",
+      "kind": "proposition",
+      "number": 31,
+      "statement": "If we conceive that anyone loves, desires, or hates anything which we ourselves love, desire, or hate, we shall thereupon regard the thing in question with more steadfast love, &c. On the contrary, if we think that anyone shrinks from somet",
+      "parent": null
+    },
+    {
+      "id": "III.P31.C1",
+      "part": "III",
+      "kind": "corollary",
+      "number": 1,
+      "statement": "\u00e2\u0080\u0094From the foregoing, and also from III. xxviii. it follows that everyone endeavours, as far as possible, to cause others to love what he himself loves, and to hate what he himself hates: as the poet says: \"As lovers let us share every hop",
+      "parent": "III.P31"
+    },
+    {
+      "id": "III.P32",
+      "part": "III",
+      "kind": "proposition",
+      "number": 32,
+      "statement": "If we conceive that anyone takes delight in something, which only one person can possess, we shall endeavour to bring it about that the man in question shall not gain possession thereof.",
+      "parent": null
+    },
+    {
+      "id": "III.P33",
+      "part": "III",
+      "kind": "proposition",
+      "number": 33,
+      "statement": "When we love a thing similar to ourselves we endeavour, as far as we can, to bring about that it should love us in return.",
+      "parent": null
+    },
+    {
+      "id": "III.P34",
+      "part": "III",
+      "kind": "proposition",
+      "number": 34,
+      "statement": "The greater the emotion with which we conceive a loved object to be affected towards us, the greater will be our complacency.",
+      "parent": null
+    },
+    {
+      "id": "III.P35",
+      "part": "III",
+      "kind": "proposition",
+      "number": 35,
+      "statement": "If anyone conceives, that an object of his love joins itself to another with closer bonds of friendship than he himself has attained to, he will be affected with hatred towards the loved object and with envy towards his rival.",
+      "parent": null
+    },
+    {
+      "id": "III.P36",
+      "part": "III",
+      "kind": "proposition",
+      "number": 36,
+      "statement": "He who remembers a thing, in which he has once taken delight, desires to possess it under the same circumstances as when he first took delight therein.",
+      "parent": null
+    },
+    {
+      "id": "III.P36.C1",
+      "part": "III",
+      "kind": "corollary",
+      "number": 1,
+      "statement": "\u00e2\u0080\u0094A lover will, therefore, feel pain if one of the aforesaid attendant circumstances be missing.",
+      "parent": "III.P36"
+    },
+    {
+      "id": "III.P37",
+      "part": "III",
+      "kind": "proposition",
+      "number": 37,
+      "statement": "Desire arising through pain or pleasure, hatred or love, is greater in proportion as the emotion is greater.",
+      "parent": null
+    },
+    {
+      "id": "III.P38",
+      "part": "III",
+      "kind": "proposition",
+      "number": 38,
+      "statement": "If a man has begun to hate an object of his love, so that love is thoroughly destroyed, he will, causes being equal, regard it with more hatred than if he had never loved it, and his hatred will be in proportion to the strength of his forme",
+      "parent": null
+    },
+    {
+      "id": "III.P39",
+      "part": "III",
+      "kind": "proposition",
+      "number": 39,
+      "statement": "He who hates anyone will endeavour to do him an injury, unless he fears that a greater injury will thereby accrue to himself; on the other hand, he who loves anyone will, by the same law, seek to benefit him.",
+      "parent": null
+    },
+    {
+      "id": "III.P40",
+      "part": "III",
+      "kind": "proposition",
+      "number": 40,
+      "statement": "He, who conceives himself to be hated by another, and believes that he has given him no cause for hatred, will hate that other in return.",
+      "parent": null
+    },
+    {
+      "id": "III.P40.C1",
+      "part": "III",
+      "kind": "corollary",
+      "number": 1,
+      "statement": "\u00e2\u0080\u0094He who conceives, that one whom he loves hates him, will be a prey to conflicting hatred and love. For, in so far as he conceives that he is an object of hatred, he is determined to hate his enemy in return. But, by the hypothesis, he ne",
+      "parent": "III.P40"
+    },
+    {
+      "id": "III.P40.C2",
+      "part": "III",
+      "kind": "corollary",
+      "number": 2,
+      "statement": "\u00e2\u0080\u0094If a man conceives that one, whom he has hitherto regarded without emotion, has done him any injury from motives of hatred, he will forthwith seek to repay the injury in kind.",
+      "parent": "III.P40"
+    },
+    {
+      "id": "III.P41",
+      "part": "III",
+      "kind": "proposition",
+      "number": 41,
+      "statement": "If anyone conceives that he is loved by another, and believes that he has given no cause for such love, he will love that other in return. (Cf. III. xv. Coroll., and III. xvi.)",
+      "parent": null
+    },
+    {
+      "id": "III.P41.C1",
+      "part": "III",
+      "kind": "corollary",
+      "number": 1,
+      "statement": "\u00e2\u0080\u0094He who imagines that he is loved by one whom he hates, will be a prey to conflicting hatred and love. This is proved in the same way as the first corollary of the preceding proposition.",
+      "parent": "III.P41"
+    },
+    {
+      "id": "III.P42",
+      "part": "III",
+      "kind": "proposition",
+      "number": 42,
+      "statement": "He who has conferred a benefit on anyone from motives of love or honour will feel pain, if he sees that the benefit is received without gratitude.",
+      "parent": null
+    },
+    {
+      "id": "III.P43",
+      "part": "III",
+      "kind": "proposition",
+      "number": 43,
+      "statement": "Hatred is increased by being reciprocated, and can on the other hand be destroyed by love.",
+      "parent": null
+    },
+    {
+      "id": "III.P44",
+      "part": "III",
+      "kind": "proposition",
+      "number": 44,
+      "statement": "Hatred which is completely vanquished by love passes into love: and love is thereupon greater than if hatred had not preceded it.",
+      "parent": null
+    },
+    {
+      "id": "III.P45",
+      "part": "III",
+      "kind": "proposition",
+      "number": 45,
+      "statement": "If a man conceives, that anyone similar to himself hates anything also similar to himself, which he loves, he will hate that person.",
+      "parent": null
+    },
+    {
+      "id": "III.P46",
+      "part": "III",
+      "kind": "proposition",
+      "number": 46,
+      "statement": "If a man has been affected pleasurably or painfully by anyone, of a class or nation different from his own, and if the pleasure or pain has been accompanied by the idea of the said stranger as cause, under the general category of the class",
+      "parent": null
+    },
+    {
+      "id": "III.P47",
+      "part": "III",
+      "kind": "proposition",
+      "number": 47,
+      "statement": "Joy arising from the fact, that anything we hate is destroyed, or suffers other injury, is never unaccompanied by a certain pain in us.",
+      "parent": null
+    },
+    {
+      "id": "III.P48",
+      "part": "III",
+      "kind": "proposition",
+      "number": 48,
+      "statement": "Love or hatred towards, for instance, Peter is destroyed, if the pleasure involved in the former, or the pain involved in the latter emotion, be associated with the idea of another cause: and will be diminished in proportion as we conceive",
+      "parent": null
+    },
+    {
+      "id": "III.P49",
+      "part": "III",
+      "kind": "proposition",
+      "number": 49,
+      "statement": "Love or hatred towards a thing, which we conceive to be free, must, other conditions being similar, be greater than if it were felt towards a thing acting by necessity.",
+      "parent": null
+    },
+    {
+      "id": "III.P50",
+      "part": "III",
+      "kind": "proposition",
+      "number": 50,
+      "statement": "Anything whatever can be, accidentally, a cause of hope or fear.",
+      "parent": null
+    },
+    {
+      "id": "III.P51",
+      "part": "III",
+      "kind": "proposition",
+      "number": 51,
+      "statement": "Different men may be differently affected by the same object, and the same man may be differently affected at different times by the same object.",
+      "parent": null
+    },
+    {
+      "id": "III.P52",
+      "part": "III",
+      "kind": "proposition",
+      "number": 52,
+      "statement": "An object which we have formerly seen in conjunction with others, and which we do not conceive to have any property that is not common to many, will not be regarded by us for so long, as an object which we conceive to have some property pec",
+      "parent": null
+    },
+    {
+      "id": "III.P53",
+      "part": "III",
+      "kind": "proposition",
+      "number": 53,
+      "statement": "When the mind regards itself and its own power of activity, it feels pleasure: and that pleasure is greater in proportion to the distinctness wherewith it conceives itself and its own power of activity.",
+      "parent": null
+    },
+    {
+      "id": "III.P53.C1",
+      "part": "III",
+      "kind": "corollary",
+      "number": 1,
+      "statement": "\u00e2\u0080\u0094This pleasure is fostered more and more, in proportion as a man conceives himself to be praised by others. For the more he conceives himself as praised by others, the more he will imagine them to be affected with pleasure, accompanied by",
+      "parent": "III.P53"
+    },
+    {
+      "id": "III.P54",
+      "part": "III",
+      "kind": "proposition",
+      "number": 54,
+      "statement": "The mind endeavours to conceive only such things as assert its power of activity.",
+      "parent": null
+    },
+    {
+      "id": "III.P55",
+      "part": "III",
+      "kind": "proposition",
+      "number": 55,
+      "statement": "When the mind contemplates its own weakness, it feels pain thereat.",
+      "parent": null
+    },
+    {
+      "id": "III.P55.C1",
+      "part": "III",
+      "kind": "corollary",
+      "number": 1,
+      "statement": "\u00e2\u0080\u0094This pain is more and more fostered, if a man conceives that he is blamed by others; this may be proved in the same way as the corollary to III. liii.",
+      "parent": "III.P55"
+    },
+    {
+      "id": "III.P55.C2",
+      "part": "III",
+      "kind": "corollary",
+      "number": 2,
+      "statement": "\u00e2\u0080\u0094No one envies the virtue of anyone who is not his equal.",
+      "parent": "III.P55"
+    },
+    {
+      "id": "III.P56",
+      "part": "III",
+      "kind": "proposition",
+      "number": 56,
+      "statement": "There are as many kinds of pleasure, of pain, of desire, and of every emotion compounded of these, such as vacillations of spirit, or derived from these, such as love, hatred, hope, fear, &c., as there are kinds of objects whereby we are af",
+      "parent": null
+    },
+    {
+      "id": "III.P57",
+      "part": "III",
+      "kind": "proposition",
+      "number": 57,
+      "statement": "Any emotion of a given individual differs from the emotion of another individual, only in so far as the essence of the one individual differs from the essence of the other.",
+      "parent": null
+    },
+    {
+      "id": "III.P58",
+      "part": "III",
+      "kind": "proposition",
+      "number": 58,
+      "statement": "Besides pleasure and desire, which are passivities or passions, there are other emotions derived from pleasure and desire, which are attributable to us in so far as we are active.",
+      "parent": null
+    },
+    {
+      "id": "III.P59",
+      "part": "III",
+      "kind": "proposition",
+      "number": 59,
+      "statement": "Among all the emotions attributable to the mind as active, there are none which cannot be referred to pleasure or desire.",
+      "parent": null
+    },
+    {
+      "id": "III.DE1",
+      "part": "III",
+      "kind": "emotion-definition",
+      "number": 1,
+      "statement": "Desire is the actual essence of man, in so far as it is conceived, as determined to a particular activity by some given modification of itself.",
+      "parent": null
+    },
+    {
+      "id": "III.DE2",
+      "part": "III",
+      "kind": "emotion-definition",
+      "number": 2,
+      "statement": "Pleasure is the transition of a man from a less to a greater perfection.",
+      "parent": null
+    },
+    {
+      "id": "III.DE3",
+      "part": "III",
+      "kind": "emotion-definition",
+      "number": 3,
+      "statement": "Pain is the transition of a man from a greater to a less perfection.",
+      "parent": null
+    },
+    {
+      "id": "III.DE4",
+      "part": "III",
+      "kind": "emotion-definition",
+      "number": 4,
+      "statement": "Wonder is the conception (imaginatio) of anything, wherein the mind comes to a stand, because the particular concept in question has no connection with other concepts (cf. III. lii. and note).",
+      "parent": null
+    },
+    {
+      "id": "III.DE5",
+      "part": "III",
+      "kind": "emotion-definition",
+      "number": 5,
+      "statement": "Contempt is the conception of anything which touches the mind so little, that its presence leads the mind to imagine those qualities which are not in it rather than such as are in it (cf. III. lii. note).",
+      "parent": null
+    },
+    {
+      "id": "III.DE6",
+      "part": "III",
+      "kind": "emotion-definition",
+      "number": 6,
+      "statement": "Love is pleasure, accompanied by the idea of an external cause.",
+      "parent": null
+    },
+    {
+      "id": "III.DE7",
+      "part": "III",
+      "kind": "emotion-definition",
+      "number": 7,
+      "statement": "Hatred is pain, accompanied by the idea of an external cause.",
+      "parent": null
+    },
+    {
+      "id": "III.DE8",
+      "part": "III",
+      "kind": "emotion-definition",
+      "number": 8,
+      "statement": "Inclination is pleasure, accompanied by the idea of something which is accidentally a cause of pleasure.",
+      "parent": null
+    },
+    {
+      "id": "III.DE9",
+      "part": "III",
+      "kind": "emotion-definition",
+      "number": 9,
+      "statement": "Aversion is pain, accompanied by the idea of something which is accidentally the cause of pain (cf. III. xv. note).",
+      "parent": null
+    },
+    {
+      "id": "III.DE10",
+      "part": "III",
+      "kind": "emotion-definition",
+      "number": 10,
+      "statement": "Devotion is love towards one whom we admire.",
+      "parent": null
+    },
+    {
+      "id": "III.DE11",
+      "part": "III",
+      "kind": "emotion-definition",
+      "number": 11,
+      "statement": "Derision is pleasure arising from our conceiving the presence of a quality, which we despise, in an object which we hate.",
+      "parent": null
+    },
+    {
+      "id": "III.DE12",
+      "part": "III",
+      "kind": "emotion-definition",
+      "number": 12,
+      "statement": "Hope is an inconstant pleasure, arising from the idea of something past or future, whereof we to a certain extent doubt the issue.",
+      "parent": null
+    },
+    {
+      "id": "III.DE13",
+      "part": "III",
+      "kind": "emotion-definition",
+      "number": 13,
+      "statement": "Fear is an inconstant pain arising from the idea of something past or future, whereof we to a certain extent doubt the issue (cf. III. xviii. note).",
+      "parent": null
+    },
+    {
+      "id": "III.DE14",
+      "part": "III",
+      "kind": "emotion-definition",
+      "number": 14,
+      "statement": "Confidence is pleasure arising from the idea of something past or future, wherefrom all cause of doubt has been removed.",
+      "parent": null
+    },
+    {
+      "id": "III.DE15",
+      "part": "III",
+      "kind": "emotion-definition",
+      "number": 15,
+      "statement": "Despair is pain arising from the idea of something past or future, wherefrom all cause of doubt has been removed.",
+      "parent": null
+    },
+    {
+      "id": "III.DE16",
+      "part": "III",
+      "kind": "emotion-definition",
+      "number": 16,
+      "statement": "Joy is pleasure accompanied by the idea of something past, which has had an issue beyond our hope.",
+      "parent": null
+    },
+    {
+      "id": "III.DE17",
+      "part": "III",
+      "kind": "emotion-definition",
+      "number": 17,
+      "statement": "Disappointment is pain accompanied by the idea of something past, which has had an issue contrary to our hope.",
+      "parent": null
+    },
+    {
+      "id": "III.DE18",
+      "part": "III",
+      "kind": "emotion-definition",
+      "number": 18,
+      "statement": "Pity is pain accompanied by the idea of evil, which has befallen someone else whom we conceive to be like ourselves (cf. III. xxii. note, and III. xxvii. note).",
+      "parent": null
+    },
+    {
+      "id": "III.DE19",
+      "part": "III",
+      "kind": "emotion-definition",
+      "number": 19,
+      "statement": "Approval is love towards one who has done good to another.",
+      "parent": null
+    },
+    {
+      "id": "III.DE20",
+      "part": "III",
+      "kind": "emotion-definition",
+      "number": 20,
+      "statement": "Indignation is hatred towards one who has done evil to another.",
+      "parent": null
+    },
+    {
+      "id": "III.DE21",
+      "part": "III",
+      "kind": "emotion-definition",
+      "number": 21,
+      "statement": "Partiality is thinking too highly of anyone because of the love we bear him.",
+      "parent": null
+    },
+    {
+      "id": "III.DE22",
+      "part": "III",
+      "kind": "emotion-definition",
+      "number": 22,
+      "statement": "Disparagement is thinking too meanly of anyone because we hate him.",
+      "parent": null
+    },
+    {
+      "id": "III.DE23",
+      "part": "III",
+      "kind": "emotion-definition",
+      "number": 23,
+      "statement": "Envy is hatred, in so far as it induces a man to be pained by another's good fortune, and to rejoice in another's evil fortune.",
+      "parent": null
+    },
+    {
+      "id": "III.DE24",
+      "part": "III",
+      "kind": "emotion-definition",
+      "number": 24,
+      "statement": "Sympathy (misericordia) is love, in so far as it induces a man to feel pleasure at another's good fortune, and pain at another's evil fortune.",
+      "parent": null
+    },
+    {
+      "id": "III.DE25",
+      "part": "III",
+      "kind": "emotion-definition",
+      "number": 25,
+      "statement": "Self\u00e2\u0080\u0094approval is pleasure arising from a man's contemplation of himself and his own power of action.",
+      "parent": null
+    },
+    {
+      "id": "III.DE26",
+      "part": "III",
+      "kind": "emotion-definition",
+      "number": 26,
+      "statement": "Humility is pain arising from a man's contemplation of his own weakness of body or mind.",
+      "parent": null
+    },
+    {
+      "id": "III.DE27",
+      "part": "III",
+      "kind": "emotion-definition",
+      "number": 27,
+      "statement": "Repentance is pain accompanied by the idea of some action, which we believe we have performed by the free decision of our mind.",
+      "parent": null
+    },
+    {
+      "id": "III.DE28",
+      "part": "III",
+      "kind": "emotion-definition",
+      "number": 28,
+      "statement": "Pride is thinking too highly of one's self from self\u00e2\u0080\u0094love.",
+      "parent": null
+    },
+    {
+      "id": "III.DE29",
+      "part": "III",
+      "kind": "emotion-definition",
+      "number": 29,
+      "statement": "Self\u00e2\u0080\u0094abasement is thinking too meanly of one's self by reason of pain.",
+      "parent": null
+    },
+    {
+      "id": "III.DE30",
+      "part": "III",
+      "kind": "emotion-definition",
+      "number": 30,
+      "statement": "Honour[11] is pleasure accompanied by the idea of some action of our own, which we believe to be praised by others.",
+      "parent": null
+    },
+    {
+      "id": "III.DE31",
+      "part": "III",
+      "kind": "emotion-definition",
+      "number": 31,
+      "statement": "Shame is pain accompanied by the idea of some action of our own, which we believe to be blamed by others.",
+      "parent": null
+    },
+    {
+      "id": "III.DE32",
+      "part": "III",
+      "kind": "emotion-definition",
+      "number": 32,
+      "statement": "Regret is the desire or appetite to possess something, kept alive by the remembrance of the said thing, and at the same time constrained by the remembrance of other things which exclude the existence of it.",
+      "parent": null
+    },
+    {
+      "id": "III.DE33",
+      "part": "III",
+      "kind": "emotion-definition",
+      "number": 33,
+      "statement": "Emulation is the desire of something, engendered in us by our conception that others have the same desire.",
+      "parent": null
+    },
+    {
+      "id": "III.DE34",
+      "part": "III",
+      "kind": "emotion-definition",
+      "number": 34,
+      "statement": "Thankfulness or Gratitude is the desire or zeal springing from love, whereby we endeavour to benefit him, who with similar feelings of love has conferred a benefit on us. Cf. III. xxxix. note and xl.",
+      "parent": null
+    },
+    {
+      "id": "III.DE35",
+      "part": "III",
+      "kind": "emotion-definition",
+      "number": 35,
+      "statement": "Benevolence is the desire of benefiting one whom we pity. Cf. III. xxvii. note.",
+      "parent": null
+    },
+    {
+      "id": "III.DE36",
+      "part": "III",
+      "kind": "emotion-definition",
+      "number": 36,
+      "statement": "Anger is the desire, whereby through hatred we are induced to injure one whom we hate, III. xxxix.",
+      "parent": null
+    },
+    {
+      "id": "III.DE37",
+      "part": "III",
+      "kind": "emotion-definition",
+      "number": 37,
+      "statement": "Revenge is the desire whereby we are induced, through mutual hatred, to injure one who, with similar feelings, has injured us. (See III. xl. Coroll. ii and note.)",
+      "parent": null
+    },
+    {
+      "id": "III.DE38",
+      "part": "III",
+      "kind": "emotion-definition",
+      "number": 38,
+      "statement": "Cruelty or savageness is the desire, whereby a man is impelled to injure one whom we love or pity.",
+      "parent": null
+    },
+    {
+      "id": "III.DE39",
+      "part": "III",
+      "kind": "emotion-definition",
+      "number": 39,
+      "statement": "Timidity is the desire to avoid a greater evil, which we dread, by undergoing a lesser evil. Cf. III. xxxix. note.",
+      "parent": null
+    },
+    {
+      "id": "III.DE40",
+      "part": "III",
+      "kind": "emotion-definition",
+      "number": 40,
+      "statement": "Daring is the desire, whereby a man is set on to do something dangerous which his equals fear to attempt.",
+      "parent": null
+    },
+    {
+      "id": "III.DE41",
+      "part": "III",
+      "kind": "emotion-definition",
+      "number": 41,
+      "statement": "Cowardice is attributed to one, whose desire is checked by the fear of some danger which his equals dare to encounter.",
+      "parent": null
+    },
+    {
+      "id": "III.DE42",
+      "part": "III",
+      "kind": "emotion-definition",
+      "number": 42,
+      "statement": "Consternation is attributed to one, whose desire of avoiding evil is checked by amazement at the evil which he fears.",
+      "parent": null
+    },
+    {
+      "id": "III.DE43",
+      "part": "III",
+      "kind": "emotion-definition",
+      "number": 43,
+      "statement": "Courtesy, or deference (Humanitas seu modestia), is the desire of acting in a way that should please men, and refraining from that which should displease them.",
+      "parent": null
+    },
+    {
+      "id": "III.DE44",
+      "part": "III",
+      "kind": "emotion-definition",
+      "number": 44,
+      "statement": "Ambition is the immoderate desire of power.",
+      "parent": null
+    },
+    {
+      "id": "III.DE45",
+      "part": "III",
+      "kind": "emotion-definition",
+      "number": 45,
+      "statement": "Luxury is excessive desire, or even love of living sumptuously.",
+      "parent": null
+    },
+    {
+      "id": "III.DE46",
+      "part": "III",
+      "kind": "emotion-definition",
+      "number": 46,
+      "statement": "Intemperance is the excessive desire and love of drinking.",
+      "parent": null
+    },
+    {
+      "id": "III.DE47",
+      "part": "III",
+      "kind": "emotion-definition",
+      "number": 47,
+      "statement": "Avarice is the excessive desire and love of riches.",
+      "parent": null
+    },
+    {
+      "id": "III.DE48",
+      "part": "III",
+      "kind": "emotion-definition",
+      "number": 48,
+      "statement": "Lust is desire and love in the matter of sexual intercourse.",
+      "parent": null
+    },
+    {
+      "id": "III.DEgen",
+      "part": "III",
+      "kind": "defemo-general",
+      "number": null,
+      "statement": "GENERAL DEFINITION OF THE EMOTIONS",
+      "parent": null
+    },
+    {
+      "id": "IV.Pref",
+      "part": "IV",
+      "kind": "preface",
+      "number": null,
+      "statement": "PREFACE",
+      "parent": null
+    },
+    {
+      "id": "IV.D1",
+      "part": "IV",
+      "kind": "definition",
+      "number": 1,
+      "statement": "By good I mean that which we certainly know to be useful to us.",
+      "parent": null
+    },
+    {
+      "id": "IV.D2",
+      "part": "IV",
+      "kind": "definition",
+      "number": 2,
+      "statement": "By evil I mean that which we certainly know to be a hindrance to us in the attainment of any good.",
+      "parent": null
+    },
+    {
+      "id": "IV.D3",
+      "part": "IV",
+      "kind": "definition",
+      "number": 3,
+      "statement": "Particular things I call contingent in so far as, while regarding their essence only, we find nothing therein, which necessarily asserts their existence or excludes it.",
+      "parent": null
+    },
+    {
+      "id": "IV.D4",
+      "part": "IV",
+      "kind": "definition",
+      "number": 4,
+      "statement": "Particular things I call possible in so far as, while regarding the causes whereby they must be produced, we know not, whether such causes be determined for producing them.",
+      "parent": null
+    },
+    {
+      "id": "IV.D5",
+      "part": "IV",
+      "kind": "definition",
+      "number": 5,
+      "statement": "By conflicting emotions I mean those which draw a man in different directions, though they are of the same kind, such as luxury and avarice, which are both species of love, and are contraries, not by nature, but by accident.",
+      "parent": null
+    },
+    {
+      "id": "IV.D6",
+      "part": "IV",
+      "kind": "definition",
+      "number": 6,
+      "statement": "What I mean by emotion felt towards a thing, future, present, and past, I explained in III. xviii., notes. i. and ii., which see.",
+      "parent": null
+    },
+    {
+      "id": "IV.D7",
+      "part": "IV",
+      "kind": "definition",
+      "number": 7,
+      "statement": "By an end, for the sake of which we do something, I mean a desire.",
+      "parent": null
+    },
+    {
+      "id": "IV.D8",
+      "part": "IV",
+      "kind": "definition",
+      "number": 8,
+      "statement": "By virtue (virtus) and power I mean the same thing; that is (III. vii), virtue, in so far as it is referred to man, is a man's nature or essence, in so far as it has the power of effecting what can only be understood by the laws of that nat",
+      "parent": null
+    },
+    {
+      "id": "IV.A1",
+      "part": "IV",
+      "kind": "axiom",
+      "number": 1,
+      "statement": "There is no individual thing in nature, than which there is not another more powerful and strong. Whatsoever thing be given, there is something stronger whereby it can be destroyed.",
+      "parent": null
+    },
+    {
+      "id": "IV.P1",
+      "part": "IV",
+      "kind": "proposition",
+      "number": 1,
+      "statement": "No positive quality possessed by a false idea is removed by the presence of what is true, in virtue of its being true.",
+      "parent": null
+    },
+    {
+      "id": "IV.P2",
+      "part": "IV",
+      "kind": "proposition",
+      "number": 2,
+      "statement": "We are only passive, in so far as we are apart of Nature, which cannot be conceived by itself without other parts.",
+      "parent": null
+    },
+    {
+      "id": "IV.P3",
+      "part": "IV",
+      "kind": "proposition",
+      "number": 3,
+      "statement": "The force whereby a man persists in existing is limited, and is infinitely surpassed by the power of external causes.",
+      "parent": null
+    },
+    {
+      "id": "IV.P4",
+      "part": "IV",
+      "kind": "proposition",
+      "number": 4,
+      "statement": "It is impossible, that man should not be a part of Nature, or that he should be capable of undergoing no changes, save such as can be understood through his nature only as their adequate cause.",
+      "parent": null
+    },
+    {
+      "id": "IV.P4.C1",
+      "part": "IV",
+      "kind": "corollary",
+      "number": 1,
+      "statement": "\u00e2\u0080\u0094Hence it follows, that man is necessarily always a prey to his passions, that he follows and obeys the general order of nature, and that he accommodates himself thereto, as much as the nature of things demands.",
+      "parent": "IV.P4"
+    },
+    {
+      "id": "IV.P5",
+      "part": "IV",
+      "kind": "proposition",
+      "number": 5,
+      "statement": "The power and increase of every passion, and its persistence in existing are not defined by the power, whereby we ourselves endeavour to persist in existing, but by the power of an external cause compared with our own.",
+      "parent": null
+    },
+    {
+      "id": "IV.P6",
+      "part": "IV",
+      "kind": "proposition",
+      "number": 6,
+      "statement": "The force of any passion or emotion can overcome the rest of a man's activities or power, so that the emotion becomes obstinately fixed to him.",
+      "parent": null
+    },
+    {
+      "id": "IV.P7",
+      "part": "IV",
+      "kind": "proposition",
+      "number": 7,
+      "statement": "An emotion can only be controlled or destroyed by another emotion contrary thereto, and with more power for controlling emotion.",
+      "parent": null
+    },
+    {
+      "id": "IV.P7.C1",
+      "part": "IV",
+      "kind": "corollary",
+      "number": 1,
+      "statement": "\u00e2\u0080\u0094An emotion, in so far as it is referred to the mind, can only be controlled or destroyed through an idea of a modification of the body contrary to, and stronger than, that which we are undergoing. For the emotion which we undergo can onl",
+      "parent": "IV.P7"
+    },
+    {
+      "id": "IV.P8",
+      "part": "IV",
+      "kind": "proposition",
+      "number": 8,
+      "statement": "The knowledge of good and evil is nothing else but the emotions of pleasure or pain, in so far as we are conscious thereof.",
+      "parent": null
+    },
+    {
+      "id": "IV.P9",
+      "part": "IV",
+      "kind": "proposition",
+      "number": 9,
+      "statement": "An emotion, whereof we conceive the cause to be with us at the present time, is stronger than if we did not conceive the cause to be with us.",
+      "parent": null
+    },
+    {
+      "id": "IV.P9.C1",
+      "part": "IV",
+      "kind": "corollary",
+      "number": 1,
+      "statement": "\u00e2\u0080\u0094The image of something past or future, that is, of a thing which we regard as in relation to time past or time future, to the exclusion of time present, is, when other conditions are equal, weaker than the image of something present; con",
+      "parent": "IV.P9"
+    },
+    {
+      "id": "IV.P10",
+      "part": "IV",
+      "kind": "proposition",
+      "number": 10,
+      "statement": "Towards something future, which we conceive as close at hand, we are affected more intensely, than if we conceive that its time for existence is separated from the present by a longer interval; so too by the remembrance of what we conceive",
+      "parent": null
+    },
+    {
+      "id": "IV.P10.C1",
+      "part": "IV",
+      "kind": "corollary",
+      "number": 1,
+      "statement": "\u00e2\u0080\u0094From the remarks made in Def. vi. of this part it follows that, if objects are separated from the present by a longer period than we can define in conception, though their dates of occurrence be widely separated one from the other, they",
+      "parent": "IV.P10"
+    },
+    {
+      "id": "IV.P11",
+      "part": "IV",
+      "kind": "proposition",
+      "number": 11,
+      "statement": "An emotion towards that which we conceive as necessary is, when other conditions are equal, more intense than an emotion towards that which possible, or contingent, or non\u00e2\u0080\u0094necessary.",
+      "parent": null
+    },
+    {
+      "id": "IV.P12",
+      "part": "IV",
+      "kind": "proposition",
+      "number": 12,
+      "statement": "An emotion towards a thing, which we know not to exist at the present time, and which we conceive as possible, is more intense, other conditions being equal, than an emotion towards a thing contingent.",
+      "parent": null
+    },
+    {
+      "id": "IV.P12.C1",
+      "part": "IV",
+      "kind": "corollary",
+      "number": 1,
+      "statement": "\u00e2\u0080\u0094An emotion towards a thing, which we know not to exist in the present, and which we conceive as contingent, is far fainter, than if we conceive the thing to be present with us.",
+      "parent": "IV.P12"
+    },
+    {
+      "id": "IV.P13",
+      "part": "IV",
+      "kind": "proposition",
+      "number": 13,
+      "statement": "Emotion towards a thing contingent, which we know not to exist in the present, is, other conditions being equal, fainter than an emotion towards a thing past.",
+      "parent": null
+    },
+    {
+      "id": "IV.P14",
+      "part": "IV",
+      "kind": "proposition",
+      "number": 14,
+      "statement": "A true knowledge of good and evil cannot check any emotion by virtue of being true, but only in so far as it is considered as an emotion.",
+      "parent": null
+    },
+    {
+      "id": "IV.P15",
+      "part": "IV",
+      "kind": "proposition",
+      "number": 15,
+      "statement": "Desire arising from the knowledge of good and bad can be quenched or checked by many of the other desires arising from the emotions whereby we are assailed.",
+      "parent": null
+    },
+    {
+      "id": "IV.P16",
+      "part": "IV",
+      "kind": "proposition",
+      "number": 16,
+      "statement": "Desire arising from the knowledge of good and evil, in so far as such knowledge regards what is future, may be more easily controlled or quenched, than the desire for what is agreeable at the present moment.",
+      "parent": null
+    },
+    {
+      "id": "IV.P17",
+      "part": "IV",
+      "kind": "proposition",
+      "number": 17,
+      "statement": "Desire arising from the true knowledge of good and evil, in so far as such knowledge is concerned with what is contingent, can be controlled far more easily still, than desire for things that are present.",
+      "parent": null
+    },
+    {
+      "id": "IV.P18",
+      "part": "IV",
+      "kind": "proposition",
+      "number": 18,
+      "statement": "Desire arising from pleasure is, other conditions being equal, stronger than desire arising from pain.",
+      "parent": null
+    },
+    {
+      "id": "IV.P19",
+      "part": "IV",
+      "kind": "proposition",
+      "number": 19,
+      "statement": "Every man, by the laws of his nature, necessarily desires or shrinks from that which he deems to be good or bad.",
+      "parent": null
+    },
+    {
+      "id": "IV.P20",
+      "part": "IV",
+      "kind": "proposition",
+      "number": 20,
+      "statement": "The more every man endeavours, and is able to seek what is useful to him\u00e2\u0080\u0094in other words, to preserve his own being\u00e2\u0080\u0094the more is he endowed with virtue; on the contrary, in proportion as a man neglects to seek what is useful to him, that",
+      "parent": null
+    },
+    {
+      "id": "IV.P21",
+      "part": "IV",
+      "kind": "proposition",
+      "number": 21,
+      "statement": "No one can desire to be blessed, to act rightly, and to live rightly, without at the same time wishing to be, act, and to live\u00e2\u0080\u0094in other words, to actually exist.",
+      "parent": null
+    },
+    {
+      "id": "IV.P22",
+      "part": "IV",
+      "kind": "proposition",
+      "number": 22,
+      "statement": "No virtue can be conceived as prior to this endeavour to preserve one's own being.",
+      "parent": null
+    },
+    {
+      "id": "IV.P22.C1",
+      "part": "IV",
+      "kind": "corollary",
+      "number": 1,
+      "statement": "\u00e2\u0080\u0094The effort for self\u00e2\u0080\u0094preservation is the first and only foundation of virtue. For prior to this principle nothing can be conceived, and without it no virtue can be conceived.",
+      "parent": "IV.P22"
+    },
+    {
+      "id": "IV.P23",
+      "part": "IV",
+      "kind": "proposition",
+      "number": 23,
+      "statement": "Man, in so far as he is determined to a particular action because he has inadequate ideas, cannot be absolutely said to act in obedience to virtue; he can only be so described, in so far as he is determined for the action because he underst",
+      "parent": null
+    },
+    {
+      "id": "IV.P24",
+      "part": "IV",
+      "kind": "proposition",
+      "number": 24,
+      "statement": "To act absolutely in obedience to virtue is in us the same thing as to act, to live, or to preserve one's being (these three terms are identical in meaning) in accordance with the dictates of reason on the basis of seeking what is useful to",
+      "parent": null
+    },
+    {
+      "id": "IV.P25",
+      "part": "IV",
+      "kind": "proposition",
+      "number": 25,
+      "statement": "No one wishes to preserve his being for the sake of anything else.",
+      "parent": null
+    },
+    {
+      "id": "IV.P26",
+      "part": "IV",
+      "kind": "proposition",
+      "number": 26,
+      "statement": "Whatsoever we endeavour in obedience to reason is nothing further than to understand; neither does the mind, in so far as it makes use of reason, judge anything to be useful to it, save such things as are conducive to understanding.",
+      "parent": null
+    },
+    {
+      "id": "IV.P27",
+      "part": "IV",
+      "kind": "proposition",
+      "number": 27,
+      "statement": "We know nothing to be certainly good or evil, save such things as really conduce to understanding, or such as are able to hinder us from understanding.",
+      "parent": null
+    },
+    {
+      "id": "IV.P28",
+      "part": "IV",
+      "kind": "proposition",
+      "number": 28,
+      "statement": "The mind's highest good is the knowledge of God, and the mind's highest virtue is to know God.",
+      "parent": null
+    },
+    {
+      "id": "IV.P29",
+      "part": "IV",
+      "kind": "proposition",
+      "number": 29,
+      "statement": "No individual thing, which is entirely different from our own nature, can help or check our power of activity, and absolutely nothing can do us good or harm, unless it has something in common with our nature.",
+      "parent": null
+    },
+    {
+      "id": "IV.P30",
+      "part": "IV",
+      "kind": "proposition",
+      "number": 30,
+      "statement": "A thing cannot be bad for us through the quality which it has in common with our nature, but it is bad for us in so far as it is contrary to our nature.",
+      "parent": null
+    },
+    {
+      "id": "IV.P31",
+      "part": "IV",
+      "kind": "proposition",
+      "number": 31,
+      "statement": "In so far as a thing is in harmony with our nature, it is necessarily good.",
+      "parent": null
+    },
+    {
+      "id": "IV.P31.C1",
+      "part": "IV",
+      "kind": "corollary",
+      "number": 1,
+      "statement": "\u00e2\u0080\u0094Hence it follows, that, in proportion as a thing is in harmony with our nature, so is it more useful or better for us, and vice vers\u00c3\u00a2, in proportion as a thing is more useful for us, so is it more in harmony with our nature. For, in so",
+      "parent": "IV.P31"
+    },
+    {
+      "id": "IV.P32",
+      "part": "IV",
+      "kind": "proposition",
+      "number": 32,
+      "statement": "In so far as men are a prey to passion, they cannot, in that respect, be said to be naturally in harmony.",
+      "parent": null
+    },
+    {
+      "id": "IV.P33",
+      "part": "IV",
+      "kind": "proposition",
+      "number": 33,
+      "statement": "Men can differ in nature, in so far as they are assailed by those emotions, which are passions, or passive states; and to this extent one and the same man is variable and inconstant.",
+      "parent": null
+    },
+    {
+      "id": "IV.P34",
+      "part": "IV",
+      "kind": "proposition",
+      "number": 34,
+      "statement": "In so far as men are assailed by emotions which are passions, they can be contrary one to another.",
+      "parent": null
+    },
+    {
+      "id": "IV.P35",
+      "part": "IV",
+      "kind": "proposition",
+      "number": 35,
+      "statement": "In so far only as men live in obedience to reason, do they always necessarily agree in nature.",
+      "parent": null
+    },
+    {
+      "id": "IV.P35.C1",
+      "part": "IV",
+      "kind": "corollary",
+      "number": 1,
+      "statement": "\u00e2\u0080\u0094There is no individual thing in nature, which is more useful to man, than a man who lives in obedience to reason. For that thing is to man most useful, which is most in harmony with his nature (IV. xxxi. Coroll.); that is, obviously, man",
+      "parent": "IV.P35"
+    },
+    {
+      "id": "IV.P35.C2",
+      "part": "IV",
+      "kind": "corollary",
+      "number": 2,
+      "statement": "\u00e2\u0080\u0094As every man seeks most that which is useful to him, so are men most useful one to another. For the more a man seeks what is useful to him and endeavours to preserve himself, the more is he endowed with virtue (IV. xx.), or, what is the",
+      "parent": "IV.P35"
+    },
+    {
+      "id": "IV.P36",
+      "part": "IV",
+      "kind": "proposition",
+      "number": 36,
+      "statement": "The highest good of those who follow virtue is common to all, and therefore all can equally rejoice therein.",
+      "parent": null
+    },
+    {
+      "id": "IV.P37",
+      "part": "IV",
+      "kind": "proposition",
+      "number": 37,
+      "statement": "The good which every man, who follows after virtue, desires for himself he will also desire for other men, and so much the more, in proportion as he has a greater knowledge of God.",
+      "parent": null
+    },
+    {
+      "id": "IV.P38",
+      "part": "IV",
+      "kind": "proposition",
+      "number": 38,
+      "statement": "Whatsoever disposes the human body, so as to render it capable of being affected in an increased number of ways, or of affecting external bodies in an increased number of ways, is useful to man; and is so, in proportion as the body is there",
+      "parent": null
+    },
+    {
+      "id": "IV.P39",
+      "part": "IV",
+      "kind": "proposition",
+      "number": 39,
+      "statement": "Whatsoever brings about the preservation of the proportion of motion and rest, which the parts of the human body mutually possess, is good; contrariwise, whatsoever causes a change in such proportion is bad.",
+      "parent": null
+    },
+    {
+      "id": "IV.P40",
+      "part": "IV",
+      "kind": "proposition",
+      "number": 40,
+      "statement": "Whatsoever conduces to man's social life, or causes men to live together in harmony, is useful, whereas whatsoever brings discord into a State is bad.",
+      "parent": null
+    },
+    {
+      "id": "IV.P41",
+      "part": "IV",
+      "kind": "proposition",
+      "number": 41,
+      "statement": "Pleasure in itself is not bad but good: contrariwise, pain in itself is bad.",
+      "parent": null
+    },
+    {
+      "id": "IV.P42",
+      "part": "IV",
+      "kind": "proposition",
+      "number": 42,
+      "statement": "Mirth cannot be excessive, but is always good; contrariwise, Melancholy is always bad.",
+      "parent": null
+    },
+    {
+      "id": "IV.P43",
+      "part": "IV",
+      "kind": "proposition",
+      "number": 43,
+      "statement": "Stimulation may be excessive and bad; on the other hand, grief may be good, in so far as stimulation or pleasure is bad.",
+      "parent": null
+    },
+    {
+      "id": "IV.P44",
+      "part": "IV",
+      "kind": "proposition",
+      "number": 44,
+      "statement": "Love and desire may be excessive.",
+      "parent": null
+    },
+    {
+      "id": "IV.P45",
+      "part": "IV",
+      "kind": "proposition",
+      "number": 45,
+      "statement": "Hatred can never be good.",
+      "parent": null
+    },
+    {
+      "id": "IV.P45.C1",
+      "part": "IV",
+      "kind": "corollary",
+      "number": 1,
+      "statement": "\u00e2\u0080\u0094Envy, derision, contempt, anger, revenge, and other emotions attributable to hatred, or arising therefrom, are bad; this is evident from III. xxxix. and IV. xxxvii.",
+      "parent": "IV.P45"
+    },
+    {
+      "id": "IV.P45.C2",
+      "part": "IV",
+      "kind": "corollary",
+      "number": 2,
+      "statement": "\u00e2\u0080\u0094Whatsoever we desire from motives of hatred is base, and in a State unjust. This also is evident from III. xxxix., and from the definitions of baseness and injustice in IV. xxxvii. note.",
+      "parent": "IV.P45"
+    },
+    {
+      "id": "IV.P46",
+      "part": "IV",
+      "kind": "proposition",
+      "number": 46,
+      "statement": "He, who lives under the guidance of reason, endeavours, as far as possible, to render back love, or kindness, for other men's hatred, anger, contempt, &c., towards him.",
+      "parent": null
+    },
+    {
+      "id": "IV.P47",
+      "part": "IV",
+      "kind": "proposition",
+      "number": 47,
+      "statement": "Emotions of hope and fear cannot be in themselves good.",
+      "parent": null
+    },
+    {
+      "id": "IV.P48",
+      "part": "IV",
+      "kind": "proposition",
+      "number": 48,
+      "statement": "The emotions of over\u00e2\u0080\u0094esteem and disparagement are always bad.",
+      "parent": null
+    },
+    {
+      "id": "IV.P49",
+      "part": "IV",
+      "kind": "proposition",
+      "number": 49,
+      "statement": "Over\u00e2\u0080\u0094esteem is apt to render its object proud.",
+      "parent": null
+    },
+    {
+      "id": "IV.P50",
+      "part": "IV",
+      "kind": "proposition",
+      "number": 50,
+      "statement": "Pity, in a man who lives under the guidance of reason, is in itself bad and useless.",
+      "parent": null
+    },
+    {
+      "id": "IV.P51",
+      "part": "IV",
+      "kind": "proposition",
+      "number": 51,
+      "statement": "Approval is not repugnant to reason, but can agree therewith and arise therefrom.",
+      "parent": null
+    },
+    {
+      "id": "IV.P52",
+      "part": "IV",
+      "kind": "proposition",
+      "number": 52,
+      "statement": "Self\u00e2\u0080\u0094approval may arise from reason, and that which arises from reason is the highest possible.",
+      "parent": null
+    },
+    {
+      "id": "IV.P53",
+      "part": "IV",
+      "kind": "proposition",
+      "number": 53,
+      "statement": "Humility is not a virtue, or does not arise from reason.",
+      "parent": null
+    },
+    {
+      "id": "IV.P54",
+      "part": "IV",
+      "kind": "proposition",
+      "number": 54,
+      "statement": "Repentance is not a virtue, or does not arise from reason; but he who repents of an action is doubly wretched or infirm.",
+      "parent": null
+    },
+    {
+      "id": "IV.P55",
+      "part": "IV",
+      "kind": "proposition",
+      "number": 55,
+      "statement": "Extreme pride or dejection indicates extreme ignorance of self.",
+      "parent": null
+    },
+    {
+      "id": "IV.P56",
+      "part": "IV",
+      "kind": "proposition",
+      "number": 56,
+      "statement": "Extreme pride or dejection indicates extreme infirmity of spirit.",
+      "parent": null
+    },
+    {
+      "id": "IV.P56.C1",
+      "part": "IV",
+      "kind": "corollary",
+      "number": 1,
+      "statement": "\u00e2\u0080\u0094Hence it most clearly follows, that the proud and the dejected specially fall a prey to the emotions.",
+      "parent": "IV.P56"
+    },
+    {
+      "id": "IV.P57",
+      "part": "IV",
+      "kind": "proposition",
+      "number": 57,
+      "statement": "The proud man delights in the company of flatterers and parasites, but hates the company of the high\u00e2\u0080\u0094minded.",
+      "parent": null
+    },
+    {
+      "id": "IV.P58",
+      "part": "IV",
+      "kind": "proposition",
+      "number": 58,
+      "statement": "Honour (gloria) is not repugnant to reason, but may arise therefrom.",
+      "parent": null
+    },
+    {
+      "id": "IV.P59",
+      "part": "IV",
+      "kind": "proposition",
+      "number": 59,
+      "statement": "To all the actions, whereto we are determined by emotion wherein the mind is passive; we can be determined without emotion by reason.",
+      "parent": null
+    },
+    {
+      "id": "IV.P60",
+      "part": "IV",
+      "kind": "proposition",
+      "number": 60,
+      "statement": "Desire arising from a pleasure or pain, that is not attributable to the whole body, but only to one or certain parts thereof, is without utility in respect to a man as a whole.",
+      "parent": null
+    },
+    {
+      "id": "IV.P61",
+      "part": "IV",
+      "kind": "proposition",
+      "number": 61,
+      "statement": "Desire which springs from reason cannot be excessive.",
+      "parent": null
+    },
+    {
+      "id": "IV.P62",
+      "part": "IV",
+      "kind": "proposition",
+      "number": 62,
+      "statement": "In so far as the mind conceives a thing under the dictates of reason, it is affected equally, whether the idea be of a thing future, past, or present.",
+      "parent": null
+    },
+    {
+      "id": "IV.P63",
+      "part": "IV",
+      "kind": "proposition",
+      "number": 63,
+      "statement": "He who is led by fear, and does good in order to escape evil, is not led by reason.",
+      "parent": null
+    },
+    {
+      "id": "IV.P63.C1",
+      "part": "IV",
+      "kind": "corollary",
+      "number": 1,
+      "statement": "\u00e2\u0080\u0094Under desire which springs from reason, we seek good directly, and shun evil indirectly.",
+      "parent": "IV.P63"
+    },
+    {
+      "id": "IV.P64",
+      "part": "IV",
+      "kind": "proposition",
+      "number": 64,
+      "statement": "The knowledge of evil is an inadequate knowledge.",
+      "parent": null
+    },
+    {
+      "id": "IV.P64.C1",
+      "part": "IV",
+      "kind": "corollary",
+      "number": 1,
+      "statement": "\u00e2\u0080\u0094Hence it follows that, if the human mind possessed only adequate ideas, it would form no conception of evil.",
+      "parent": "IV.P64"
+    },
+    {
+      "id": "IV.P65",
+      "part": "IV",
+      "kind": "proposition",
+      "number": 65,
+      "statement": "Under the guidance of reason we should pursue the greater of two goods and the lesser of two evils.",
+      "parent": null
+    },
+    {
+      "id": "IV.P65.C1",
+      "part": "IV",
+      "kind": "corollary",
+      "number": 1,
+      "statement": "\u00e2\u0080\u0094We may, under the guidance of reason, pursue the lesser evil as though it were the greater good, and we may shun the lesser good, which would be the cause of the greater evil. For the evil, which is here called the lesser, is really good",
+      "parent": "IV.P65"
+    },
+    {
+      "id": "IV.P66",
+      "part": "IV",
+      "kind": "proposition",
+      "number": 66,
+      "statement": "We may, under the guidance of reason, seek a greater good in the future in preference to a lesser good in the present, and we may seek a lesser evil in the present in preference to a greater evil in the future.[15]",
+      "parent": null
+    },
+    {
+      "id": "IV.P66.C1",
+      "part": "IV",
+      "kind": "corollary",
+      "number": 1,
+      "statement": "\u00e2\u0080\u0094We may, under the guidance of reason, seek a lesser evil in the present, because it is the cause of a greater good in the future, and we may shun a lesser good in the present, because it is the cause of a greater evil in the future. This",
+      "parent": "IV.P66"
+    },
+    {
+      "id": "IV.P67",
+      "part": "IV",
+      "kind": "proposition",
+      "number": 67,
+      "statement": "A free man thinks of death least of all things; and his wisdom is a meditation not of death but of life.",
+      "parent": null
+    },
+    {
+      "id": "IV.P68",
+      "part": "IV",
+      "kind": "proposition",
+      "number": 68,
+      "statement": "If men were born free, they would, so long as they remained free, form no conception of good and evil.",
+      "parent": null
+    },
+    {
+      "id": "IV.P69",
+      "part": "IV",
+      "kind": "proposition",
+      "number": 69,
+      "statement": "The virtue of a free man is seen to be as great, when it declines dangers, as when it overcomes them.",
+      "parent": null
+    },
+    {
+      "id": "IV.P69.C1",
+      "part": "IV",
+      "kind": "corollary",
+      "number": 1,
+      "statement": "\u00e2\u0080\u0094The free man is as courageous in timely retreat as in combat; or, a free man shows equal courage or presence of mind, whether he elect to give battle or to retreat.",
+      "parent": "IV.P69"
+    },
+    {
+      "id": "IV.P70",
+      "part": "IV",
+      "kind": "proposition",
+      "number": 70,
+      "statement": "The free man, who lives among the ignorant, strives, as far as he can, to avoid receiving favours from them.",
+      "parent": null
+    },
+    {
+      "id": "IV.P71",
+      "part": "IV",
+      "kind": "proposition",
+      "number": 71,
+      "statement": "Only free men are thoroughly grateful one to another.",
+      "parent": null
+    },
+    {
+      "id": "IV.P72",
+      "part": "IV",
+      "kind": "proposition",
+      "number": 72,
+      "statement": "The free man never acts fraudulently, but always in good faith.",
+      "parent": null
+    },
+    {
+      "id": "IV.P73",
+      "part": "IV",
+      "kind": "proposition",
+      "number": 73,
+      "statement": "The man, who is guided by reason, is more free in a State, where he lives under a general system of law, than in solitude, where he is independent.",
+      "parent": null
+    },
+    {
+      "id": "IV.App",
+      "part": "IV",
+      "kind": "appendix",
+      "number": null,
+      "statement": "What have said in this Part concerning the right way of life has not been arranged, so as to admit of being seen at one view, but has been set forth piece\u00e2\u0080\u0094meal, according as I thought each Proposition could most readily be deduced from wh",
+      "parent": null
+    },
+    {
+      "id": "V.Pref",
+      "part": "V",
+      "kind": "preface",
+      "number": null,
+      "statement": "PREFACE",
+      "parent": null
+    },
+    {
+      "id": "V.A1",
+      "part": "V",
+      "kind": "axiom",
+      "number": 1,
+      "statement": "If two contrary actions be started in the same subject, a change must necessarily take place, either in both, or in one of the two, and continue until they cease to be contrary.",
+      "parent": null
+    },
+    {
+      "id": "V.A2",
+      "part": "V",
+      "kind": "axiom",
+      "number": 2,
+      "statement": "The power of an effect is defined by the power of its cause, in so far as its essence is explained or defined by the essence of its cause.",
+      "parent": null
+    },
+    {
+      "id": "V.A3",
+      "part": "V",
+      "kind": "axiom",
+      "number": 3,
+      "statement": "(This axiom is evident from III. vii.)",
+      "parent": null
+    },
+    {
+      "id": "V.P1",
+      "part": "V",
+      "kind": "proposition",
+      "number": 1,
+      "statement": "Even as thoughts and the ideas of things are arranged and associated in the mind, so are the modifications of body or the images of things precisely in the same way arranged and associated in the body.",
+      "parent": null
+    },
+    {
+      "id": "V.P2",
+      "part": "V",
+      "kind": "proposition",
+      "number": 2,
+      "statement": "If we remove a disturbance of the spirit, or emotion, from the thought of an external cause, and unite it to other thoughts, then will the love or hatred towards that external cause, and also the vacillations of spirit which arise from thes",
+      "parent": null
+    },
+    {
+      "id": "V.P3",
+      "part": "V",
+      "kind": "proposition",
+      "number": 3,
+      "statement": "An emotion, which is a passion, ceases to be a passion, as soon as we form a clear and distinct idea thereof.",
+      "parent": null
+    },
+    {
+      "id": "V.P3.C1",
+      "part": "V",
+      "kind": "corollary",
+      "number": 1,
+      "statement": "\u00e2\u0080\u0094An emotion therefore becomes more under our control, and the mind is less passive in respect to it, in proportion as it is more known to us.",
+      "parent": "V.P3"
+    },
+    {
+      "id": "V.P4",
+      "part": "V",
+      "kind": "proposition",
+      "number": 4,
+      "statement": "There is no modification of the body, whereof we cannot form some clear and distinct conception.",
+      "parent": null
+    },
+    {
+      "id": "V.P4.C1",
+      "part": "V",
+      "kind": "corollary",
+      "number": 1,
+      "statement": "\u00e2\u0080\u0094Hence it follows that there is no emotion, whereof we cannot form some clear and distinct conception. For an emotion is the idea of a modification of the body (by the general Def. of the Emotions), and must therefore (by the preceding Pr",
+      "parent": "V.P4"
+    },
+    {
+      "id": "V.P5",
+      "part": "V",
+      "kind": "proposition",
+      "number": 5,
+      "statement": "An emotion towards a thing, which we conceive simply, and not as necessary, or as contingent, or as possible, is, other conditions being equal, greater than any other emotion.",
+      "parent": null
+    },
+    {
+      "id": "V.P6",
+      "part": "V",
+      "kind": "proposition",
+      "number": 6,
+      "statement": "The mind has greater power over the emotions and is less subject thereto, in so far as it understands all things as necessary.",
+      "parent": null
+    },
+    {
+      "id": "V.P7",
+      "part": "V",
+      "kind": "proposition",
+      "number": 7,
+      "statement": "Emotions which are aroused or spring from reason, if we take account of time, are stronger than those, which are attributable to particular objects that we regard as absent.",
+      "parent": null
+    },
+    {
+      "id": "V.P8",
+      "part": "V",
+      "kind": "proposition",
+      "number": 8,
+      "statement": "An emotion is stronger in proportion to the number of simultaneous concurrent causes whereby it is aroused.",
+      "parent": null
+    },
+    {
+      "id": "V.P9",
+      "part": "V",
+      "kind": "proposition",
+      "number": 9,
+      "statement": "An emotion, which is attributable to many and diverse causes which the mind regards as simultaneous with the emotion itself, is less hurtful, and we are less subject thereto and less affected towards each of its causes, than if it were a di",
+      "parent": null
+    },
+    {
+      "id": "V.P10",
+      "part": "V",
+      "kind": "proposition",
+      "number": 10,
+      "statement": "So long as we are not assailed by emotions contrary to our nature, we have the power of arranging and associating the modifications of our body according to the intellectual order.",
+      "parent": null
+    },
+    {
+      "id": "V.P11",
+      "part": "V",
+      "kind": "proposition",
+      "number": 11,
+      "statement": "In proportion as a mental image is referred to more objects, so is it more frequent, or more often vivid, and occupies the mind more.",
+      "parent": null
+    },
+    {
+      "id": "V.P12",
+      "part": "V",
+      "kind": "proposition",
+      "number": 12,
+      "statement": "The mental images of things are more easily associated with the images referred to things which we clearly and distinctly understand, than with others.",
+      "parent": null
+    },
+    {
+      "id": "V.P13",
+      "part": "V",
+      "kind": "proposition",
+      "number": 13,
+      "statement": "A mental image is more often vivid, in proportion as it is associated with a greater number of other images.",
+      "parent": null
+    },
+    {
+      "id": "V.P14",
+      "part": "V",
+      "kind": "proposition",
+      "number": 14,
+      "statement": "The mind can bring it about, that all bodily modifications or images of things may be referred to the idea of God.",
+      "parent": null
+    },
+    {
+      "id": "V.P15",
+      "part": "V",
+      "kind": "proposition",
+      "number": 15,
+      "statement": "He who clearly and distinctly understands himself and his emotions loves God, and so much the more in proportion as he more understands himself and his emotions.",
+      "parent": null
+    },
+    {
+      "id": "V.P16",
+      "part": "V",
+      "kind": "proposition",
+      "number": 16,
+      "statement": "This love towards God must hold the chief place in the mind.",
+      "parent": null
+    },
+    {
+      "id": "V.P17",
+      "part": "V",
+      "kind": "proposition",
+      "number": 17,
+      "statement": "God is without passions, neither is he affected by any emotion of pleasure or pain.",
+      "parent": null
+    },
+    {
+      "id": "V.P17.C1",
+      "part": "V",
+      "kind": "corollary",
+      "number": 1,
+      "statement": "\u00e2\u0080\u0094Strictly speaking, God does not love or hate anyone. For God (by the foregoing Prop.) is not affected by any emotion of pleasure or pain, consequently (Def. of the Emotions, vi. vii.) he does not love or hate anyone.",
+      "parent": "V.P17"
+    },
+    {
+      "id": "V.P18",
+      "part": "V",
+      "kind": "proposition",
+      "number": 18,
+      "statement": "No one can hate God.",
+      "parent": null
+    },
+    {
+      "id": "V.P18.C1",
+      "part": "V",
+      "kind": "corollary",
+      "number": 1,
+      "statement": "\u00e2\u0080\u0094Love towards God cannot be turned into hate.",
+      "parent": "V.P18"
+    },
+    {
+      "id": "V.P19",
+      "part": "V",
+      "kind": "proposition",
+      "number": 19,
+      "statement": "He, who loves God, cannot endeavour that God should love him in return.",
+      "parent": null
+    },
+    {
+      "id": "V.P20",
+      "part": "V",
+      "kind": "proposition",
+      "number": 20,
+      "statement": "This love towards God cannot be stained by the emotion of envy or jealousy: contrariwise, it is the more fostered, in proportion as we conceive a greater number of men to be joined to God by the same bond of love.",
+      "parent": null
+    },
+    {
+      "id": "V.P21",
+      "part": "V",
+      "kind": "proposition",
+      "number": 21,
+      "statement": "The mind can only imagine anything, or remember what is past, while the body endures.",
+      "parent": null
+    },
+    {
+      "id": "V.P22",
+      "part": "V",
+      "kind": "proposition",
+      "number": 22,
+      "statement": "Nevertheless in God there is necessarily an idea, which expresses the essence of this or that human body under the form of eternity.",
+      "parent": null
+    },
+    {
+      "id": "V.P23",
+      "part": "V",
+      "kind": "proposition",
+      "number": 23,
+      "statement": "The human mind cannot be absolutely destroyed with the body, but there remains of it something which is eternal.",
+      "parent": null
+    },
+    {
+      "id": "V.P24",
+      "part": "V",
+      "kind": "proposition",
+      "number": 24,
+      "statement": "The more we understand particular things, the more do we understand God.",
+      "parent": null
+    },
+    {
+      "id": "V.P25",
+      "part": "V",
+      "kind": "proposition",
+      "number": 25,
+      "statement": "The highest endeavour of the mind, and the highest virtue is to understand things by the third kind of knowledge.",
+      "parent": null
+    },
+    {
+      "id": "V.P26",
+      "part": "V",
+      "kind": "proposition",
+      "number": 26,
+      "statement": "In proportion as the mind is more capable of understanding things by the third kind of knowledge, it desires more to understand things by that kind.",
+      "parent": null
+    },
+    {
+      "id": "V.P27",
+      "part": "V",
+      "kind": "proposition",
+      "number": 27,
+      "statement": "From this third kind of knowledge arises the highest possible mental acquiescence.",
+      "parent": null
+    },
+    {
+      "id": "V.P28",
+      "part": "V",
+      "kind": "proposition",
+      "number": 28,
+      "statement": "The endeavour or desire to know things by the third kind of knowledge cannot arise from the first, but from the second kind of knowledge.",
+      "parent": null
+    },
+    {
+      "id": "V.P29",
+      "part": "V",
+      "kind": "proposition",
+      "number": 29,
+      "statement": "Whatsoever the mind understands under the form of eternity, it does not understand by virtue of conceiving the present actual existence of the body, but by virtue of conceiving the essence of the body under the form of eternity.",
+      "parent": null
+    },
+    {
+      "id": "V.P30",
+      "part": "V",
+      "kind": "proposition",
+      "number": 30,
+      "statement": "Our mind, in so far as it knows itself and the body under the form of eternity, has to that extent necessarily a knowledge of God, and knows that it is in God, and is conceived through God.",
+      "parent": null
+    },
+    {
+      "id": "V.P31",
+      "part": "V",
+      "kind": "proposition",
+      "number": 31,
+      "statement": "The third kind of knowledge depends on the mind, as its formal cause, in so far as the mind itself is eternal.",
+      "parent": null
+    },
+    {
+      "id": "V.P32",
+      "part": "V",
+      "kind": "proposition",
+      "number": 32,
+      "statement": "Whatsoever we understand by the third kind of knowledge, we take delight in, and our delight is accompanied by the idea of God as cause.",
+      "parent": null
+    },
+    {
+      "id": "V.P32.C1",
+      "part": "V",
+      "kind": "corollary",
+      "number": 1,
+      "statement": "\u00e2\u0080\u0094From the third kind of knowledge necessarily arises the intellectual love of God. From this kind of knowledge arises pleasure accompanied by the idea of God as cause, that is (Def. of the Emotions, vi.), the love of God; not in so far as",
+      "parent": "V.P32"
+    },
+    {
+      "id": "V.P33",
+      "part": "V",
+      "kind": "proposition",
+      "number": 33,
+      "statement": "The intellectual love of God, which arises from the third kind of knowledge, is eternal.",
+      "parent": null
+    },
+    {
+      "id": "V.P34",
+      "part": "V",
+      "kind": "proposition",
+      "number": 34,
+      "statement": "The mind is, only while the body endures, subject to those emotions which are attributable to passions.",
+      "parent": null
+    },
+    {
+      "id": "V.P34.C1",
+      "part": "V",
+      "kind": "corollary",
+      "number": 1,
+      "statement": "\u00e2\u0080\u0094Hence it follows that no love save intellectual love is eternal.",
+      "parent": "V.P34"
+    },
+    {
+      "id": "V.P35",
+      "part": "V",
+      "kind": "proposition",
+      "number": 35,
+      "statement": "God loves himself with an infinite intellectual love.",
+      "parent": null
+    },
+    {
+      "id": "V.P36",
+      "part": "V",
+      "kind": "proposition",
+      "number": 36,
+      "statement": "The intellectual love of the mind towards God is that very love of God whereby God loves himself, not in so far as he is infinite, but in so far as he can be explained through the essence of the human mind regarded under the form of eternit",
+      "parent": null
+    },
+    {
+      "id": "V.P36.C1",
+      "part": "V",
+      "kind": "corollary",
+      "number": 1,
+      "statement": "\u00e2\u0080\u0094Hence it follows that God, in so far as he loves himself, loves man, and, consequently, that the love of God towards men, and the intellectual love of the mind towards God are identical.",
+      "parent": "V.P36"
+    },
+    {
+      "id": "V.P37",
+      "part": "V",
+      "kind": "proposition",
+      "number": 37,
+      "statement": "There is nothing in nature, which is contrary to this intellectual love, or which can take it away.",
+      "parent": null
+    },
+    {
+      "id": "V.P38",
+      "part": "V",
+      "kind": "proposition",
+      "number": 38,
+      "statement": "In proportion as the mind understands more things by the second and third kind of knowledge, it is less subject to those emotions which are evil, and stands in less fear of death.",
+      "parent": null
+    },
+    {
+      "id": "V.P39",
+      "part": "V",
+      "kind": "proposition",
+      "number": 39,
+      "statement": "He, who possesses a body capable of the greatest number of activities, possesses a mind whereof the greatest part is eternal.",
+      "parent": null
+    },
+    {
+      "id": "V.P40",
+      "part": "V",
+      "kind": "proposition",
+      "number": 40,
+      "statement": "In proportion as each thing possesses more of perfection, so is it more active, and less passive; and, vice vers\u00c3\u00a2, in proportion as it is more active, so is it more perfect.",
+      "parent": null
+    },
+    {
+      "id": "V.P40.C1",
+      "part": "V",
+      "kind": "corollary",
+      "number": 1,
+      "statement": "\u00e2\u0080\u0094Hence it follows that the part of the mind which endures, be it great or small, is more perfect than the rest. For the eternal part of the mind (V. xxiii. xxix.) is the understanding, through which alone we are said to act (III. iii.); t",
+      "parent": "V.P40"
+    },
+    {
+      "id": "V.P41",
+      "part": "V",
+      "kind": "proposition",
+      "number": 41,
+      "statement": "Even if we did not know that our mind is eternal, we should still consider as of primary importance piety and religion, and generally all things which, in Part IV., we showed to be attributable to courage and high\u00e2\u0080\u0094mindedness.",
+      "parent": null
+    },
+    {
+      "id": "V.P42",
+      "part": "V",
+      "kind": "proposition",
+      "number": 42,
+      "statement": "Blessedness is not the reward of virtue, but virtue itself; neither do we rejoice therein, because we control our lusts, but, contrariwise, because we rejoice therein, we are able to control our lusts.",
+      "parent": null
+    }
+  ],
+  "edges": [
+    [
+      "I.A1",
+      "I.P14.C2"
+    ],
+    [
+      "I.A1",
+      "I.P15"
+    ],
+    [
+      "I.A1",
+      "I.P27"
+    ],
+    [
+      "I.A1",
+      "I.P28"
+    ],
+    [
+      "I.A1",
+      "I.P4"
+    ],
+    [
+      "I.A1",
+      "I.P6.C1"
+    ],
+    [
+      "I.A3",
+      "V.P33"
+    ],
+    [
+      "I.A4",
+      "I.P25"
+    ],
+    [
+      "I.A4",
+      "I.P3"
+    ],
+    [
+      "I.A4",
+      "I.P4"
+    ],
+    [
+      "I.A4",
+      "I.P6.C1"
+    ],
+    [
+      "I.A4",
+      "II.P16"
+    ],
+    [
+      "I.A4",
+      "II.P45"
+    ],
+    [
+      "I.A4",
+      "II.P5"
+    ],
+    [
+      "I.A4",
+      "II.P6"
+    ],
+    [
+      "I.A4",
+      "II.P7"
+    ],
+    [
+      "I.A4",
+      "V.P22"
+    ],
+    [
+      "I.A5",
+      "I.P3"
+    ],
+    [
+      "I.A5",
+      "II.P13"
+    ],
+    [
+      "I.A6",
+      "I.P30"
+    ],
+    [
+      "I.A6",
+      "II.P29"
+    ],
+    [
+      "I.A6",
+      "II.P32"
+    ],
+    [
+      "I.A6",
+      "II.P44"
+    ],
+    [
+      "I.A6",
+      "II.P44.C2"
+    ],
+    [
+      "I.D1",
+      "I.P24"
+    ],
+    [
+      "I.D2",
+      "I.P21"
+    ],
+    [
+      "I.D2",
+      "I.P8"
+    ],
+    [
+      "I.D3",
+      "I.P1"
+    ],
+    [
+      "I.D3",
+      "I.P10"
+    ],
+    [
+      "I.D3",
+      "I.P15"
+    ],
+    [
+      "I.D3",
+      "I.P2"
+    ],
+    [
+      "I.D3",
+      "I.P28"
+    ],
+    [
+      "I.D3",
+      "I.P4"
+    ],
+    [
+      "I.D3",
+      "I.P5"
+    ],
+    [
+      "I.D3",
+      "I.P6.C1"
+    ],
+    [
+      "I.D4",
+      "I.P10"
+    ],
+    [
+      "I.D4",
+      "I.P12"
+    ],
+    [
+      "I.D4",
+      "I.P19"
+    ],
+    [
+      "I.D4",
+      "I.P9"
+    ],
+    [
+      "I.D5",
+      "I.P1"
+    ],
+    [
+      "I.D5",
+      "I.P15"
+    ],
+    [
+      "I.D5",
+      "I.P23"
+    ],
+    [
+      "I.D5",
+      "I.P25.C1"
+    ],
+    [
+      "I.D5",
+      "I.P31"
+    ],
+    [
+      "I.D5",
+      "I.P4"
+    ],
+    [
+      "I.D5",
+      "I.P6.C1"
+    ],
+    [
+      "I.D5",
+      "II.P1"
+    ],
+    [
+      "I.D6",
+      "I.P11"
+    ],
+    [
+      "I.D6",
+      "I.P14"
+    ],
+    [
+      "I.D6",
+      "I.P14.C1"
+    ],
+    [
+      "I.D6",
+      "I.P16"
+    ],
+    [
+      "I.D6",
+      "I.P19"
+    ],
+    [
+      "I.D6",
+      "I.P31"
+    ],
+    [
+      "I.D6",
+      "I.P5"
+    ],
+    [
+      "I.D6",
+      "II.P1"
+    ],
+    [
+      "I.D6",
+      "IV.P28"
+    ],
+    [
+      "I.D6",
+      "V.P35"
+    ],
+    [
+      "I.D7",
+      "I.P17.C2"
+    ],
+    [
+      "I.D7",
+      "I.P32"
+    ],
+    [
+      "I.D7",
+      "III.P49"
+    ],
+    [
+      "I.D8",
+      "I.P19"
+    ],
+    [
+      "I.D8",
+      "I.P20"
+    ],
+    [
+      "I.D8",
+      "I.P23"
+    ],
+    [
+      "I.D8",
+      "V.P29"
+    ],
+    [
+      "I.D8",
+      "V.P30"
+    ],
+    [
+      "I.P1",
+      "I.P5"
+    ],
+    [
+      "I.P10",
+      "I.P12"
+    ],
+    [
+      "I.P10",
+      "I.P14.C1"
+    ],
+    [
+      "I.P10",
+      "II.P5"
+    ],
+    [
+      "I.P10",
+      "II.P6"
+    ],
+    [
+      "I.P11",
+      "I.P13"
+    ],
+    [
+      "I.P11",
+      "I.P14"
+    ],
+    [
+      "I.P11",
+      "I.P17.C2"
+    ],
+    [
+      "I.P11",
+      "I.P19"
+    ],
+    [
+      "I.P11",
+      "I.P21"
+    ],
+    [
+      "I.P11",
+      "I.P29"
+    ],
+    [
+      "I.P11",
+      "I.P33"
+    ],
+    [
+      "I.P11",
+      "I.P34"
+    ],
+    [
+      "I.P11",
+      "V.P35"
+    ],
+    [
+      "I.P13",
+      "I.P13.C1"
+    ],
+    [
+      "I.P14",
+      "I.P14.C1"
+    ],
+    [
+      "I.P14",
+      "I.P14.C2"
+    ],
+    [
+      "I.P14",
+      "I.P15"
+    ],
+    [
+      "I.P14",
+      "I.P18"
+    ],
+    [
+      "I.P14.C1",
+      "I.P17.C2"
+    ],
+    [
+      "I.P14.C1",
+      "I.P24.C1"
+    ],
+    [
+      "I.P14.C1",
+      "I.P30"
+    ],
+    [
+      "I.P14.C1",
+      "I.P33"
+    ],
+    [
+      "I.P14.C1",
+      "II.P4"
+    ],
+    [
+      "I.P15",
+      "I.P17"
+    ],
+    [
+      "I.P15",
+      "I.P18"
+    ],
+    [
+      "I.P15",
+      "I.P23"
+    ],
+    [
+      "I.P15",
+      "I.P25"
+    ],
+    [
+      "I.P15",
+      "I.P25.C1"
+    ],
+    [
+      "I.P15",
+      "I.P29"
+    ],
+    [
+      "I.P15",
+      "I.P30"
+    ],
+    [
+      "I.P15",
+      "I.P31"
+    ],
+    [
+      "I.P15",
+      "II.L1"
+    ],
+    [
+      "I.P15",
+      "II.P3"
+    ],
+    [
+      "I.P15",
+      "II.P33"
+    ],
+    [
+      "I.P15",
+      "II.P36"
+    ],
+    [
+      "I.P15",
+      "II.P45"
+    ],
+    [
+      "I.P15",
+      "IV.P28"
+    ],
+    [
+      "I.P15",
+      "IV.P37"
+    ],
+    [
+      "I.P15",
+      "V.P14"
+    ],
+    [
+      "I.P16",
+      "I.P16.C1"
+    ],
+    [
+      "I.P16",
+      "I.P16.C2"
+    ],
+    [
+      "I.P16",
+      "I.P16.C3"
+    ],
+    [
+      "I.P16",
+      "I.P17"
+    ],
+    [
+      "I.P16",
+      "I.P26"
+    ],
+    [
+      "I.P16",
+      "I.P29"
+    ],
+    [
+      "I.P16",
+      "I.P33"
+    ],
+    [
+      "I.P16",
+      "I.P34"
+    ],
+    [
+      "I.P16",
+      "I.P36"
+    ],
+    [
+      "I.P16",
+      "II.P3"
+    ],
+    [
+      "I.P16",
+      "II.P44.C2"
+    ],
+    [
+      "I.P16",
+      "IV.P4"
+    ],
+    [
+      "I.P16",
+      "V.P22"
+    ],
+    [
+      "I.P16.C1",
+      "I.P18"
+    ],
+    [
+      "I.P17",
+      "I.P17.C1"
+    ],
+    [
+      "I.P17",
+      "I.P17.C2"
+    ],
+    [
+      "I.P17.C1",
+      "II.P48"
+    ],
+    [
+      "I.P19",
+      "I.P20"
+    ],
+    [
+      "I.P2",
+      "I.P11"
+    ],
+    [
+      "I.P2",
+      "I.P12"
+    ],
+    [
+      "I.P2",
+      "I.P6"
+    ],
+    [
+      "I.P20",
+      "I.P20.C1"
+    ],
+    [
+      "I.P20",
+      "I.P20.C2"
+    ],
+    [
+      "I.P20.C1",
+      "V.P17"
+    ],
+    [
+      "I.P20.C2",
+      "I.P21"
+    ],
+    [
+      "I.P21",
+      "I.P22"
+    ],
+    [
+      "I.P21",
+      "I.P23"
+    ],
+    [
+      "I.P21",
+      "I.P28"
+    ],
+    [
+      "I.P21",
+      "II.P11"
+    ],
+    [
+      "I.P21",
+      "II.P30"
+    ],
+    [
+      "I.P21",
+      "IV.P4"
+    ],
+    [
+      "I.P22",
+      "I.P23"
+    ],
+    [
+      "I.P23",
+      "I.P32"
+    ],
+    [
+      "I.P24",
+      "I.P24.C1"
+    ],
+    [
+      "I.P24.C1",
+      "I.P28"
+    ],
+    [
+      "I.P24.C1",
+      "I.P29"
+    ],
+    [
+      "I.P24.C1",
+      "IV.P4"
+    ],
+    [
+      "I.P25",
+      "I.P25.C1"
+    ],
+    [
+      "I.P25",
+      "I.P26"
+    ],
+    [
+      "I.P25",
+      "V.P22"
+    ],
+    [
+      "I.P25.C1",
+      "I.P36"
+    ],
+    [
+      "I.P25.C1",
+      "II.P1"
+    ],
+    [
+      "I.P25.C1",
+      "II.P5"
+    ],
+    [
+      "I.P25.C1",
+      "III.P6"
+    ],
+    [
+      "I.P25.C1",
+      "V.P24"
+    ],
+    [
+      "I.P25.C1",
+      "V.P36"
+    ],
+    [
+      "I.P26",
+      "I.P28"
+    ],
+    [
+      "I.P26",
+      "I.P29"
+    ],
+    [
+      "I.P27",
+      "I.P29"
+    ],
+    [
+      "I.P28",
+      "I.P32"
+    ],
+    [
+      "I.P28",
+      "II.L3"
+    ],
+    [
+      "I.P28",
+      "II.P30"
+    ],
+    [
+      "I.P28",
+      "II.P31"
+    ],
+    [
+      "I.P28",
+      "II.P48"
+    ],
+    [
+      "I.P28",
+      "II.P9"
+    ],
+    [
+      "I.P28",
+      "IV.P29"
+    ],
+    [
+      "I.P29",
+      "I.P32.C2"
+    ],
+    [
+      "I.P29",
+      "I.P33"
+    ],
+    [
+      "I.P29",
+      "II.P31.C1"
+    ],
+    [
+      "I.P29",
+      "II.P44"
+    ],
+    [
+      "I.P29",
+      "III.P7"
+    ],
+    [
+      "I.P29",
+      "V.P6"
+    ],
+    [
+      "I.P3",
+      "I.P6"
+    ],
+    [
+      "I.P30",
+      "II.P4"
+    ],
+    [
+      "I.P32",
+      "I.P32.C1"
+    ],
+    [
+      "I.P32",
+      "I.P32.C2"
+    ],
+    [
+      "I.P33",
+      "II.P31.C1"
+    ],
+    [
+      "I.P33",
+      "IV.P11"
+    ],
+    [
+      "I.P34",
+      "I.P35"
+    ],
+    [
+      "I.P34",
+      "I.P36"
+    ],
+    [
+      "I.P34",
+      "III.P6"
+    ],
+    [
+      "I.P34",
+      "IV.P4"
+    ],
+    [
+      "I.P35",
+      "II.P3"
+    ],
+    [
+      "I.P36",
+      "II.P13"
+    ],
+    [
+      "I.P36",
+      "III.P1"
+    ],
+    [
+      "I.P36",
+      "III.P7"
+    ],
+    [
+      "I.P4",
+      "I.P5"
+    ],
+    [
+      "I.P5",
+      "I.P12"
+    ],
+    [
+      "I.P5",
+      "I.P13"
+    ],
+    [
+      "I.P5",
+      "I.P14"
+    ],
+    [
+      "I.P5",
+      "I.P6.C1"
+    ],
+    [
+      "I.P5",
+      "I.P8"
+    ],
+    [
+      "I.P5",
+      "II.L1"
+    ],
+    [
+      "I.P6",
+      "I.P12"
+    ],
+    [
+      "I.P6",
+      "I.P6.C1"
+    ],
+    [
+      "I.P6",
+      "II.P45"
+    ],
+    [
+      "I.P6.C1",
+      "I.P7"
+    ],
+    [
+      "I.P7",
+      "I.P11"
+    ],
+    [
+      "I.P7",
+      "I.P12"
+    ],
+    [
+      "I.P7",
+      "I.P13"
+    ],
+    [
+      "I.P7",
+      "I.P19"
+    ],
+    [
+      "I.P7",
+      "I.P8"
+    ],
+    [
+      "I.P7",
+      "II.P10"
+    ],
+    [
+      "I.P8",
+      "I.P12"
+    ],
+    [
+      "I.P8",
+      "II.L1"
+    ],
+    [
+      "II.A1",
+      "II.L3"
+    ],
+    [
+      "II.A1",
+      "II.P10"
+    ],
+    [
+      "II.A1",
+      "II.P11"
+    ],
+    [
+      "II.A1",
+      "II.P16"
+    ],
+    [
+      "II.A1",
+      "II.P30"
+    ],
+    [
+      "II.A2",
+      "II.P11"
+    ],
+    [
+      "II.A2",
+      "II.P17.C1"
+    ],
+    [
+      "II.A3",
+      "II.P11"
+    ],
+    [
+      "II.A3",
+      "II.P49"
+    ],
+    [
+      "II.A4",
+      "II.P13"
+    ],
+    [
+      "II.D1",
+      "II.L2"
+    ],
+    [
+      "II.D1",
+      "II.L3"
+    ],
+    [
+      "II.D1",
+      "III.P2"
+    ],
+    [
+      "II.D2",
+      "II.P10"
+    ],
+    [
+      "II.D2",
+      "II.P37"
+    ],
+    [
+      "II.D4",
+      "IV.P62"
+    ],
+    [
+      "II.D4",
+      "V.P17"
+    ],
+    [
+      "II.D6",
+      "V.P35"
+    ],
+    [
+      "II.D6",
+      "V.P40"
+    ],
+    [
+      "II.L1",
+      "II.L4"
+    ],
+    [
+      "II.L2",
+      "II.P38.C1"
+    ],
+    [
+      "II.L2",
+      "V.P4"
+    ],
+    [
+      "II.L3",
+      "II.P16"
+    ],
+    [
+      "II.L3",
+      "II.P17.C1"
+    ],
+    [
+      "II.L3",
+      "II.P24"
+    ],
+    [
+      "II.L4",
+      "II.L7"
+    ],
+    [
+      "II.L4",
+      "II.P24"
+    ],
+    [
+      "II.L4",
+      "IV.P39"
+    ],
+    [
+      "II.P1",
+      "II.P2"
+    ],
+    [
+      "II.P1",
+      "II.P20"
+    ],
+    [
+      "II.P1",
+      "II.P3"
+    ],
+    [
+      "II.P10",
+      "II.P10.C1"
+    ],
+    [
+      "II.P10",
+      "II.P11"
+    ],
+    [
+      "II.P10",
+      "III.P27"
+    ],
+    [
+      "II.P11",
+      "II.P11.C1"
+    ],
+    [
+      "II.P11",
+      "II.P12"
+    ],
+    [
+      "II.P11",
+      "II.P13"
+    ],
+    [
+      "II.P11",
+      "II.P20"
+    ],
+    [
+      "II.P11",
+      "II.P23"
+    ],
+    [
+      "II.P11",
+      "II.P48"
+    ],
+    [
+      "II.P11",
+      "III.P10"
+    ],
+    [
+      "II.P11",
+      "III.P3"
+    ],
+    [
+      "II.P11",
+      "IV.P37"
+    ],
+    [
+      "II.P11",
+      "V.P38"
+    ],
+    [
+      "II.P11",
+      "V.P9"
+    ],
+    [
+      "II.P11.C1",
+      "II.P12"
+    ],
+    [
+      "II.P11.C1",
+      "II.P13"
+    ],
+    [
+      "II.P11.C1",
+      "II.P19"
+    ],
+    [
+      "II.P11.C1",
+      "II.P23"
+    ],
+    [
+      "II.P11.C1",
+      "II.P24"
+    ],
+    [
+      "II.P11.C1",
+      "II.P30"
+    ],
+    [
+      "II.P11.C1",
+      "II.P34"
+    ],
+    [
+      "II.P11.C1",
+      "II.P38"
+    ],
+    [
+      "II.P11.C1",
+      "II.P39"
+    ],
+    [
+      "II.P11.C1",
+      "II.P40"
+    ],
+    [
+      "II.P11.C1",
+      "II.P43"
+    ],
+    [
+      "II.P11.C1",
+      "III.P1"
+    ],
+    [
+      "II.P11.C1",
+      "III.P28"
+    ],
+    [
+      "II.P11.C1",
+      "V.P36"
+    ],
+    [
+      "II.P12",
+      "II.P14"
+    ],
+    [
+      "II.P12",
+      "II.P17"
+    ],
+    [
+      "II.P12",
+      "II.P17.C1"
+    ],
+    [
+      "II.P12",
+      "II.P19"
+    ],
+    [
+      "II.P12",
+      "II.P21"
+    ],
+    [
+      "II.P12",
+      "II.P22"
+    ],
+    [
+      "II.P12",
+      "II.P38"
+    ],
+    [
+      "II.P12",
+      "IV.P7"
+    ],
+    [
+      "II.P12",
+      "V.P4"
+    ],
+    [
+      "II.P13",
+      "II.P15"
+    ],
+    [
+      "II.P13",
+      "II.P19"
+    ],
+    [
+      "II.P13",
+      "II.P21"
+    ],
+    [
+      "II.P13",
+      "II.P23"
+    ],
+    [
+      "II.P13",
+      "II.P24"
+    ],
+    [
+      "II.P13",
+      "II.P29"
+    ],
+    [
+      "II.P13",
+      "II.P39"
+    ],
+    [
+      "II.P13",
+      "III.P3"
+    ],
+    [
+      "II.P13",
+      "III.P51"
+    ],
+    [
+      "II.P13",
+      "IV.P39"
+    ],
+    [
+      "II.P13",
+      "V.P23"
+    ],
+    [
+      "II.P13",
+      "V.P29"
+    ],
+    [
+      "II.P13",
+      "V.P4"
+    ],
+    [
+      "II.P14",
+      "III.P11"
+    ],
+    [
+      "II.P14",
+      "IV.P38"
+    ],
+    [
+      "II.P15",
+      "III.P3"
+    ],
+    [
+      "II.P16",
+      "II.P16.C1"
+    ],
+    [
+      "II.P16",
+      "II.P16.C2"
+    ],
+    [
+      "II.P16",
+      "II.P17"
+    ],
+    [
+      "II.P16",
+      "II.P19"
+    ],
+    [
+      "II.P16",
+      "II.P23"
+    ],
+    [
+      "II.P16",
+      "II.P26"
+    ],
+    [
+      "II.P16",
+      "II.P27"
+    ],
+    [
+      "II.P16",
+      "II.P28"
+    ],
+    [
+      "II.P16",
+      "II.P38"
+    ],
+    [
+      "II.P16",
+      "II.P39"
+    ],
+    [
+      "II.P16",
+      "IV.P5"
+    ],
+    [
+      "II.P16.C1",
+      "II.P47"
+    ],
+    [
+      "II.P16.C1",
+      "III.P14"
+    ],
+    [
+      "II.P16.C1",
+      "III.P18"
+    ],
+    [
+      "II.P16.C1",
+      "IV.P9"
+    ],
+    [
+      "II.P16.C1",
+      "V.P34"
+    ],
+    [
+      "II.P17",
+      "II.P17.C1"
+    ],
+    [
+      "II.P17",
+      "II.P26.C1"
+    ],
+    [
+      "II.P17",
+      "II.P47"
+    ],
+    [
+      "II.P17",
+      "III.P12"
+    ],
+    [
+      "II.P17",
+      "III.P13"
+    ],
+    [
+      "II.P17",
+      "III.P18"
+    ],
+    [
+      "II.P17",
+      "III.P19"
+    ],
+    [
+      "II.P17",
+      "III.P25"
+    ],
+    [
+      "II.P17",
+      "III.P27"
+    ],
+    [
+      "II.P17",
+      "III.P28"
+    ],
+    [
+      "II.P17",
+      "III.P56"
+    ],
+    [
+      "II.P17",
+      "IV.P9"
+    ],
+    [
+      "II.P17",
+      "V.P21"
+    ],
+    [
+      "II.P17",
+      "V.P34"
+    ],
+    [
+      "II.P17",
+      "V.P7"
+    ],
+    [
+      "II.P17.C1",
+      "II.P18"
+    ],
+    [
+      "II.P17.C1",
+      "IV.P13"
+    ],
+    [
+      "II.P18",
+      "III.P14"
+    ],
+    [
+      "II.P18",
+      "III.P52"
+    ],
+    [
+      "II.P18",
+      "IV.P13"
+    ],
+    [
+      "II.P18",
+      "V.P1"
+    ],
+    [
+      "II.P18",
+      "V.P12"
+    ],
+    [
+      "II.P18",
+      "V.P13"
+    ],
+    [
+      "II.P18",
+      "V.P21"
+    ],
+    [
+      "II.P19",
+      "II.P23"
+    ],
+    [
+      "II.P19",
+      "II.P29.C1"
+    ],
+    [
+      "II.P19",
+      "II.P47"
+    ],
+    [
+      "II.P19",
+      "III.P30"
+    ],
+    [
+      "II.P19",
+      "III.P31.C1"
+    ],
+    [
+      "II.P19",
+      "III.P53"
+    ],
+    [
+      "II.P20",
+      "II.P22"
+    ],
+    [
+      "II.P20",
+      "II.P23"
+    ],
+    [
+      "II.P20",
+      "II.P43"
+    ],
+    [
+      "II.P21",
+      "II.P22"
+    ],
+    [
+      "II.P21",
+      "IV.P8"
+    ],
+    [
+      "II.P21",
+      "V.P3"
+    ],
+    [
+      "II.P22",
+      "II.P23"
+    ],
+    [
+      "II.P22",
+      "II.P47"
+    ],
+    [
+      "II.P22",
+      "IV.P8"
+    ],
+    [
+      "II.P23",
+      "II.P29.C1"
+    ],
+    [
+      "II.P23",
+      "II.P47"
+    ],
+    [
+      "II.P23",
+      "III.P30"
+    ],
+    [
+      "II.P23",
+      "III.P53"
+    ],
+    [
+      "II.P23",
+      "III.P9"
+    ],
+    [
+      "II.P24",
+      "II.P28"
+    ],
+    [
+      "II.P24",
+      "II.P36"
+    ],
+    [
+      "II.P25",
+      "II.P26.C1"
+    ],
+    [
+      "II.P25",
+      "II.P29.C1"
+    ],
+    [
+      "II.P26",
+      "II.P26.C1"
+    ],
+    [
+      "II.P26",
+      "V.P21"
+    ],
+    [
+      "II.P26",
+      "V.P29"
+    ],
+    [
+      "II.P27",
+      "II.P29"
+    ],
+    [
+      "II.P27",
+      "II.P29.C1"
+    ],
+    [
+      "II.P28",
+      "II.P29.C1"
+    ],
+    [
+      "II.P28",
+      "II.P36"
+    ],
+    [
+      "II.P29",
+      "II.P29.C1"
+    ],
+    [
+      "II.P29",
+      "IV.P64"
+    ],
+    [
+      "II.P29.C1",
+      "III.P3"
+    ],
+    [
+      "II.P3",
+      "II.P20"
+    ],
+    [
+      "II.P3",
+      "II.P24"
+    ],
+    [
+      "II.P3",
+      "II.P5"
+    ],
+    [
+      "II.P3",
+      "II.P9.C1"
+    ],
+    [
+      "II.P3",
+      "V.P22"
+    ],
+    [
+      "II.P3",
+      "V.P35"
+    ],
+    [
+      "II.P30",
+      "II.P31"
+    ],
+    [
+      "II.P30",
+      "II.P31.C1"
+    ],
+    [
+      "II.P31",
+      "II.P31.C1"
+    ],
+    [
+      "II.P32",
+      "II.P33"
+    ],
+    [
+      "II.P32",
+      "II.P34"
+    ],
+    [
+      "II.P32",
+      "II.P36"
+    ],
+    [
+      "II.P32",
+      "IV.P1"
+    ],
+    [
+      "II.P32",
+      "V.P17"
+    ],
+    [
+      "II.P33",
+      "II.P35"
+    ],
+    [
+      "II.P33",
+      "IV.P1"
+    ],
+    [
+      "II.P34",
+      "II.P41"
+    ],
+    [
+      "II.P34",
+      "II.P43"
+    ],
+    [
+      "II.P35",
+      "II.P41"
+    ],
+    [
+      "II.P35",
+      "IV.P1"
+    ],
+    [
+      "II.P35",
+      "V.P5"
+    ],
+    [
+      "II.P37",
+      "II.P38.C1"
+    ],
+    [
+      "II.P37",
+      "II.P44.C2"
+    ],
+    [
+      "II.P38",
+      "II.P38.C1"
+    ],
+    [
+      "II.P38",
+      "II.P44.C2"
+    ],
+    [
+      "II.P38",
+      "II.P46"
+    ],
+    [
+      "II.P38",
+      "V.P4"
+    ],
+    [
+      "II.P38",
+      "V.P7"
+    ],
+    [
+      "II.P38.C1",
+      "III.P3"
+    ],
+    [
+      "II.P39",
+      "II.P39.C1"
+    ],
+    [
+      "II.P4",
+      "III.P31.C1"
+    ],
+    [
+      "II.P40",
+      "II.P42"
+    ],
+    [
+      "II.P40",
+      "III.P1"
+    ],
+    [
+      "II.P40",
+      "III.P56"
+    ],
+    [
+      "II.P40",
+      "III.P58"
+    ],
+    [
+      "II.P40",
+      "IV.P26"
+    ],
+    [
+      "II.P40",
+      "IV.P27"
+    ],
+    [
+      "II.P40",
+      "IV.P52"
+    ],
+    [
+      "II.P40",
+      "V.P10"
+    ],
+    [
+      "II.P40",
+      "V.P12"
+    ],
+    [
+      "II.P40",
+      "V.P25"
+    ],
+    [
+      "II.P40",
+      "V.P28"
+    ],
+    [
+      "II.P40",
+      "V.P31"
+    ],
+    [
+      "II.P40",
+      "V.P7"
+    ],
+    [
+      "II.P41",
+      "II.P44"
+    ],
+    [
+      "II.P41",
+      "II.P44.C2"
+    ],
+    [
+      "II.P41",
+      "IV.P27"
+    ],
+    [
+      "II.P41",
+      "IV.P35"
+    ],
+    [
+      "II.P41",
+      "IV.P62"
+    ],
+    [
+      "II.P43",
+      "III.P58"
+    ],
+    [
+      "II.P43",
+      "IV.P52"
+    ],
+    [
+      "II.P43",
+      "IV.P56"
+    ],
+    [
+      "II.P43",
+      "IV.P62"
+    ],
+    [
+      "II.P44",
+      "II.P44.C1"
+    ],
+    [
+      "II.P44",
+      "II.P44.C2"
+    ],
+    [
+      "II.P44",
+      "III.P18"
+    ],
+    [
+      "II.P44.C1",
+      "IV.P62"
+    ],
+    [
+      "II.P44.C1",
+      "V.P29"
+    ],
+    [
+      "II.P45",
+      "II.P46"
+    ],
+    [
+      "II.P45",
+      "II.P47"
+    ],
+    [
+      "II.P46",
+      "II.P47"
+    ],
+    [
+      "II.P46",
+      "V.P18"
+    ],
+    [
+      "II.P46",
+      "V.P31"
+    ],
+    [
+      "II.P47",
+      "IV.P36"
+    ],
+    [
+      "II.P47",
+      "IV.P37"
+    ],
+    [
+      "II.P47",
+      "V.P10"
+    ],
+    [
+      "II.P47",
+      "V.P18"
+    ],
+    [
+      "II.P48",
+      "II.P49.C1"
+    ],
+    [
+      "II.P49",
+      "II.P49.C1"
+    ],
+    [
+      "II.P5",
+      "III.P31.C1"
+    ],
+    [
+      "II.P6",
+      "II.L3"
+    ],
+    [
+      "II.P6",
+      "II.P36"
+    ],
+    [
+      "II.P6",
+      "II.P45"
+    ],
+    [
+      "II.P6",
+      "II.P6.C1"
+    ],
+    [
+      "II.P6",
+      "II.P9"
+    ],
+    [
+      "II.P6",
+      "III.P2"
+    ],
+    [
+      "II.P6",
+      "IV.P29"
+    ],
+    [
+      "II.P6",
+      "IV.P7"
+    ],
+    [
+      "II.P6.C1",
+      "V.P1"
+    ],
+    [
+      "II.P7",
+      "II.P15"
+    ],
+    [
+      "II.P7",
+      "II.P19"
+    ],
+    [
+      "II.P7",
+      "II.P20"
+    ],
+    [
+      "II.P7",
+      "II.P24"
+    ],
+    [
+      "II.P7",
+      "II.P25"
+    ],
+    [
+      "II.P7",
+      "II.P26"
+    ],
+    [
+      "II.P7",
+      "II.P7.C1"
+    ],
+    [
+      "II.P7",
+      "II.P8"
+    ],
+    [
+      "II.P7",
+      "II.P9"
+    ],
+    [
+      "II.P7",
+      "II.P9.C1"
+    ],
+    [
+      "II.P7",
+      "III.P11"
+    ],
+    [
+      "II.P7",
+      "III.P12"
+    ],
+    [
+      "II.P7",
+      "V.P1"
+    ],
+    [
+      "II.P7.C1",
+      "II.P32"
+    ],
+    [
+      "II.P7.C1",
+      "II.P36"
+    ],
+    [
+      "II.P7.C1",
+      "II.P38"
+    ],
+    [
+      "II.P7.C1",
+      "II.P39"
+    ],
+    [
+      "II.P7.C1",
+      "III.P28"
+    ],
+    [
+      "II.P8",
+      "II.P45"
+    ],
+    [
+      "II.P8",
+      "II.P8.C1"
+    ],
+    [
+      "II.P8",
+      "II.P9"
+    ],
+    [
+      "II.P8",
+      "II.P9.C1"
+    ],
+    [
+      "II.P8.C1",
+      "II.P11"
+    ],
+    [
+      "II.P8.C1",
+      "II.P15"
+    ],
+    [
+      "II.P8.C1",
+      "V.P21"
+    ],
+    [
+      "II.P8.C1",
+      "V.P23"
+    ],
+    [
+      "II.P9",
+      "II.P10.C1"
+    ],
+    [
+      "II.P9",
+      "II.P19"
+    ],
+    [
+      "II.P9",
+      "II.P20"
+    ],
+    [
+      "II.P9",
+      "II.P24"
+    ],
+    [
+      "II.P9",
+      "II.P25"
+    ],
+    [
+      "II.P9",
+      "II.P9.C1"
+    ],
+    [
+      "II.P9",
+      "III.P1"
+    ],
+    [
+      "II.P9.C1",
+      "II.P12"
+    ],
+    [
+      "II.P9.C1",
+      "II.P13"
+    ],
+    [
+      "II.P9.C1",
+      "II.P30"
+    ],
+    [
+      "II.P9.C1",
+      "III.P10"
+    ],
+    [
+      "II.PhysA1",
+      "II.P24"
+    ],
+    [
+      "II.PhysA1",
+      "III.P51"
+    ],
+    [
+      "II.PhysA1",
+      "III.P57"
+    ],
+    [
+      "II.Post1",
+      "II.P15"
+    ],
+    [
+      "II.Post1",
+      "II.P24"
+    ],
+    [
+      "II.Post3",
+      "II.P14"
+    ],
+    [
+      "II.Post3",
+      "II.P28"
+    ],
+    [
+      "II.Post3",
+      "III.P51"
+    ],
+    [
+      "II.Post4",
+      "II.P19"
+    ],
+    [
+      "II.Post4",
+      "IV.P39"
+    ],
+    [
+      "II.Post5",
+      "II.P17.C1"
+    ],
+    [
+      "II.Post6",
+      "II.P14"
+    ],
+    [
+      "III.D1",
+      "III.P1"
+    ],
+    [
+      "III.D1",
+      "IV.P2"
+    ],
+    [
+      "III.D1",
+      "IV.P23"
+    ],
+    [
+      "III.D1",
+      "IV.P33"
+    ],
+    [
+      "III.D1",
+      "IV.P5"
+    ],
+    [
+      "III.D1",
+      "V.P31"
+    ],
+    [
+      "III.D2",
+      "III.P1"
+    ],
+    [
+      "III.D2",
+      "IV.P15"
+    ],
+    [
+      "III.D2",
+      "IV.P2"
+    ],
+    [
+      "III.D2",
+      "IV.P35"
+    ],
+    [
+      "III.D2",
+      "IV.P35.C1"
+    ],
+    [
+      "III.D2",
+      "IV.P52"
+    ],
+    [
+      "III.D2",
+      "IV.P61"
+    ],
+    [
+      "III.D2",
+      "IV.P64"
+    ],
+    [
+      "III.D3",
+      "III.P14"
+    ],
+    [
+      "III.DE1",
+      "IV.P15"
+    ],
+    [
+      "III.DE1",
+      "IV.P18"
+    ],
+    [
+      "III.DE1",
+      "IV.P19"
+    ],
+    [
+      "III.DE1",
+      "IV.P21"
+    ],
+    [
+      "III.DE1",
+      "IV.P37"
+    ],
+    [
+      "III.DE1",
+      "IV.P59"
+    ],
+    [
+      "III.DE1",
+      "IV.P61"
+    ],
+    [
+      "III.DE1",
+      "V.P26"
+    ],
+    [
+      "III.DE1",
+      "V.P28"
+    ],
+    [
+      "III.DE13",
+      "IV.P47"
+    ],
+    [
+      "III.DE18",
+      "IV.P50"
+    ],
+    [
+      "III.DE19",
+      "IV.P51"
+    ],
+    [
+      "III.DE2",
+      "V.P17"
+    ],
+    [
+      "III.DE2",
+      "V.P27"
+    ],
+    [
+      "III.DE21",
+      "IV.P48"
+    ],
+    [
+      "III.DE22",
+      "IV.P48"
+    ],
+    [
+      "III.DE23",
+      "V.P20"
+    ],
+    [
+      "III.DE25",
+      "IV.P52"
+    ],
+    [
+      "III.DE25",
+      "V.P27"
+    ],
+    [
+      "III.DE25",
+      "V.P32"
+    ],
+    [
+      "III.DE26",
+      "IV.P53"
+    ],
+    [
+      "III.DE27",
+      "IV.P54"
+    ],
+    [
+      "III.DE28",
+      "IV.P55"
+    ],
+    [
+      "III.DE28",
+      "IV.P57"
+    ],
+    [
+      "III.DE29",
+      "IV.P55"
+    ],
+    [
+      "III.DE3",
+      "IV.P64"
+    ],
+    [
+      "III.DE3",
+      "V.P17"
+    ],
+    [
+      "III.DE30",
+      "IV.P49"
+    ],
+    [
+      "III.DE30",
+      "IV.P58"
+    ],
+    [
+      "III.DE4",
+      "IV.P59"
+    ],
+    [
+      "III.DE40",
+      "IV.P69"
+    ],
+    [
+      "III.DE41",
+      "IV.P69"
+    ],
+    [
+      "III.DE6",
+      "IV.P57"
+    ],
+    [
+      "III.DE6",
+      "V.P15"
+    ],
+    [
+      "III.DE6",
+      "V.P17.C1"
+    ],
+    [
+      "III.DE6",
+      "V.P2"
+    ],
+    [
+      "III.DE6",
+      "V.P32.C1"
+    ],
+    [
+      "III.DE7",
+      "V.P17.C1"
+    ],
+    [
+      "III.DE7",
+      "V.P18"
+    ],
+    [
+      "III.DE7",
+      "V.P2"
+    ],
+    [
+      "III.P1",
+      "III.P1.C1"
+    ],
+    [
+      "III.P1",
+      "III.P27.C1"
+    ],
+    [
+      "III.P1",
+      "III.P3"
+    ],
+    [
+      "III.P1",
+      "III.P31.C1"
+    ],
+    [
+      "III.P1",
+      "III.P48"
+    ],
+    [
+      "III.P1",
+      "III.P56"
+    ],
+    [
+      "III.P1",
+      "III.P58"
+    ],
+    [
+      "III.P1",
+      "III.P59"
+    ],
+    [
+      "III.P1",
+      "IV.P15"
+    ],
+    [
+      "III.P1",
+      "IV.P23"
+    ],
+    [
+      "III.P11",
+      "III.P12"
+    ],
+    [
+      "III.P11",
+      "III.P15"
+    ],
+    [
+      "III.P11",
+      "III.P15.C1"
+    ],
+    [
+      "III.P11",
+      "III.P19"
+    ],
+    [
+      "III.P11",
+      "III.P20"
+    ],
+    [
+      "III.P11",
+      "III.P21"
+    ],
+    [
+      "III.P11",
+      "III.P23"
+    ],
+    [
+      "III.P11",
+      "III.P34"
+    ],
+    [
+      "III.P11",
+      "III.P35"
+    ],
+    [
+      "III.P11",
+      "III.P37"
+    ],
+    [
+      "III.P11",
+      "III.P38"
+    ],
+    [
+      "III.P11",
+      "III.P53"
+    ],
+    [
+      "III.P11",
+      "III.P55"
+    ],
+    [
+      "III.P11",
+      "III.P55.C2"
+    ],
+    [
+      "III.P11",
+      "III.P56"
+    ],
+    [
+      "III.P11",
+      "III.P57"
+    ],
+    [
+      "III.P11",
+      "III.P59"
+    ],
+    [
+      "III.P11",
+      "IV.P29"
+    ],
+    [
+      "III.P11",
+      "IV.P30"
+    ],
+    [
+      "III.P11",
+      "IV.P41"
+    ],
+    [
+      "III.P11",
+      "IV.P42"
+    ],
+    [
+      "III.P11",
+      "IV.P43"
+    ],
+    [
+      "III.P11",
+      "IV.P44"
+    ],
+    [
+      "III.P11",
+      "IV.P51"
+    ],
+    [
+      "III.P12",
+      "III.P13"
+    ],
+    [
+      "III.P12",
+      "III.P15.C1"
+    ],
+    [
+      "III.P12",
+      "III.P19"
+    ],
+    [
+      "III.P12",
+      "III.P25"
+    ],
+    [
+      "III.P12",
+      "III.P28"
+    ],
+    [
+      "III.P12",
+      "III.P33"
+    ],
+    [
+      "III.P13",
+      "III.P13.C1"
+    ],
+    [
+      "III.P13",
+      "III.P15.C1"
+    ],
+    [
+      "III.P13",
+      "III.P17"
+    ],
+    [
+      "III.P13",
+      "III.P20"
+    ],
+    [
+      "III.P13",
+      "III.P22"
+    ],
+    [
+      "III.P13",
+      "III.P23"
+    ],
+    [
+      "III.P13",
+      "III.P25"
+    ],
+    [
+      "III.P13",
+      "III.P27.C3"
+    ],
+    [
+      "III.P13",
+      "III.P28"
+    ],
+    [
+      "III.P13",
+      "III.P29"
+    ],
+    [
+      "III.P13",
+      "III.P33"
+    ],
+    [
+      "III.P13",
+      "III.P35"
+    ],
+    [
+      "III.P13",
+      "III.P38"
+    ],
+    [
+      "III.P13",
+      "III.P39"
+    ],
+    [
+      "III.P13",
+      "III.P45"
+    ],
+    [
+      "III.P13",
+      "III.P48"
+    ],
+    [
+      "III.P13",
+      "III.P49"
+    ],
+    [
+      "III.P13",
+      "III.P55.C2"
+    ],
+    [
+      "III.P13",
+      "III.P57"
+    ],
+    [
+      "III.P13",
+      "IV.P57"
+    ],
+    [
+      "III.P13.C1",
+      "III.P15.C1"
+    ],
+    [
+      "III.P13.C1",
+      "III.P38"
+    ],
+    [
+      "III.P14",
+      "III.P15"
+    ],
+    [
+      "III.P14",
+      "III.P15.C1"
+    ],
+    [
+      "III.P14",
+      "III.P16"
+    ],
+    [
+      "III.P15",
+      "III.P15.C1"
+    ],
+    [
+      "III.P15",
+      "III.P16"
+    ],
+    [
+      "III.P15",
+      "III.P36"
+    ],
+    [
+      "III.P15",
+      "III.P50"
+    ],
+    [
+      "III.P15.C1",
+      "III.P35"
+    ],
+    [
+      "III.P15.C1",
+      "III.P41"
+    ],
+    [
+      "III.P16",
+      "III.P17"
+    ],
+    [
+      "III.P16",
+      "III.P41"
+    ],
+    [
+      "III.P16",
+      "III.P46"
+    ],
+    [
+      "III.P16",
+      "IV.P34"
+    ],
+    [
+      "III.P17",
+      "III.P31"
+    ],
+    [
+      "III.P18",
+      "III.P50"
+    ],
+    [
+      "III.P18",
+      "IV.P12"
+    ],
+    [
+      "III.P19",
+      "III.P21"
+    ],
+    [
+      "III.P19",
+      "III.P36.C1"
+    ],
+    [
+      "III.P19",
+      "III.P42"
+    ],
+    [
+      "III.P19",
+      "V.P19"
+    ],
+    [
+      "III.P2",
+      "V.P1"
+    ],
+    [
+      "III.P20",
+      "III.P23"
+    ],
+    [
+      "III.P20",
+      "III.P28"
+    ],
+    [
+      "III.P21",
+      "III.P22"
+    ],
+    [
+      "III.P21",
+      "III.P25"
+    ],
+    [
+      "III.P21",
+      "III.P26"
+    ],
+    [
+      "III.P21",
+      "III.P27.C1"
+    ],
+    [
+      "III.P22",
+      "III.P24"
+    ],
+    [
+      "III.P22",
+      "III.P27.C1"
+    ],
+    [
+      "III.P23",
+      "III.P26"
+    ],
+    [
+      "III.P23",
+      "III.P38"
+    ],
+    [
+      "III.P24",
+      "III.P55.C2"
+    ],
+    [
+      "III.P25",
+      "III.P26"
+    ],
+    [
+      "III.P25",
+      "IV.P49"
+    ],
+    [
+      "III.P26",
+      "III.P27.C1"
+    ],
+    [
+      "III.P26",
+      "III.P27.C3"
+    ],
+    [
+      "III.P26",
+      "III.P40.C2"
+    ],
+    [
+      "III.P27",
+      "III.P27.C1"
+    ],
+    [
+      "III.P27",
+      "III.P27.C2"
+    ],
+    [
+      "III.P27",
+      "III.P27.C3"
+    ],
+    [
+      "III.P27",
+      "III.P29"
+    ],
+    [
+      "III.P27",
+      "III.P30"
+    ],
+    [
+      "III.P27",
+      "III.P31"
+    ],
+    [
+      "III.P27",
+      "III.P32"
+    ],
+    [
+      "III.P27",
+      "III.P40"
+    ],
+    [
+      "III.P27",
+      "III.P47"
+    ],
+    [
+      "III.P27",
+      "III.P53.C1"
+    ],
+    [
+      "III.P28",
+      "III.P31.C1"
+    ],
+    [
+      "III.P28",
+      "III.P32"
+    ],
+    [
+      "III.P28",
+      "III.P35"
+    ],
+    [
+      "III.P28",
+      "III.P38"
+    ],
+    [
+      "III.P28",
+      "III.P39"
+    ],
+    [
+      "III.P28",
+      "V.P19"
+    ],
+    [
+      "III.P29",
+      "III.P33"
+    ],
+    [
+      "III.P29",
+      "III.P43"
+    ],
+    [
+      "III.P29",
+      "III.P53.C1"
+    ],
+    [
+      "III.P3",
+      "III.P56"
+    ],
+    [
+      "III.P3",
+      "III.P9"
+    ],
+    [
+      "III.P3",
+      "IV.P24"
+    ],
+    [
+      "III.P3",
+      "IV.P32"
+    ],
+    [
+      "III.P3",
+      "IV.P35"
+    ],
+    [
+      "III.P3",
+      "IV.P51"
+    ],
+    [
+      "III.P3",
+      "IV.P52"
+    ],
+    [
+      "III.P3",
+      "IV.P59"
+    ],
+    [
+      "III.P3",
+      "IV.P61"
+    ],
+    [
+      "III.P3",
+      "IV.P64"
+    ],
+    [
+      "III.P3",
+      "V.P18"
+    ],
+    [
+      "III.P3",
+      "V.P3"
+    ],
+    [
+      "III.P3",
+      "V.P36"
+    ],
+    [
+      "III.P3",
+      "V.P40"
+    ],
+    [
+      "III.P3",
+      "V.P40.C1"
+    ],
+    [
+      "III.P3",
+      "V.P42"
+    ],
+    [
+      "III.P30",
+      "III.P31.C1"
+    ],
+    [
+      "III.P30",
+      "III.P34"
+    ],
+    [
+      "III.P30",
+      "III.P35"
+    ],
+    [
+      "III.P30",
+      "III.P42"
+    ],
+    [
+      "III.P31",
+      "III.P31.C1"
+    ],
+    [
+      "III.P31",
+      "III.P35"
+    ],
+    [
+      "III.P31",
+      "IV.P37"
+    ],
+    [
+      "III.P32",
+      "IV.P34"
+    ],
+    [
+      "III.P33",
+      "III.P34"
+    ],
+    [
+      "III.P33",
+      "III.P38"
+    ],
+    [
+      "III.P33",
+      "III.P42"
+    ],
+    [
+      "III.P34",
+      "III.P35"
+    ],
+    [
+      "III.P34",
+      "III.P42"
+    ],
+    [
+      "III.P35",
+      "III.P36.C1"
+    ],
+    [
+      "III.P35",
+      "V.P20"
+    ],
+    [
+      "III.P36",
+      "III.P36.C1"
+    ],
+    [
+      "III.P37",
+      "III.P39"
+    ],
+    [
+      "III.P37",
+      "III.P43"
+    ],
+    [
+      "III.P37",
+      "III.P44"
+    ],
+    [
+      "III.P37",
+      "IV.P15"
+    ],
+    [
+      "III.P37",
+      "IV.P37"
+    ],
+    [
+      "III.P37",
+      "IV.P44"
+    ],
+    [
+      "III.P38",
+      "III.P43"
+    ],
+    [
+      "III.P38",
+      "III.P44"
+    ],
+    [
+      "III.P39",
+      "III.P40.C2"
+    ],
+    [
+      "III.P39",
+      "IV.P34"
+    ],
+    [
+      "III.P39",
+      "IV.P45"
+    ],
+    [
+      "III.P39",
+      "IV.P45.C1"
+    ],
+    [
+      "III.P39",
+      "IV.P45.C2"
+    ],
+    [
+      "III.P39",
+      "IV.P70"
+    ],
+    [
+      "III.P4",
+      "III.P5"
+    ],
+    [
+      "III.P4",
+      "III.P6"
+    ],
+    [
+      "III.P4",
+      "III.P8"
+    ],
+    [
+      "III.P4",
+      "IV.P20"
+    ],
+    [
+      "III.P4",
+      "IV.P30"
+    ],
+    [
+      "III.P40",
+      "III.P40.C1"
+    ],
+    [
+      "III.P40",
+      "III.P40.C2"
+    ],
+    [
+      "III.P40",
+      "III.P41"
+    ],
+    [
+      "III.P40",
+      "III.P41.C1"
+    ],
+    [
+      "III.P40",
+      "III.P43"
+    ],
+    [
+      "III.P40",
+      "III.P45"
+    ],
+    [
+      "III.P41",
+      "III.P41.C1"
+    ],
+    [
+      "III.P41",
+      "III.P43"
+    ],
+    [
+      "III.P41",
+      "IV.P49"
+    ],
+    [
+      "III.P42",
+      "IV.P70"
+    ],
+    [
+      "III.P43",
+      "IV.P46"
+    ],
+    [
+      "III.P44",
+      "IV.P46"
+    ],
+    [
+      "III.P48",
+      "V.P6"
+    ],
+    [
+      "III.P48",
+      "V.P9"
+    ],
+    [
+      "III.P49",
+      "V.P5"
+    ],
+    [
+      "III.P5",
+      "III.P10"
+    ],
+    [
+      "III.P5",
+      "III.P37"
+    ],
+    [
+      "III.P5",
+      "III.P6"
+    ],
+    [
+      "III.P5",
+      "IV.P7"
+    ],
+    [
+      "III.P51",
+      "IV.P33"
+    ],
+    [
+      "III.P53",
+      "III.P53.C1"
+    ],
+    [
+      "III.P53",
+      "III.P55.C1"
+    ],
+    [
+      "III.P53",
+      "III.P58"
+    ],
+    [
+      "III.P53",
+      "V.P15"
+    ],
+    [
+      "III.P54",
+      "III.P55"
+    ],
+    [
+      "III.P55",
+      "III.P55.C1"
+    ],
+    [
+      "III.P55",
+      "III.P55.C2"
+    ],
+    [
+      "III.P55",
+      "IV.P34"
+    ],
+    [
+      "III.P55",
+      "IV.P53"
+    ],
+    [
+      "III.P56",
+      "IV.P33"
+    ],
+    [
+      "III.P58",
+      "III.P59"
+    ],
+    [
+      "III.P59",
+      "IV.P34"
+    ],
+    [
+      "III.P59",
+      "IV.P51"
+    ],
+    [
+      "III.P59",
+      "IV.P63"
+    ],
+    [
+      "III.P59",
+      "IV.P63.C1"
+    ],
+    [
+      "III.P59",
+      "IV.P69"
+    ],
+    [
+      "III.P59",
+      "V.P18"
+    ],
+    [
+      "III.P59",
+      "V.P42"
+    ],
+    [
+      "III.P6",
+      "III.P12"
+    ],
+    [
+      "III.P6",
+      "III.P7"
+    ],
+    [
+      "III.P6",
+      "IV.P20"
+    ],
+    [
+      "III.P6",
+      "IV.P25"
+    ],
+    [
+      "III.P6",
+      "IV.P26"
+    ],
+    [
+      "III.P6",
+      "IV.P31"
+    ],
+    [
+      "III.P6",
+      "IV.P60"
+    ],
+    [
+      "III.P6",
+      "IV.P64"
+    ],
+    [
+      "III.P7",
+      "III.P37"
+    ],
+    [
+      "III.P7",
+      "III.P54"
+    ],
+    [
+      "III.P7",
+      "III.P9"
+    ],
+    [
+      "III.P7",
+      "IV.P15"
+    ],
+    [
+      "III.P7",
+      "IV.P21"
+    ],
+    [
+      "III.P7",
+      "IV.P22"
+    ],
+    [
+      "III.P7",
+      "IV.P25"
+    ],
+    [
+      "III.P7",
+      "IV.P26"
+    ],
+    [
+      "III.P7",
+      "IV.P32"
+    ],
+    [
+      "III.P7",
+      "IV.P33"
+    ],
+    [
+      "III.P7",
+      "IV.P4"
+    ],
+    [
+      "III.P7",
+      "IV.P5"
+    ],
+    [
+      "III.P7",
+      "IV.P53"
+    ],
+    [
+      "III.P7",
+      "IV.P8"
+    ],
+    [
+      "III.P7",
+      "V.P25"
+    ],
+    [
+      "III.P7",
+      "V.P8"
+    ],
+    [
+      "III.P7",
+      "V.P9"
+    ],
+    [
+      "III.P8",
+      "III.P9"
+    ],
+    [
+      "III.P9",
+      "III.P13"
+    ],
+    [
+      "III.P9",
+      "III.P27.C3"
+    ],
+    [
+      "III.P9",
+      "III.P28"
+    ],
+    [
+      "III.P9",
+      "III.P56"
+    ],
+    [
+      "III.P9",
+      "III.P57"
+    ],
+    [
+      "III.P9",
+      "III.P58"
+    ],
+    [
+      "III.P9",
+      "IV.P19"
+    ],
+    [
+      "III.P9",
+      "IV.P26"
+    ],
+    [
+      "III.Post1",
+      "III.P12"
+    ],
+    [
+      "III.Post1",
+      "III.P15"
+    ],
+    [
+      "IV.A1",
+      "IV.P3"
+    ],
+    [
+      "IV.D1",
+      "IV.P28"
+    ],
+    [
+      "IV.D1",
+      "IV.P31"
+    ],
+    [
+      "IV.D1",
+      "IV.P42"
+    ],
+    [
+      "IV.D1",
+      "IV.P8"
+    ],
+    [
+      "IV.D2",
+      "IV.P59"
+    ],
+    [
+      "IV.D3",
+      "IV.P12"
+    ],
+    [
+      "IV.D3",
+      "IV.P13"
+    ],
+    [
+      "IV.D6",
+      "IV.P10.C1"
+    ],
+    [
+      "IV.D8",
+      "IV.P20"
+    ],
+    [
+      "IV.D8",
+      "IV.P23"
+    ],
+    [
+      "IV.D8",
+      "IV.P35.C2"
+    ],
+    [
+      "IV.D8",
+      "IV.P56"
+    ],
+    [
+      "IV.D8",
+      "V.P25"
+    ],
+    [
+      "IV.D8",
+      "V.P42"
+    ],
+    [
+      "IV.P1",
+      "IV.P17"
+    ],
+    [
+      "IV.P1",
+      "IV.P66.C1"
+    ],
+    [
+      "IV.P10",
+      "IV.P10.C1"
+    ],
+    [
+      "IV.P10",
+      "IV.P12.C1"
+    ],
+    [
+      "IV.P11",
+      "V.P5"
+    ],
+    [
+      "IV.P12",
+      "IV.P12.C1"
+    ],
+    [
+      "IV.P12.C1",
+      "IV.P17"
+    ],
+    [
+      "IV.P15",
+      "IV.P16"
+    ],
+    [
+      "IV.P16",
+      "IV.P17"
+    ],
+    [
+      "IV.P19",
+      "IV.P35"
+    ],
+    [
+      "IV.P19",
+      "IV.P37"
+    ],
+    [
+      "IV.P19",
+      "IV.P46"
+    ],
+    [
+      "IV.P19",
+      "IV.P59"
+    ],
+    [
+      "IV.P20",
+      "IV.P35.C2"
+    ],
+    [
+      "IV.P22",
+      "IV.P22.C1"
+    ],
+    [
+      "IV.P22.C1",
+      "IV.P24"
+    ],
+    [
+      "IV.P22.C1",
+      "IV.P25"
+    ],
+    [
+      "IV.P22.C1",
+      "IV.P26"
+    ],
+    [
+      "IV.P22.C1",
+      "IV.P56"
+    ],
+    [
+      "IV.P22.C1",
+      "V.P41"
+    ],
+    [
+      "IV.P24",
+      "IV.P36"
+    ],
+    [
+      "IV.P24",
+      "IV.P56"
+    ],
+    [
+      "IV.P24",
+      "IV.P67"
+    ],
+    [
+      "IV.P25",
+      "IV.P26"
+    ],
+    [
+      "IV.P26",
+      "IV.P27"
+    ],
+    [
+      "IV.P26",
+      "IV.P28"
+    ],
+    [
+      "IV.P26",
+      "IV.P36"
+    ],
+    [
+      "IV.P26",
+      "IV.P37"
+    ],
+    [
+      "IV.P26",
+      "IV.P38"
+    ],
+    [
+      "IV.P26",
+      "IV.P40"
+    ],
+    [
+      "IV.P26",
+      "IV.P48"
+    ],
+    [
+      "IV.P26",
+      "IV.P53"
+    ],
+    [
+      "IV.P26",
+      "V.P10"
+    ],
+    [
+      "IV.P26",
+      "V.P9"
+    ],
+    [
+      "IV.P27",
+      "IV.P28"
+    ],
+    [
+      "IV.P27",
+      "IV.P38"
+    ],
+    [
+      "IV.P27",
+      "IV.P40"
+    ],
+    [
+      "IV.P27",
+      "IV.P48"
+    ],
+    [
+      "IV.P27",
+      "IV.P50"
+    ],
+    [
+      "IV.P27",
+      "V.P10"
+    ],
+    [
+      "IV.P27",
+      "V.P9"
+    ],
+    [
+      "IV.P28",
+      "IV.P36"
+    ],
+    [
+      "IV.P28",
+      "V.P20"
+    ],
+    [
+      "IV.P28",
+      "V.P25"
+    ],
+    [
+      "IV.P28",
+      "V.P27"
+    ],
+    [
+      "IV.P29",
+      "IV.P31.C1"
+    ],
+    [
+      "IV.P3",
+      "IV.P1"
+    ],
+    [
+      "IV.P3",
+      "IV.P15"
+    ],
+    [
+      "IV.P3",
+      "IV.P4"
+    ],
+    [
+      "IV.P3",
+      "IV.P43"
+    ],
+    [
+      "IV.P3",
+      "IV.P6"
+    ],
+    [
+      "IV.P3",
+      "IV.P69"
+    ],
+    [
+      "IV.P30",
+      "IV.P34"
+    ],
+    [
+      "IV.P30",
+      "V.P10"
+    ],
+    [
+      "IV.P30",
+      "V.P38"
+    ],
+    [
+      "IV.P30",
+      "V.P39"
+    ],
+    [
+      "IV.P31",
+      "IV.P31.C1"
+    ],
+    [
+      "IV.P31.C1",
+      "IV.P35"
+    ],
+    [
+      "IV.P31.C1",
+      "IV.P35.C1"
+    ],
+    [
+      "IV.P33",
+      "IV.P35"
+    ],
+    [
+      "IV.P34",
+      "IV.P35.C1"
+    ],
+    [
+      "IV.P34",
+      "IV.P35.C2"
+    ],
+    [
+      "IV.P35",
+      "IV.P35.C1"
+    ],
+    [
+      "IV.P35",
+      "IV.P35.C2"
+    ],
+    [
+      "IV.P35",
+      "IV.P37"
+    ],
+    [
+      "IV.P35",
+      "IV.P40"
+    ],
+    [
+      "IV.P35",
+      "IV.P71"
+    ],
+    [
+      "IV.P36",
+      "V.P20"
+    ],
+    [
+      "IV.P37",
+      "IV.P45"
+    ],
+    [
+      "IV.P37",
+      "IV.P45.C1"
+    ],
+    [
+      "IV.P37",
+      "IV.P45.C2"
+    ],
+    [
+      "IV.P37",
+      "IV.P46"
+    ],
+    [
+      "IV.P37",
+      "IV.P50"
+    ],
+    [
+      "IV.P37",
+      "IV.P51"
+    ],
+    [
+      "IV.P37",
+      "IV.P58"
+    ],
+    [
+      "IV.P37",
+      "IV.P70"
+    ],
+    [
+      "IV.P37",
+      "IV.P71"
+    ],
+    [
+      "IV.P37",
+      "IV.P73"
+    ],
+    [
+      "IV.P37",
+      "V.P20"
+    ],
+    [
+      "IV.P38",
+      "IV.P39"
+    ],
+    [
+      "IV.P38",
+      "IV.P41"
+    ],
+    [
+      "IV.P38",
+      "IV.P42"
+    ],
+    [
+      "IV.P38",
+      "IV.P43"
+    ],
+    [
+      "IV.P38",
+      "V.P39"
+    ],
+    [
+      "IV.P39",
+      "IV.P42"
+    ],
+    [
+      "IV.P4",
+      "IV.P12"
+    ],
+    [
+      "IV.P4",
+      "IV.P4.C1"
+    ],
+    [
+      "IV.P41",
+      "IV.P43"
+    ],
+    [
+      "IV.P41",
+      "IV.P47"
+    ],
+    [
+      "IV.P41",
+      "IV.P50"
+    ],
+    [
+      "IV.P41",
+      "IV.P59"
+    ],
+    [
+      "IV.P43",
+      "IV.P44"
+    ],
+    [
+      "IV.P43",
+      "IV.P47"
+    ],
+    [
+      "IV.P43",
+      "IV.P59"
+    ],
+    [
+      "IV.P45",
+      "IV.P45.C1"
+    ],
+    [
+      "IV.P45",
+      "IV.P45.C2"
+    ],
+    [
+      "IV.P45.C1",
+      "IV.P46"
+    ],
+    [
+      "IV.P5",
+      "IV.P43"
+    ],
+    [
+      "IV.P5",
+      "IV.P6"
+    ],
+    [
+      "IV.P5",
+      "IV.P69"
+    ],
+    [
+      "IV.P5",
+      "IV.P7"
+    ],
+    [
+      "IV.P5",
+      "V.P8"
+    ],
+    [
+      "IV.P56",
+      "IV.P56.C1"
+    ],
+    [
+      "IV.P6",
+      "IV.P43"
+    ],
+    [
+      "IV.P6",
+      "IV.P44"
+    ],
+    [
+      "IV.P6",
+      "IV.P60"
+    ],
+    [
+      "IV.P6",
+      "V.P7"
+    ],
+    [
+      "IV.P61",
+      "IV.P63.C1"
+    ],
+    [
+      "IV.P62",
+      "IV.P66"
+    ],
+    [
+      "IV.P63",
+      "IV.P63.C1"
+    ],
+    [
+      "IV.P63",
+      "IV.P67"
+    ],
+    [
+      "IV.P63",
+      "IV.P73"
+    ],
+    [
+      "IV.P63.C1",
+      "IV.P67"
+    ],
+    [
+      "IV.P64",
+      "IV.P64.C1"
+    ],
+    [
+      "IV.P64.C1",
+      "IV.P68"
+    ],
+    [
+      "IV.P65",
+      "IV.P65.C1"
+    ],
+    [
+      "IV.P65",
+      "IV.P66"
+    ],
+    [
+      "IV.P65",
+      "IV.P66.C1"
+    ],
+    [
+      "IV.P66",
+      "IV.P66.C1"
+    ],
+    [
+      "IV.P66",
+      "IV.P73"
+    ],
+    [
+      "IV.P69",
+      "IV.P69.C1"
+    ],
+    [
+      "IV.P7",
+      "IV.P69"
+    ],
+    [
+      "IV.P7",
+      "IV.P7.C1"
+    ],
+    [
+      "IV.P8",
+      "IV.P14"
+    ],
+    [
+      "IV.P8",
+      "IV.P19"
+    ],
+    [
+      "IV.P8",
+      "IV.P29"
+    ],
+    [
+      "IV.P8",
+      "IV.P30"
+    ],
+    [
+      "IV.P8",
+      "IV.P63.C1"
+    ],
+    [
+      "IV.P8",
+      "IV.P64"
+    ],
+    [
+      "IV.P9",
+      "IV.P10"
+    ],
+    [
+      "IV.P9",
+      "IV.P11"
+    ],
+    [
+      "IV.P9",
+      "IV.P13"
+    ],
+    [
+      "IV.P9",
+      "IV.P9.C1"
+    ],
+    [
+      "IV.P9",
+      "V.P7"
+    ],
+    [
+      "IV.P9.C1",
+      "IV.P12.C1"
+    ],
+    [
+      "IV.P9.C1",
+      "IV.P16"
+    ],
+    [
+      "IV.Pref",
+      "IV.P39"
+    ],
+    [
+      "IV.Pref",
+      "IV.P65"
+    ],
+    [
+      "V.A1",
+      "V.P7"
+    ],
+    [
+      "V.P10",
+      "V.P39"
+    ],
+    [
+      "V.P11",
+      "V.P12"
+    ],
+    [
+      "V.P11",
+      "V.P16"
+    ],
+    [
+      "V.P14",
+      "V.P15"
+    ],
+    [
+      "V.P14",
+      "V.P16"
+    ],
+    [
+      "V.P15",
+      "V.P16"
+    ],
+    [
+      "V.P15",
+      "V.P39"
+    ],
+    [
+      "V.P16",
+      "V.P17.C1"
+    ],
+    [
+      "V.P16",
+      "V.P39"
+    ],
+    [
+      "V.P17",
+      "V.P17.C1"
+    ],
+    [
+      "V.P17.C1",
+      "V.P19"
+    ],
+    [
+      "V.P18",
+      "V.P18.C1"
+    ],
+    [
+      "V.P18",
+      "V.P20"
+    ],
+    [
+      "V.P21",
+      "V.P29"
+    ],
+    [
+      "V.P21",
+      "V.P31"
+    ],
+    [
+      "V.P21",
+      "V.P34"
+    ],
+    [
+      "V.P21",
+      "V.P40.C1"
+    ],
+    [
+      "V.P22",
+      "V.P23"
+    ],
+    [
+      "V.P23",
+      "V.P29"
+    ],
+    [
+      "V.P23",
+      "V.P31"
+    ],
+    [
+      "V.P23",
+      "V.P38"
+    ],
+    [
+      "V.P23",
+      "V.P40.C1"
+    ],
+    [
+      "V.P24",
+      "V.P25"
+    ],
+    [
+      "V.P24",
+      "V.P27"
+    ],
+    [
+      "V.P25",
+      "V.P27"
+    ],
+    [
+      "V.P27",
+      "V.P32"
+    ],
+    [
+      "V.P29",
+      "V.P31"
+    ],
+    [
+      "V.P29",
+      "V.P32.C1"
+    ],
+    [
+      "V.P29",
+      "V.P37"
+    ],
+    [
+      "V.P29",
+      "V.P38"
+    ],
+    [
+      "V.P29",
+      "V.P40.C1"
+    ],
+    [
+      "V.P3",
+      "V.P3.C1"
+    ],
+    [
+      "V.P3",
+      "V.P4.C1"
+    ],
+    [
+      "V.P3.C1",
+      "V.P42"
+    ],
+    [
+      "V.P30",
+      "V.P31"
+    ],
+    [
+      "V.P30",
+      "V.P32"
+    ],
+    [
+      "V.P31",
+      "V.P33"
+    ],
+    [
+      "V.P32",
+      "V.P32.C1"
+    ],
+    [
+      "V.P32",
+      "V.P36"
+    ],
+    [
+      "V.P32",
+      "V.P42"
+    ],
+    [
+      "V.P32.C1",
+      "V.P35"
+    ],
+    [
+      "V.P32.C1",
+      "V.P36"
+    ],
+    [
+      "V.P32.C1",
+      "V.P42"
+    ],
+    [
+      "V.P33",
+      "V.P37"
+    ],
+    [
+      "V.P33",
+      "V.P39"
+    ],
+    [
+      "V.P34",
+      "V.P34.C1"
+    ],
+    [
+      "V.P35",
+      "V.P36"
+    ],
+    [
+      "V.P36",
+      "V.P36.C1"
+    ],
+    [
+      "V.P36",
+      "V.P42"
+    ],
+    [
+      "V.P37",
+      "V.P38"
+    ],
+    [
+      "V.P38",
+      "V.P42"
+    ],
+    [
+      "V.P4",
+      "V.P14"
+    ],
+    [
+      "V.P4",
+      "V.P4.C1"
+    ],
+    [
+      "V.P40",
+      "V.P40.C1"
+    ],
+    [
+      "V.P5",
+      "V.P6"
+    ],
+    [
+      "V.P8",
+      "V.P11"
+    ]
+  ],
+  "unresolved": {
+    "III.P49": [
+      "III.D7"
+    ],
+    "V.P31": [
+      "V.D1"
+    ],
+    "V.P35": [
+      "V.D1"
+    ]
+  }
+}

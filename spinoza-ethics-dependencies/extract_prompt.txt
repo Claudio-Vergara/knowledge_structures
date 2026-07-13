@@ -1,0 +1,97 @@
+# Task
+Parse `Spinoza_Ethics.txt` (Project Gutenberg, Elwes translation of Spinoza's *Ethics*)
+and produce `ethics.json` of the form `{"elements": [ ... ]}`, where each element has
+exactly these fields:
+
+  { "id", "part", "kind", "number", "statement", "proof", "parent" }
+
+Write a parser script (don't hand-transcribe ~420 elements), run it, and verify the
+counts below before declaring done.
+
+# What to extract
+Across all 5 parts, in order of textual appearance:
+- definitions (kind "definition")
+- axioms (kind "axiom")
+- propositions (kind "proposition")
+- corollaries (kind "corollary")
+- the Definitions of the Emotions (Part III) — the 48 numbered ones AND the single
+  "General Definition of the Emotions" (all kind "definition")
+
+# Field rules
+- part: Roman string "I".."V".
+- id:
+  - definition  -> {part}.D{n}         (e.g. I.D1)
+  - axiom       -> {part}.A{n}         (e.g. I.A1)
+  - proposition -> {part}.P{n}         (e.g. I.P10)
+  - corollary   -> {parentPropId}.C{k} (e.g. I.P16.C1)
+  - emotion def -> III.DE{n}           (n = 1..48)
+  - general emotion def -> III.DEG
+  Here `n` is the element's own Roman/section ordinal; `k` is the corollary's sequential
+  index within its parent proposition.
+- number: a GLOBAL running index 1..N over the whole array in order of appearance
+  (NOT per-kind). Assign it last, after the ordered list is built. (ids keep their own
+  ordinals; only `number` is global.)
+- statement: the element's text, footnote markers like `[2]` stripped. Preserve the
+  source characters otherwise — note the source uses em-dash `—` (U+2014) inside some
+  compounds (`self—caused`); leave them as-is.
+- proof:
+  - proposition -> the text of the FIRST `Proof.—` paragraph only. Exclude any
+    `Another proof.—`, `Note`, `Scholium`. Keep a trailing `Q.E.D.` if present.
+  - Special case I.P9: it has no demonstration; its only justification is the inline
+    citation `(Def. iv.)`. Set its proof to the string "DI.4" (and keep the statement
+    verbatim, including `(Def. iv.)`).
+  - definition / axiom / corollary -> always null.
+- parent:
+  - corollary -> id of the immediately preceding proposition.
+  - everything else -> null.
+
+# Corollary numbering
+Number corollaries sequentially within their parent proposition (C1, C2, …) regardless
+of how they're labeled in the text. Note that labels vary: `Corollary.—`, `Corollary—`,
+`Corollary I.—`, `Coroll. I.—`, `Coroll.—`. Some propositions have multiple UNLABELED
+corollaries (e.g. Part III Prop. LV has two `Corollary.—` blocks -> .C1, .C2).
+
+# Structural notes / pitfalls (the source is irregular)
+- File is UTF-8 (despite the header claiming ISO-8859-1). Read it as UTF-8.
+- Each paragraph is a single non-blank line; blank lines separate paragraphs.
+- Part headers look like `PART I. CONCERNING GOD.`, `PART II.`, `PART IV:`. IGNORE the
+  table-of-contents line near the top (`PART I \tPART II \t...`) — real headers have the
+  Roman numeral immediately followed by `.` or `:`.
+- Section headers within a part: `DEFINITIONS`, `AXIOMS`, `PROPOSITIONS` (with/without a
+  trailing `.`). NOT every part has every section: Part III has no AXIOMS section;
+  Part V has no DEFINITIONS (only axioms + propositions).
+- Definition formats differ: Part I/III/IV/V use `I. ...`; Part II spells them out as
+  `DEFINITION I. ...`.
+- Part IV has a single unnumbered axiom: header `AXIOM.` then one paragraph -> treat as
+  axiom number 1, id IV.A1.
+- A `PROP.` line must (re)enter proposition mode even after a `POSTULATES` header or a
+  digression interrupts the sequence — otherwise you lose props. (In particular Part III
+  goes DEFINITIONS -> POSTULATES -> `PROP. I` with NO `PROPOSITIONS` header; and Part II's
+  propositions are interrupted mid-stream, see below.)
+- EXCLUDE entirely: lemmas, postulates, notes, scholia, explanations, prefaces,
+  appendices, and the physical "digression" after II.P13 (its extra `AXIOM I/II`,
+  `LEMMA I–VII`, inline `Axiom`/`Definition`, and the lemma's `Corollary.—`). Crucially,
+  that lemma-corollary must NOT be attached to II.P13. Implement this by entering a "skip"
+  state at the first `LEMMA` and leaving it only at the next `PROP.`.
+- Within DEFINITIONS / AXIOMS sections, skip lines starting with `(`, `[`, `N.B`,
+  `Explanation`, or `*` (these are footnotes, parentheticals, explanations).
+- Definitions of the Emotions: header `DEFINITIONS OF THE EMOTIONS` (Part III, after
+  Prop. LIX). 48 entries `I.`..`XLVIII.` with `Explanation` paragraphs and prose
+  interspersed — capture only the Roman-numbered lines. Then header
+  `GENERAL DEFINITION OF THE EMOTIONS` -> capture the single following definition paragraph
+  as III.DEG (skip its trailing Explanations). These sit in the array right after the
+  last Part III proposition and before Part IV's first definition.
+
+# Verification (must hold before finishing)
+Total elements: 420, with `number` a contiguous 1..420 in textual order; all ids unique.
+
+Per part (definitions / axioms / propositions / corollaries):
+- Part I:   8 / 7 / 36 / 15
+- Part II:  7 / 5 / 49 / 17
+- Part III: 3 / 0 / 59 / 14   (+ 48 emotion defs III.DE1..DE48 + 1 III.DEG)
+- Part IV:  8 / 1 / 73 / 17
+- Part V:   0 / 2 / 42 / 8
+
+Also assert: every proposition has a non-null proof (I.P9 = "DI.4"); every corollary's
+`parent` is a real proposition id; no footnote `[n]` markers remain; the element right
+before III.DE1 is III.P59 and the one right after III.DEG is IV.D1.

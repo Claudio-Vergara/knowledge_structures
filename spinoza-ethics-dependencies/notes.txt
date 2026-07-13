@@ -1,0 +1,23 @@
+Note 1
+
+The Latin text of Part IV, Propositio LXV reads: 
+"De duobus bonis majus et de duobus malis minus ex rationis ductu sequemur. 
+Demonstratio: Bonum quod impedit quominus majore bono fruamur, est revera malum; 
+malum enim et bonum (ut in præfatione hujus ostendimus) de rebus dicitur quatenus 
+easdem ad invicem comparamus et (per eandem rationem) malum minus revera bonum est; 
+quare (per corollarium propositionis 63 hujus) ex rationis ductu bonum tantum majus et 
+malum minus appetemus seu sequemur." 
+
+Note 2
+
+The Latin text of Part IV, Proposition LXXII reads: 
+
+PROPOSITIO LXXII : Homo liber nunquam dolo malo sed semper cum fide agit.
+
+DEMONSTRATIO : Si liber homo quicquam dolo malo quatenus liber est, ageret, id ex 
+dictamine rationis ageret (nam eatenus tantum liber a nobis appellatur) atque adeo 
+dolo malo agere virtus esset (per propositionem 24 hujus) et consequenter 
+(per eandem propositionem) unicuique ad suum esse conservandum consultius esset dolo 
+malo agere hoc est (ut per se notum) hominibus consultius esset verbis solummodo 
+convenire, re autem invicem esse contrarios, quod (per corollarium propositionis 31 hujus) est absurdum. 
+Ergo homo liber etc. Q.E.D.

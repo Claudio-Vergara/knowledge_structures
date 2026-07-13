@@ -1,0 +1,48 @@
+I want a json file that extracts as separate elements all the definitions, axioms, propositions, and corollaries in Spinoza_Ethics.txt. For each element, use the following structure:
+
+  "elements": [
+    {
+      "id": "I.D1",
+      "part": "I",
+      "kind": "definition",
+      "number": 1,
+      "statement": "By that which is self-caused, I mean that of which the essence involves existence, or that of which the       nature is only conceivable as existent.",
+      "proof": null,
+      "parent": null
+    },
+   {
+      "id": "I.A1",
+      "part": "I",
+      "kind": "axiom",
+      "number": 1,
+      "statement": "Everything which exists, exists either in itself or in something else.",
+      "proof": null,
+      "parent": null
+    },
+   {
+      "id": "I.P10",
+      "part": "I",
+      "kind": "proposition",
+      "number": 10,
+      "statement": "Each particular attribute of the one substance must be conceived through itself.",
+      "proof": "An attribute is that which the intellect perceives of substance, as constituting its essence (Def. iv.), and, therefore, must be conceived through itself (Def. iii.). Q.E.D.",
+      "parent": null
+    },
+   {
+      "id": "I.P16.C1",
+      "part": "I",
+      "kind": "corollary",
+      "number": 1,
+      "statement": "Hence it follows, that God is the efficient cause of all that can fall within the sphere of an infinite intellect.",
+      "proof":null,
+      "parent":"I.P16"
+    },
+
+Notes:
+
+1. The field "number" corresponds to the position in the list of elements, which should correspond to the sequence of appearance in the text
+2. All propositions must have a proof, but corolaries may not.
+3. All corollaries have as parent the id of their preceding proposition.
+4. At this stage, the "parent" field in propositions, axioms, and definitions is to be left empty.
+
+
