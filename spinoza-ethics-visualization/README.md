@@ -48,21 +48,48 @@ about the structure is hand-authored in the component.
 
 ## Interaction
 
-| Action | Effect |
-|--------|--------|
-| Hover node | Highlight direct neighbors |
-| Click node | Lock selection |
-| Double-click node | Trace full ancestry (all upstream nodes/edges) |
-| Double-click again / double-click canvas | Clear |
-| Scroll | Zoom (0.2× – 4×) |
-| Drag | Pan |
-| Part filter buttons | Show only one Part |
-| ↺ | Reset view |
+Input is handled entirely through Pointer Events, so mouse, touch and pen all take the same
+code path. Behaviour branches per-event on `pointerType` rather than on device sniffing,
+which keeps hybrid machines (touchscreen laptops) correct.
+
+| Action | Mouse | Touch |
+|--------|-------|-------|
+| Highlight direct neighbors | Hover node | — (tap selects instead) |
+| Lock selection | Click node | Tap node |
+| Trace full ancestry | Double-click node | Press and hold, or double-tap |
+| Clear | Double-click again / double-click canvas | Repeat, or double-tap the canvas |
+| Zoom (4% – 400%) | Scroll (anchored at the cursor) | Pinch (anchored between the fingers) |
+| Pan | Drag | One-finger drag, or two fingers together |
+| Reposition a node | Drag the node | Drag the node |
+| Show only one Part | Part filter buttons | Part filter buttons (scroll the row) |
+| Reset node positions | ↺ | ↺, in the ⚙ sheet |
+
+Node labels are hidden below 30% zoom — at 7–8px in graph coordinates they are illegible
+there anyway, and dropping them takes ~420 text elements out of every panned frame.
+
+## Mobile
+
+Below a 768px viewport the desktop panels are replaced by phone chrome, since the two 288px
+columns alone exceed an iPhone's width:
+
+- The header keeps one line and drops the subtitle; the Part filter row scrolls sideways.
+- **Contents** starts closed behind ☰ and opens as a near-full-screen sheet. Picking an
+  entry closes it and centres that node.
+- The **info panel** becomes a bottom sheet that peeks on selection and expands via ⌃.
+- The control bar keeps only zoom and fit; layout, theme, language, dimming, the legends and
+  the stats move into a ⚙ settings sheet.
+- The opening shot frames V.P42 at 38% rather than 65%, inside the band the chrome leaves
+  free, and `env(safe-area-inset-*)` keeps the bar clear of Safari's toolbar and the home
+  indicator.
+
+The canvas sets `touch-action: none` and cancels Safari's own `gesturestart`/`gesturechange`
+so a pinch zooms the graph rather than the page; the panels above it stay scrollable.
 
 ## Layout
 
 `ethics.json` carries no coordinates, so positions are computed in the browser from the
-node/edge sets. Three layouts are available (switch top-right; drag any node to adjust):
+node/edge sets. Three layouts are available (switch in the bottom bar, or the mobile ⚙
+sheet; drag any node to adjust):
 
 - **Force-directed** — a deterministic Fruchterman–Reingold simulation with a gentle
   per-Part anchoring, so the five Parts settle into distinct, color-coherent regions.

@@ -2,11 +2,18 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- viewport-fit=cover is what makes env(safe-area-inset-*) resolve, so the bottom
+         control bar can clear the iOS home indicator. Deliberately no user-scalable=no /
+         maximum-scale: iOS ignores the former for accessibility and the latter is hostile.
+         The canvas blocks browser gestures via touch-action + listeners in SpinozaEthics. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <title>Spinoza — Ethica Ordine Geometrico Demonstrata</title>
     <style>
       * { margin: 0; padding: 0; box-sizing: border-box; }
       html, body, #root { width: 100%; height: 100%; overflow: hidden; }
+      /* overflow:hidden alone does not stop iOS rubber-banding — position:fixed does. */
+      html, body { overscroll-behavior: none; }
+      body { position: fixed; inset: 0; -webkit-text-size-adjust: 100%; }
     </style>
   </head>
   <body>
