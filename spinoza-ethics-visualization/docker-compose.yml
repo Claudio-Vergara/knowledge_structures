@@ -1,0 +1,22 @@
+# Serves the built visualization as a static nginx container. It publishes no
+# host port: the Caddy proxy in the sandbox repo's `edge/` directory owns :80 and
+# routes /spinoza/* here over the shared `web` network. Bring that up first, then
+# this; see the deploy notes in README.md.
+services:
+  spinoza:
+    build: .
+    image: spinoza:latest
+    container_name: spinoza
+    restart: unless-stopped
+    # The bundle is static and holds no state, so there is nothing here to
+    # publish or persist beyond what nginx serves.
+    expose:
+      - "80"
+    networks:
+      - web
+
+# Created once per host with `docker network create web`; external here so no
+# compose project tries to own it.
+networks:
+  web:
+    external: true

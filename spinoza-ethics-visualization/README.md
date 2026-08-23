@@ -84,3 +84,39 @@ node/edge sets. Three layouts are available (switch top-right; drag any node to 
 | Purple | Part III — On the Origin and Nature of the Emotions |
 | Red   | Part IV — Of Human Bondage |
 | Green | Part V — Of Human Freedom |
+
+## Deploy
+
+Ships as a static nginx container. Everything — `ethics.json`, `ethics_es.json`, React —
+is compiled into one ~720 KB JS file at build time, so the running container makes no
+network calls and holds no state.
+
+It publishes no host port. A Caddy reverse proxy owns :80 and routes `/spinoza/*` here,
+which is why [`vite.config.js`](vite.config.js) sets `base: '/spinoza/'` — every built
+asset URL is absolute under that prefix. **That proxy lives in a separate repo**
+(`cvergara-lyra/sandbox`, in its `edge/` directory) because it fronts more than this app.
+
+**Host setup — provisioning, firewall, Docker install, TLS — is documented there:
+`sandbox/edge/README.md`.** This container attaches to the shared `web` network created
+during that setup.
+
+```bash
+docker network create web                   # once per host, if not already done
+cd sandbox/edge && docker compose up -d     # if not already running
+cd <this repo>  && docker compose up -d --build
+```
+
+Then:
+
+```bash
+curl -sI http://<ip>/spinoza                       # 308 → /spinoza/
+curl -s  http://<ip>/spinoza/ | grep script        # src="/spinoza/assets/index-*.js"
+```
+
+Open `http://<ip>/spinoza/` and confirm the graph renders and all three layouts switch,
+with no 404s in the browser's network panel — that verifies the `base` prefix survives the
+proxy end to end.
+
+Because the datasets are bundled rather than fetched, **editing `ethics.json` requires a
+rebuild** (`docker compose up -d --build`); there is no way to swap content in a running
+container.
