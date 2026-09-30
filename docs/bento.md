@@ -6,8 +6,9 @@ I want to create a system, named 'Bento' that answers to general practical-philo
  1. The user asks an open-ended question, for example, "should the state regulate natural monopolies?"
  2. Bento answers clarification questions to be able to create an answer in the form of a properly formatted proposition. In the case of the example, it needs to come to a definition of natural monopoly, and a more precise statement of what "to regulate" means. Ideally the clarification questions come in the form of viable alternatives the user chooses from.
  3. Present the user with the final proposition to be tested against the Ethics, for approval.
- 4. Upon approval, identify the smallest number of propositions from within the Ethics that are needed to prove or disprove the proposition. If the proposition is  
+ 4. Upon approval, identify the smallest number of propositions from within the Ethics that are needed to prove or disprove the proposition. If the proposition is refuted, offer an alternative form (including a completely negated one) that will be proved true.
+ 5.  Either way
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTk2NDUwMjkxXX0=
+eyJoaXN0b3J5IjpbNjUyMjAzMzBdfQ==
 -->
