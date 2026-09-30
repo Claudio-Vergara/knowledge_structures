@@ -8,8 +8,11 @@ I want to create a system, named 'Bento' that answers to general practical-philo
  3. Present the user with the final proposition to be tested against the Ethics, for approval.
  4. Upon approval, identify the smallest number of propositions from within the Ethics that are needed to prove or disprove the proposition. If the proposition is refuted, offer an alternative form (including a completely negated one) that will be proved true.
  5.  For either case, present the user with a proof following the same style Spinoza uses in the Ethics
- 6. Store the new proposition and proof in a json file for future reference. 
+ 6. Store the new proposition and proof in a json file for future reference. In later sessions, propositions in this reference files can be included as part of step 4
+## Implementation
+
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ5NDI5MTEzM119
+eyJoaXN0b3J5IjpbMTYzMTgxNTkwOF19
 -->
