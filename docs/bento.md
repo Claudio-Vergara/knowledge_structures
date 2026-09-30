@@ -10,9 +10,9 @@ I want to create a system, named 'Bento' that answers to general practical-philo
  5.  For either case, present the user with a proof following the same style Spinoza uses in the Ethics
  6. Store the new proposition and proof in a json file for future reference. In later sessions, propositions in this reference files can be included as part of step 4
 ## Implementation
-For a first prototype, the user interface can be CLI supported by a Python script. The script will use a combination of explicit code and Claude code API calls to
+For a first prototype, the user interface can be CLI supported by a Python script. The script will use a combination of explicit code and Claude code API calls to solve the task.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MTI1Nzk2NTRdfQ==
+eyJoaXN0b3J5IjpbLTE2NTI1MzQzMzVdfQ==
 -->
