@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Narrative Graph — Grimm: The Elves and the Shoemaker</title>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: #0d1117;
+    color: #c9d1d9;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    font-size: 13px;
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* ── Header ── */
+  #header {
+    padding: 10px 18px;
+    background: #161b22;
+    border-bottom: 1px solid #30363d;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+  }
+  #header h1 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #e6edf3;
+    white-space: nowrap;
+  }
+  #header .meta {
+    color: #8b949e;
+    font-size: 12px;
+    white-space: nowrap;
+  }
+  .btn-group { display: flex; gap: 6px; margin-left: auto; flex-wrap: wrap; }
+  button {
+    background: #21262d;
+    border: 1px solid #30363d;
+    color: #c9d1d9;
+    padding: 4px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: background 0.15s, border-color 0.15s;
+  }
+  button:hover { background: #30363d; border-color: #8b949e; }
+  button.active { background: #1f6feb; border-color: #388bfd; color: #fff; }
+
+  /* ── Main layout ── */
+  #main {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+  }
+
+  /* ── SVG canvas ── */
+  #canvas {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+  }
+  svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+
+  /* ── Side panel ── */
+  #panel {
+    width: 280px;
+    background: #161b22;
+    border-left: 1px solid #30363d;
+    padding: 14px;
+    overflow-y: auto;
+    flex-shrink: 0;
+    transition: width 0.2s;
+  }
+  #panel.hidden { width: 0; padding: 0; overflow: hidden; }
+  #panel h2 {
+    font-size: 13px;
+    font-weight: 600;
+    color: #e6edf3;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #30363d;
+    padding-bottom: 6px;
+  }
+  .detail-row {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 6px;
+    align-items: baseline;
+  }
+  .detail-key {
+    color: #8b949e;
+    font-size: 11px;
+    min-width: 70px;
+    flex-shrink: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+  .detail-val {
+    color: #e6edf3;
+    font-size: 12px;
+    word-break: break-word;
+  }
+  .badge {
+    display: inline-block;
+    padding: 1px 7px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 500;
+  }
+  .badge-actor   { background: #0d2233; color: #58a6ff; border: 1px solid #58a6ff44; }
+  .badge-event   { background: #0d2a14; color: #3fb950; border: 1px solid #3fb95044; }
+  .badge-time    { background: #2a2000; color: #e3b341; border: 1px solid #e3b34144; }
+  .badge-rel     { background: #2a0d0d; color: #f85149; border: 1px solid #f8514944; }
+
+  #conn-list { margin-top: 10px; }
+  #conn-list .conn-item {
+    padding: 5px 8px;
+    background: #0d1117;
+    border-radius: 5px;
+    margin-bottom: 4px;
+    font-size: 11px;
+    color: #8b949e;
+    border-left: 3px solid #30363d;
+    cursor: pointer;
+    transition: border-color 0.15s, color 0.15s;
+  }
+  #conn-list .conn-item:hover { border-color: #8b949e; color: #c9d1d9; }
+  #panel-placeholder {
+    color: #484f58;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 40px;
+    line-height: 1.8;
+  }
+
+  /* ── Legend ── */
+  #legend {
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    background: #161b22cc;
+    border: 1px solid #30363d;
+    border-radius: 8px;
+    padding: 10px 14px;
+    pointer-events: none;
+    backdrop-filter: blur(4px);
+  }
+  #legend h3 {
+    font-size: 11px;
+    font-weight: 600;
+    color: #8b949e;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin-bottom: 8px;
+  }
+  .legend-section { margin-bottom: 8px; }
+  .legend-section-title {
+    font-size: 10px;
+    color: #484f58;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 4px;
+  }
+  .legend-row {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    margin-bottom: 4px;
+    font-size: 11px;
+    color: #c9d1d9;
+  }
+  .legend-shape {
+    width: 16px;
+    height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  .legend-line {
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+    flex-shrink: 0;
+  }
+
+  /* ── Tooltip ── */
+  #tooltip {
+    position: absolute;
+    background: #161b22ee;
+    border: 1px solid #30363d;
+    border-radius: 7px;
+    padding: 8px 11px;
+    font-size: 12px;
+    color: #c9d1d9;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.12s;
+    max-width: 220px;
+    line-height: 1.6;
+    backdrop-filter: blur(4px);
+    z-index: 100;
+  }
+  #tooltip.visible { opacity: 1; }
+  #tooltip strong { color: #e6edf3; display: block; margin-bottom: 3px; }
+
+  /* ── Graph elements ── */
+  .link {
+    fill: none;
+    stroke-width: 1.5;
+    opacity: 0.7;
+  }
+  .link.highlighted { stroke-width: 2.5; opacity: 1; }
+  .link.dimmed { opacity: 0.12; }
+
+  .node { cursor: pointer; }
+  .node circle, .node rect, .node polygon { stroke-width: 1.5; transition: filter 0.15s; }
+  .node.highlighted circle,
+  .node.highlighted rect,
+  .node.highlighted polygon { filter: drop-shadow(0 0 6px currentColor); }
+  .node.dimmed { opacity: 0.25; }
+
+  .node-label {
+    font-size: 11px;
+    fill: #c9d1d9;
+    pointer-events: none;
+    text-anchor: middle;
+    dominant-baseline: central;
+  }
+  .node-label.dimmed { opacity: 0.25; }
+
+  /* ── Zoom hint ── */
+  #zoom-hint {
+    position: absolute;
+    top: 14px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 11px;
+    color: #484f58;
+    pointer-events: none;
+    transition: opacity 1s;
+  }
+</style>
+</head>
+<body>
+
+<div id="header">
+  <h1>Grimm: The Elves and the Shoemaker</h1>
+  <span class="meta">Text2Story / INESC-TEC &nbsp;|&nbsp; complete tale</span>
+  <div class="btn-group">
+    <button id="btn-all"    class="active" title="Show all edge types">All edges</button>
+    <button id="btn-sem"    title="Semantic role links only">Semantic</button>
+    <button id="btn-temp"   title="Temporal links only">Temporal</button>
+    <button id="btn-causal" title="Causal links only">Causal</button>
+    <button id="btn-sub"    title="Subordination links only">Subord.</button>
+    <button id="btn-panel"  title="Toggle detail panel">Detail panel</button>
+    <button id="btn-reset"  title="Reset zoom">Reset zoom</button>
+  </div>
+</div>
+
+<div id="main">
+  <div id="canvas">
+    <svg id="svg"></svg>
+    <div id="tooltip"></div>
+    <div id="zoom-hint">Scroll to zoom &nbsp;·&nbsp; Drag to pan &nbsp;·&nbsp; Click a node for details</div>
+    <div id="legend">
+      <h3>Legend</h3>
+      <div class="legend-section">
+        <div class="legend-section-title">Node types</div>
+        <div class="legend-row">
+          <div class="legend-shape"><svg width="16" height="16"><circle cx="8" cy="8" r="7" fill="#58a6ff" fill-opacity="0.18" stroke="#58a6ff" stroke-width="1.5"/></svg></div>
+          Actor (person)
+        </div>
+        <div class="legend-row">
+          <div class="legend-shape"><svg width="16" height="16"><circle cx="8" cy="8" r="7" fill="#bc8cff" fill-opacity="0.18" stroke="#bc8cff" stroke-width="1.5"/></svg></div>
+          Actor (abstract)
+        </div>
+        <div class="legend-row">
+          <div class="legend-shape"><svg width="16" height="16"><rect x="1" y="4" width="14" height="9" rx="2" fill="#3fb950" fill-opacity="0.18" stroke="#3fb950" stroke-width="1.5"/></svg></div>
+          Event
+        </div>
+        <div class="legend-row">
+          <div class="legend-shape"><svg width="16" height="16"><rect x="8" y="1" width="10" height="10" fill="#e3b341" fill-opacity="0.18" stroke="#e3b341" stroke-width="1.5" transform="rotate(45,8,8)"/></svg></div>
+          Time expression
+        </div>
+      </div>
+      <div class="legend-section">
+        <div class="legend-section-title">Edge types</div>
+        <div class="legend-row"><div class="legend-line" style="background:#58a6ff;"></div> Semantic role</div>
+        <div class="legend-row"><div class="legend-line" style="background:#e3b341;"></div> Temporal</div>
+        <div class="legend-row"><div class="legend-line" style="background:#f85149;"></div> Causal</div>
+        <div class="legend-row"><div class="legend-line" style="background:#bc8cff;"></div> Subordination</div>
+      </div>
+    </div>
+  </div>
+  <div id="panel">
+    <h2 id="panel-title">Node detail</h2>
+    <div id="panel-content">
+      <div id="panel-placeholder">Click any node<br>to see its details<br>and connections.</div>
+    </div>
+  </div>
+</div>
+
+<script>
+// ── Data ──────────────────────────────────────────────────────────────────────
+const graphData = {
+  "metadata": {
+    "source": "Grimm: The Elves and the Shoemaker",
+    "segment": "complete tale",
+    "framework": "Text2Story / INESC-TEC",
+    "schema_version": "1.0"
+  },
+  "nodes": [
+    { "id": "A1", "label": "Shoemaker", "type": "actor", "subtype": "person" },
+    { "id": "A2", "label": "Shoemaker's Wife", "type": "actor", "subtype": "person" },
+    { "id": "A3", "label": "Elves", "type": "actor", "subtype": "creature" },
+    { "id": "E1", "label": "cutting out leather", "type": "event", "tense": "past", "aspect": "perfective" },
+    { "id": "E2", "label": "going to bed", "type": "event", "tense": "past", "aspect": "perfective" },
+    { "id": "E3", "label": "finding finished shoes", "type": "event", "tense": "past", "aspect": "perfective" },
+    { "id": "E4", "label": "selling shoes", "type": "event", "tense": "past", "aspect": "perfective" },
+    { "id": "E5", "label": "buying more leather", "type": "event", "tense": "past", "aspect": "perfective" },
+    { "id": "E6", "label": "watching at night", "type": "event", "tense": "past", "aspect": "progressive" },
+    { "id": "E7", "label": "seeing the elves", "type": "event", "tense": "past", "aspect": "perfective" },
+    { "id": "E8", "label": "elves making shoes", "type": "event", "tense": "past", "aspect": "perfective" },
+    { "id": "E9", "label": "wife proposing gift for the elves", "type": "event", "tense": "past", "aspect": "perfective" },
+    { "id": "E10", "label": "making clothes for the elves", "type": "event", "tense": "past", "aspect": "perfective" },
+    { "id": "E11", "label": "elves putting on clothes", "type": "event", "tense": "past", "aspect": "perfective" },
+    { "id": "E12", "label": "elves dancing away", "type": "event", "tense": "past", "aspect": "perfective" },
+    { "id": "T1", "label": "one evening", "type": "time", "time_type": "date" },
+    { "id": "T2", "label": "next morning", "type": "time", "time_type": "date" },
+    { "id": "T3", "label": "before Christmas", "type": "time", "time_type": "duration" },
+    { "id": "T4", "label": "Christmas night", "type": "time", "time_type": "date" },
+    { "id": "T5", "label": "after the elves depart", "type": "time", "time_type": "implicit" }
+  ],
+  "edges": [
+    { "from": "A1", "to": "E1", "relation": "agent", "link_type": "SemanticRoleLink" },
+    { "from": "A1", "to": "E2", "relation": "agent", "link_type": "SemanticRoleLink" },
+    { "from": "A2", "to": "E2", "relation": "co-agent", "link_type": "SemanticRoleLink" },
+    { "from": "A1", "to": "E3", "relation": "experiencer", "link_type": "SemanticRoleLink" },
+    { "from": "A1", "to": "E4", "relation": "agent", "link_type": "SemanticRoleLink" },
+    { "from": "A1", "to": "E5", "relation": "agent", "link_type": "SemanticRoleLink" },
+    { "from": "A1", "to": "E6", "relation": "agent", "link_type": "SemanticRoleLink" },
+    { "from": "A2", "to": "E6", "relation": "co-agent", "link_type": "SemanticRoleLink" },
+    { "from": "A1", "to": "E7", "relation": "experiencer", "link_type": "SemanticRoleLink" },
+    { "from": "A2", "to": "E7", "relation": "experiencer", "link_type": "SemanticRoleLink" },
+    { "from": "A3", "to": "E7", "relation": "theme", "link_type": "SemanticRoleLink" },
+    { "from": "A3", "to": "E8", "relation": "agent", "link_type": "SemanticRoleLink" },
+    { "from": "A2", "to": "E9", "relation": "agent", "link_type": "SemanticRoleLink" },
+    { "from": "A3", "to": "E9", "relation": "beneficiary", "link_type": "SemanticRoleLink" },
+    { "from": "A1", "to": "E10", "relation": "agent", "link_type": "SemanticRoleLink" },
+    { "from": "A2", "to": "E10", "relation": "co-agent", "link_type": "SemanticRoleLink" },
+    { "from": "A3", "to": "E10", "relation": "beneficiary", "link_type": "SemanticRoleLink" },
+    { "from": "A3", "to": "E11", "relation": "agent", "link_type": "SemanticRoleLink" },
+    { "from": "A3", "to": "E12", "relation": "agent", "link_type": "SemanticRoleLink" },
+    { "from": "E1", "to": "E2", "relation": "BEFORE", "link_type": "TemporalLink" },
+    { "from": "E2", "to": "E3", "relation": "BEFORE", "link_type": "TemporalLink" },
+    { "from": "E3", "to": "E4", "relation": "BEFORE", "link_type": "TemporalLink" },
+    { "from": "E4", "to": "E5", "relation": "BEFORE", "link_type": "TemporalLink" },
+    { "from": "E5", "to": "E6", "relation": "BEFORE", "link_type": "TemporalLink" },
+    { "from": "E6", "to": "E7", "relation": "BEFORE", "link_type": "TemporalLink" },
+    { "from": "E7", "to": "E9", "relation": "BEFORE", "link_type": "TemporalLink" },
+    { "from": "E9", "to": "E10", "relation": "BEFORE", "link_type": "TemporalLink" },
+    { "from": "E10", "to": "E11", "relation": "BEFORE", "link_type": "TemporalLink" },
+    { "from": "E11", "to": "E12", "relation": "BEFORE", "link_type": "TemporalLink" },
+    { "from": "E8", "to": "E3", "relation": "BEFORE", "link_type": "TemporalLink" },
+    { "from": "E6", "to": "E8", "relation": "INCLUDES", "link_type": "TemporalLink" },
+    { "from": "E1", "to": "T1", "relation": "IS_INCLUDED", "link_type": "TemporalLink" },
+    { "from": "E3", "to": "T2", "relation": "IS_INCLUDED", "link_type": "TemporalLink" },
+    { "from": "E10", "to": "T3", "relation": "IS_INCLUDED", "link_type": "TemporalLink" },
+    { "from": "E6", "to": "T4", "relation": "IS_INCLUDED", "link_type": "TemporalLink" },
+    { "from": "E12", "to": "T5", "relation": "IS_INCLUDED", "link_type": "TemporalLink" },
+    { "from": "E8", "to": "E3", "relation": "CAUSES", "link_type": "CausalLink" },
+    { "from": "E3", "to": "E4", "relation": "ENABLES", "link_type": "CausalLink" },
+    { "from": "E4", "to": "E5", "relation": "ENABLES", "link_type": "CausalLink" },
+    { "from": "E7", "to": "E9", "relation": "MOTIVATES", "link_type": "CausalLink" },
+    { "from": "E9", "to": "E10", "relation": "CAUSES", "link_type": "CausalLink" },
+    { "from": "E11", "to": "E12", "relation": "CAUSES", "link_type": "CausalLink" },
+    { "from": "E6", "to": "E7", "relation": "PART-OF", "link_type": "SubordinationLink" },
+    { "from": "E6", "to": "E8", "relation": "PART-OF", "link_type": "SubordinationLink" },
+    { "from": "E9", "to": "E10", "relation": "PART-OF", "link_type": "SubordinationLink" }
+  ]
+};
+
+// ── Config ────────────────────────────────────────────────────────────────────
+const nodeColor = d => {
+  if (d.type === "time")              return "#e3b341";
+  if (d.type === "event")             return "#3fb950";
+  if (d.subtype === "abstract")       return "#bc8cff";
+  return "#58a6ff";
+};
+const EDGE_COLORS = {
+  SemanticRoleLink:    "#58a6ff",
+  TemporalLink:        "#e3b341",
+  CausalLink:          "#f85149",
+  SubordinationLink:   "#bc8cff"
+};
+const EVENT_W = 80, EVENT_H = 26;
+
+// ── State ─────────────────────────────────────────────────────────────────────
+let activeFilter = "all";
+let selectedNode = null;
+let panelOpen = true;
+
+// ── Build lookup maps ─────────────────────────────────────────────────────────
+const nodeById = {};
+graphData.nodes.forEach(n => nodeById[n.id] = n);
+
+// Neighbour map for highlight
+const neighbours = {};
+graphData.nodes.forEach(n => { neighbours[n.id] = new Set(); });
+graphData.edges.forEach(e => {
+  neighbours[e.from].add(e.to);
+  neighbours[e.to].add(e.from);
+});
+
+// ── SVG setup ─────────────────────────────────────────────────────────────────
+const svg = d3.select("#svg");
+const g   = svg.append("g").attr("class", "zoom-layer");
+
+// Defs — arrowheads per edge colour
+const defs = svg.append("defs");
+Object.entries(EDGE_COLORS).forEach(([lt, color]) => {
+  defs.append("marker")
+    .attr("id", `arrow-${lt}`)
+    .attr("viewBox", "0 -5 10 10")
+    .attr("refX", 20)
+    .attr("refY", 0)
+    .attr("markerWidth", 6)
+    .attr("markerHeight", 6)
+    .attr("orient", "auto")
+    .append("path")
+      .attr("d", "M0,-5L10,0L0,5")
+      .attr("fill", color)
+      .attr("opacity", 0.85);
+});
+
+// Zoom behaviour
+const zoom = d3.zoom()
+  .scaleExtent([0.2, 4])
+  .on("zoom", e => g.attr("transform", e.transform));
+svg.call(zoom);
+
+// ── Force simulation ──────────────────────────────────────────────────────────
+const nodes = graphData.nodes.map(d => Object.assign({}, d));
+const edges = graphData.edges.map(d => Object.assign({}, d, { source: d.from, target: d.to }));
+
+const simulation = d3.forceSimulation(nodes)
+  .force("link", d3.forceLink(edges)
+    .id(d => d.id)
+    .distance(d => {
+      const lt = d.link_type;
+      if (lt === "SemanticRoleLink") return 110;
+      if (lt === "TemporalLink")     return 95;
+      if (lt === "CausalLink")       return 120;
+      return 90;
+    })
+    .strength(0.5)
+  )
+  .force("charge", d3.forceManyBody().strength(-320))
+  .force("center",  d3.forceCenter(0, 0))
+  .force("collide", d3.forceCollide(45))
+  .alphaDecay(0.03);
+
+// ── Draw edges ────────────────────────────────────────────────────────────────
+const linkSel = g.append("g").attr("class", "links")
+  .selectAll("line")
+  .data(edges)
+  .join("line")
+    .attr("class", "link")
+    .attr("stroke", d => EDGE_COLORS[d.link_type] || "#555")
+    .attr("marker-end", d => `url(#arrow-${d.link_type})`)
+    .attr("stroke-dasharray", d => d.link_type === "SubordinationLink" ? "5,3" : null);
+
+// ── Draw nodes ────────────────────────────────────────────────────────────────
+const nodeSel = g.append("g").attr("class", "nodes")
+  .selectAll("g")
+  .data(nodes)
+  .join("g")
+    .attr("class", "node")
+    .call(d3.drag()
+      .on("start", dragStart)
+      .on("drag",  dragged)
+      .on("end",   dragEnd)
+    )
+    .on("click",     nodeClick)
+    .on("mouseover", nodeHover)
+    .on("mouseout",  nodeOut);
+
+// Actor → circle
+nodeSel.filter(d => d.type === "actor")
+  .append("circle")
+    .attr("r", d => d.id === "A1" || d.id === "A2" ? 22 : 18)
+    .attr("fill", d => nodeColor(d))
+    .attr("fill-opacity", 0.18)
+    .attr("stroke", d => nodeColor(d))
+    .attr("stroke-width", d => d.id === "A1" || d.id === "A2" ? 2.5 : 1.5);
+
+// Event → rounded rectangle
+nodeSel.filter(d => d.type === "event")
+  .append("rect")
+    .attr("x", -EVENT_W/2)
+    .attr("y", -EVENT_H/2)
+    .attr("width", EVENT_W)
+    .attr("height", EVENT_H)
+    .attr("rx", 4)
+    .attr("fill", d => nodeColor(d))
+    .attr("fill-opacity", 0.18)
+    .attr("stroke", d => nodeColor(d))
+    .attr("stroke-width", 1.5);
+
+// Time → rotated square (diamond)
+nodeSel.filter(d => d.type === "time")
+  .append("rect")
+    .attr("x", -14).attr("y", -14)
+    .attr("width", 28).attr("height", 28)
+    .attr("fill", d => nodeColor(d))
+    .attr("fill-opacity", 0.18)
+    .attr("stroke", d => nodeColor(d))
+    .attr("stroke-width", 1.5)
+    .attr("transform", "rotate(45)");
+
+// Labels — actors show name, events/time show ID
+nodeSel.append("text")
+  .attr("class", "node-label")
+  .attr("font-size", d => d.type === "actor" ? "10px" : "9px")
+  .attr("font-weight", d => d.id === "A1" || d.id === "A2" ? "700" : "400")
+  .text(d => d.type === "actor" ? d.label : d.id);
+
+// ── Simulation tick ───────────────────────────────────────────────────────────
+simulation.on("tick", () => {
+  linkSel
+    .attr("x1", d => d.source.x)
+    .attr("y1", d => d.source.y)
+    .attr("x2", d => d.target.x)
+    .attr("y2", d => d.target.y);
+  nodeSel.attr("transform", d => `translate(${d.x},${d.y})`);
+});
+
+// After simulation settles, fit the graph to canvas
+simulation.on("end", fitGraph);
+
+// ── Fit / reset zoom ──────────────────────────────────────────────────────────
+function fitGraph() {
+  const svgEl = document.getElementById("svg");
+  const w = svgEl.clientWidth  || 800;
+  const h = svgEl.clientHeight || 600;
+  const bbox = g.node().getBBox();
+  if (!bbox.width || !bbox.height) return;
+  const pad = 60;
+  const scale = Math.min(
+    (w - pad*2) / bbox.width,
+    (h - pad*2) / bbox.height,
+    1.5
+  );
+  const tx = w/2 - scale * (bbox.x + bbox.width/2);
+  const ty = h/2 - scale * (bbox.y + bbox.height/2);
+  svg.transition().duration(600)
+    .call(zoom.transform, d3.zoomIdentity.translate(tx, ty).scale(scale));
+}
+
+// ── Filter buttons ────────────────────────────────────────────────────────────
+const filterMap = {
+  "btn-all":    "all",
+  "btn-sem":    "SemanticRoleLink",
+  "btn-temp":   "TemporalLink",
+  "btn-causal": "CausalLink",
+  "btn-sub":    "SubordinationLink"
+};
+Object.entries(filterMap).forEach(([btnId, filter]) => {
+  document.getElementById(btnId).addEventListener("click", () => {
+    activeFilter = filter;
+    document.querySelectorAll(".btn-group button").forEach(b => b.classList.remove("active"));
+    document.getElementById(btnId).classList.add("active");
+    applyFilter();
+  });
+});
+
+function applyFilter() {
+  linkSel.attr("display", d =>
+    activeFilter === "all" || d.link_type === activeFilter ? null : "none"
+  );
+  // Arrowheads: hide marker on hidden links
+  linkSel.attr("marker-end", d =>
+    (activeFilter === "all" || d.link_type === activeFilter)
+      ? `url(#arrow-${d.link_type})` : null
+  );
+}
+
+// ── Panel toggle ──────────────────────────────────────────────────────────────
+document.getElementById("btn-panel").addEventListener("click", () => {
+  panelOpen = !panelOpen;
+  document.getElementById("panel").classList.toggle("hidden", !panelOpen);
+  document.getElementById("btn-panel").classList.toggle("active", !panelOpen);
+  setTimeout(fitGraph, 250);
+});
+
+// ── Reset zoom ────────────────────────────────────────────────────────────────
+document.getElementById("btn-reset").addEventListener("click", fitGraph);
+
+// ── Tooltip ───────────────────────────────────────────────────────────────────
+const tooltip = document.getElementById("tooltip");
+
+function nodeHover(event, d) {
+  let html = `<strong>${d.label}</strong>`;
+  html += `Type: ${d.type}`;
+  if (d.subtype)    html += ` / ${d.subtype}`;
+  if (d.tense)      html += `<br>Tense: ${d.tense} &nbsp; Aspect: ${d.aspect}`;
+  if (d.time_type)  html += `<br>Time type: ${d.time_type}`;
+  tooltip.innerHTML = html;
+  tooltip.classList.add("visible");
+  moveTooltip(event);
+}
+function nodeOut() { tooltip.classList.remove("visible"); }
+document.getElementById("canvas").addEventListener("mousemove", e => {
+  if (tooltip.classList.contains("visible")) moveTooltip(e);
+});
+function moveTooltip(e) {
+  const pad = 12;
+  const cRect = document.getElementById("canvas").getBoundingClientRect();
+  let x = e.clientX - cRect.left + pad;
+  let y = e.clientY - cRect.top  + pad;
+  if (x + 230 > cRect.width)  x = e.clientX - cRect.left - 230 - pad;
+  if (y + 100 > cRect.height) y = e.clientY - cRect.top  - 100 - pad;
+  tooltip.style.left = x + "px";
+  tooltip.style.top  = y + "px";
+}
+
+// ── Click → detail panel ──────────────────────────────────────────────────────
+function nodeClick(event, d) {
+  event.stopPropagation();
+  if (selectedNode === d.id) {
+    clearSelection();
+    return;
+  }
+  selectedNode = d.id;
+  highlightNeighbourhood(d.id);
+  showPanel(d);
+}
+
+svg.on("click", clearSelection);
+
+function clearSelection() {
+  selectedNode = null;
+  nodeSel.classed("highlighted dimmed", false);
+  linkSel.classed("highlighted dimmed", false);
+  d3.selectAll(".node-label").classed("dimmed", false);
+  document.getElementById("panel-content").innerHTML =
+    `<div id="panel-placeholder">Click any node<br>to see its details<br>and connections.</div>`;
+  document.getElementById("panel-title").textContent = "Node detail";
+}
+
+function highlightNeighbourhood(id) {
+  const nb = neighbours[id];
+  nodeSel.classed("highlighted", d => d.id === id)
+         .classed("dimmed",      d => d.id !== id && !nb.has(d.id));
+  linkSel.classed("highlighted", d => d.source.id === id || d.target.id === id)
+         .classed("dimmed",      d => d.source.id !== id && d.target.id !== id);
+  d3.selectAll(".node-label")
+    .classed("dimmed", function() {
+      const parentDatum = d3.select(this.parentNode).datum();
+      return parentDatum && parentDatum.id !== id && !nb.has(parentDatum.id);
+    });
+}
+
+function showPanel(d) {
+  if (!panelOpen) return;
+  document.getElementById("panel-title").textContent = d.label;
+
+  const typeClass = { actor: "badge-actor", event: "badge-event", time: "badge-time" }[d.type] || "";
+
+  let html = `
+    <div class="detail-row">
+      <span class="detail-key">ID</span>
+      <span class="detail-val">${d.id}</span>
+    </div>
+    <div class="detail-row">
+      <span class="detail-key">Type</span>
+      <span class="detail-val"><span class="badge ${typeClass}">${d.type}</span></span>
+    </div>`;
+
+  if (d.subtype)
+    html += `<div class="detail-row"><span class="detail-key">Subtype</span><span class="detail-val">${d.subtype}</span></div>`;
+  if (d.tense)
+    html += `<div class="detail-row"><span class="detail-key">Tense</span><span class="detail-val">${d.tense}</span></div>`;
+  if (d.aspect)
+    html += `<div class="detail-row"><span class="detail-key">Aspect</span><span class="detail-val">${d.aspect}</span></div>`;
+  if (d.time_type)
+    html += `<div class="detail-row"><span class="detail-key">Time type</span><span class="detail-val">${d.time_type}</span></div>`;
+
+  // Connections
+  const outgoing = edges.filter(e => e.source.id === d.id);
+  const incoming = edges.filter(e => e.target.id === d.id);
+
+  html += `<div id="conn-list">`;
+  if (outgoing.length) {
+    html += `<div class="detail-key" style="margin:10px 0 5px;">Outgoing (${outgoing.length})</div>`;
+    outgoing.forEach(e => {
+      const tgt = nodeById[e.target.id] || nodeById[e.to];
+      const tgtLabel = tgt ? tgt.label : e.target.id;
+      const col = EDGE_COLORS[e.link_type] || "#555";
+      html += `<div class="conn-item" style="border-left-color:${col}"
+                    onclick="focusNode('${e.target.id}')">
+                 <span style="color:${col}">${e.relation}</span>
+                 &rarr; ${tgtLabel}
+               </div>`;
+    });
+  }
+  if (incoming.length) {
+    html += `<div class="detail-key" style="margin:10px 0 5px;">Incoming (${incoming.length})</div>`;
+    incoming.forEach(e => {
+      const src = nodeById[e.source.id] || nodeById[e.from];
+      const srcLabel = src ? src.label : e.source.id;
+      const col = EDGE_COLORS[e.link_type] || "#555";
+      html += `<div class="conn-item" style="border-left-color:${col}"
+                    onclick="focusNode('${e.source.id}')">
+                 ${srcLabel}
+                 <span style="color:${col}">&rarr; ${e.relation}</span>
+               </div>`;
+    });
+  }
+  html += `</div>`;
+
+  document.getElementById("panel-content").innerHTML = html;
+}
+
+// Focus a node from the connection list
+window.focusNode = function(id) {
+  const d = nodes.find(n => n.id === id);
+  if (!d) return;
+  selectedNode = id;
+  highlightNeighbourhood(id);
+  showPanel(d);
+  // Pan to node
+  const svgEl = document.getElementById("svg");
+  const w = svgEl.clientWidth;
+  const h = svgEl.clientHeight;
+  const t = d3.zoomTransform(svg.node());
+  const tx = w/2 - t.k * d.x;
+  const ty = h/2 - t.k * d.y;
+  svg.transition().duration(400)
+    .call(zoom.transform, d3.zoomIdentity.translate(tx, ty).scale(t.k));
+};
+
+// ── Drag ──────────────────────────────────────────────────────────────────────
+function dragStart(event, d) {
+  if (!event.active) simulation.alphaTarget(0.3).restart();
+  d.fx = d.x; d.fy = d.y;
+}
+function dragged(event, d) { d.fx = event.x; d.fy = event.y; }
+function dragEnd(event, d) {
+  if (!event.active) simulation.alphaTarget(0);
+  d.fx = null; d.fy = null;
+}
+
+// ── Hint fade ─────────────────────────────────────────────────────────────────
+setTimeout(() => {
+  const hint = document.getElementById("zoom-hint");
+  hint.style.opacity = "0";
+}, 4000);
+
+// ── Initial centre ────────────────────────────────────────────────────────────
+// Run fit once DOM has settled
+setTimeout(() => {
+  const svgEl = document.getElementById("svg");
+  simulation.force("center", d3.forceCenter(svgEl.clientWidth / 2, svgEl.clientHeight / 2));
+  simulation.alpha(0.3).restart();
+}, 50);
+</script>
+</body>
+</html>
